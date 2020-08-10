@@ -5,7 +5,13 @@ Page({
    * Page initial data
    */
   data: {
-
+    array: ["Shanghai", "Taipei", "Hong Kong", "Xi'an", "Beijing", "Tianjin", "Haerbin", "Gaoxiong", "Pingdong"],
+  },
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail)
+    this.setData({
+      index: e.detail.value
+    })
   },
 
   /**

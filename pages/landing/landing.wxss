@@ -53,13 +53,14 @@
   width: 100vw;
   height: 480rpx;
   align-items: center;
+  padding-top: 5vw;
 }
 
 .banner-hesha {
   position: absolute;
   background-size: cover;
   background-position: center;
-  width: 30vw;
+  width: 40vw;
   height: 10vw;
   padding-bottom: 130rpx;
 }

@@ -1,1 +1,26 @@
 /* pages/createpost/createpost.wxss */
+.form {
+  padding: 10% 10%;
+  margin: 50rpx;
+  box-shadow: 3rpx 3rpx 3rpx lightgray;
+  }
+  .section {
+  margin: 30rpx 0;
+  }
+  .btn-area {
+  display: flex;
+  justify-content: space-evenly;
+  }
+  
+  .picker-section {
+    margin: 20rpx 0;
+  }
+  .box {
+    box-shadow: 1rpx 1rpx 2rpx 2rpx lightgray;
+    border-radius: 5%;
+    width: 25 rpx;
+  }
+  .checkbox {
+    display: flex;
+    justify-content: space-between;
+  }

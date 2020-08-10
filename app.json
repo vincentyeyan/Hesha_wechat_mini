@@ -17,37 +17,36 @@
     "navigationBarTitleText": "喝啥？",
     "navigationBarTextStyle":"black"
   },
-  "tabBar":
-   {
+  "tabBar": {
     "color": "#00071E",
-    "selectedColor": "#FF8908",
-      "list": [
-        {
-    "pagePath": "pages/landing/landing",
-    "text": "Home",
-    "iconPath":  "/images/imagess/internet.png",
-    "selectedIconPath": "/images/imagess/property.png"
-        },
-        {
-          "pagePath": "pages/category/category",
-          "text": "Category",
-          "iconPath": "/images/imagess/chatbla.png",
-          "selectedIconPath": "/images/imagess/chat.png"
-              },
-        {
-      "pagePath": "pages/createpost/createpost",
-      "text": "Post",
-      "iconPath":  "/images/imagess/plane.png",
-      "selectedIconPath": "/images/imagess/planecol.png"
+    "selectedColor": "#17B890",
+    "list": [
+      {
+        "pagePath": "pages/landing/landing",
+        "text": "Home",
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/home.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "Category",
+        "iconPath": "pages/images/cocktail-2.png",
+        "selectedIconPath": "pages/images/cocktail-2.png"
+      },
+      {
+        "pagePath": "pages/createpost/createpost",
+        "text": "Post",
+        "iconPath":  "pages/images/photo-camera.png",
+        "selectedIconPath": "pages/images/photo-camera.png"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "Profile",
-        "iconPath":  "/images/imagess/man.png",
-        "selectedIconPath": "/images/imagess/mancol.png"
-        }
-      ]
-      },
+        "iconPath":  "pages/images/avatar.png",
+        "selectedIconPath": "pages/images/avatar.png"
+      }
+    ]
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

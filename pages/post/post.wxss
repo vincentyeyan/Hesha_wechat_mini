@@ -1,0 +1,57 @@
+/* pages/post/post.wxss */
+.img {
+  position: center;
+  background-position: cover;
+  width: 100vw;
+  object-fit: cover;
+}
+.h2 {
+  font-size: 40rpx;
+}
+.p1 {
+  background-color: rgb(255, 255, 255);
+  font-size: 32rpx;
+  border-radius: 8rpx;
+  padding: 10rpx;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.local {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.post-card {
+background-color:rgb(243, 243, 243);
+margin-top: 20rpx;
+padding: 40rpx;
+height: 400rpx;
+width: 80vw;
+border-radius: 8rpx;
+}
+
+.description {
+  margin-top: 60rpx;
+  margin-left: 20rpx;
+}
+
+.btn-orange {
+  background-color:rgb(255, 219, 8);
+  color: white;
+  text-shadow: 2rpx 2rpx 6rpx rgba(0, 0, 0,0.4);
+  margin-right: 30rpx;
+}
+
+
+.button {
+  width: 92vw;
+  display: inline-flex;
+  justify-content: flex-end;
+  margin: 40rpx;
+}
+

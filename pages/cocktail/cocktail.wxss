@@ -1,0 +1,51 @@
+/* pages/cocktail/cocktail.wxss */
+.banner-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 480rpx;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section {
+  margin-top: 100rpx;
+  margin-bottom: 10rpx;
+}
+
+.searchbar {
+  display: flex;
+  align-items:center;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8rpx;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  width: 600rpx;
+  padding-left: 40rpx;
+  height: 50rpx;
+}
+.search-tag {
+  display: flex;
+  align-items:center;
+  background-color: rgba(0,0,0,0.2);
+  width: 200rpx;
+  height: 50rpx;
+  border-radius: 5%;
+  justify-content: center;
+  margin: 1vh;
+}
+.btnsearch {
+  background-color: none;
+  margin-top: 30rpx;
+  color: white;
+}
+.container{
+  padding-top:0rpx;
+}
+.cocktail-card {
+
+}

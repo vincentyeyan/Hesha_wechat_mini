@@ -1,14 +1,53 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/landing/landing",
+    "pages/post/post",
+    "pages/recipe/recipe",
+    "pages/search/search",
+    "pages/cocktail/cocktail",
+    "pages/category/category",
+    "pages/createpost/createpost",
+    "pages/profile/profile"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "喝啥？",
     "navigationBarTextStyle":"black"
   },
+  "tabBar":
+   {
+    "color": "#00071E",
+    "selectedColor": "#FF8908",
+      "list": [
+        {
+    "pagePath": "pages/landing/landing",
+    "text": "Home",
+    "iconPath":  "/images/imagess/internet.png",
+    "selectedIconPath": "/images/imagess/property.png"
+        },
+        {
+          "pagePath": "pages/category/category",
+          "text": "Category",
+          "iconPath": "/images/imagess/chatbla.png",
+          "selectedIconPath": "/images/imagess/chat.png"
+              },
+        {
+      "pagePath": "pages/createpost/createpost",
+      "text": "Post",
+      "iconPath":  "/images/imagess/plane.png",
+      "selectedIconPath": "/images/imagess/planecol.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "Profile",
+        "iconPath":  "/images/imagess/man.png",
+        "selectedIconPath": "/images/imagess/mancol.png"
+        }
+      ]
+      },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

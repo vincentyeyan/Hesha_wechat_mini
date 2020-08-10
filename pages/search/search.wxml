@@ -1,0 +1,18 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+<view class="banner-wrapper">
+  <view class="section">
+    <view class="section__title"></view>
+    <input class="searchbar" bindinput="searchInput" name="input" placeholder="Search" />
+    <button class="btn" style="background: grey" bindtap="searchForm">..</button>
+  </view>
+</view>
+ <view class="row">
+<view class="search-tag" bindtap="GoTo1">1</view>
+<view class="search-tag" bindtap="GoTo2">2</view>
+<view class="search-tag" bindtap="GoTo3">3</view>
+<view class="search-tag" bindtap="GoTo4">4</view>
+<view class="search-tag" bindtap="GoTo5">5</view>
+<view class="search-tag" bindtap="GoTo6">6</view>
+</view>
+</view>

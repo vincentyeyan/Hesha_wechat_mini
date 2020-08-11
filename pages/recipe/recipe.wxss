@@ -1,9 +1,10 @@
 /* pages/recipe/recipe.wxss */
 .img {
-  position: center;
-  background-position: cover;
-  width: 100vw;
-  object-fit: cover;
+  padding: 60rpx;
+  width: 60vw;
+  margin-left: 95rpx;
+
+  
 }
 
 .h2 {

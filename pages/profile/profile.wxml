@@ -1,6 +1,11 @@
 <!--pages/profile/profile.wxml-->
-<view class="card">
+<!-- <view class="card">
   <image src="../images/man.png" alt="John" style="width:90%"/>
   <view class="h1">Capo Wang</view>
   <view class="p title">Hi! My name is Capo, I live in Shanghai. I love to make yummy drinks during my freetime! I love bubble tea.</view>
-  </view>
+  </view> -->
+
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>
+<!-- 需要使用 button 来授权登录 -->
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">Authorize</button>

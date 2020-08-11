@@ -1,2 +1,6 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class="card">
+  <image src="../images/man.png" alt="John" style="width:90%"/>
+  <view class="h1">Capo Wang</view>
+  <view class="p title">Hi! My name is Capo, I live in Shanghai. I love to make yummy drinks during my freetime! I love bubble tea.</view>
+  </view>

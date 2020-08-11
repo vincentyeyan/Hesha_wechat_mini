@@ -30,12 +30,6 @@
         "selectedIconPath": "pages/images/home.png"
       },
       {
-        "pagePath": "pages/category/category",
-        "text": "Category",
-        "iconPath": "pages/images/HESHAbanner.png",
-        "selectedIconPath": "pages/images/HESHAbanner.png"
-      },
-      {
         "pagePath": "pages/profile/profile",
         "text": "Profile",
         "iconPath":  "pages/images/avatar.png",

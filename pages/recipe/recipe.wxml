@@ -1,6 +1,6 @@
 <!--pages/recipe/recipe.wxml-->
 
-<image class='img' src=""></image>
+<image class='img' src="../images/cocktails.png"></image>
   <view class="row">
     <view class="post-card">
       <view class="local">

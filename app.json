@@ -16,7 +16,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "喝啥？",
+    "navigationBarTitleText": "喝啥",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -32,8 +32,8 @@
       {
         "pagePath": "pages/category/category",
         "text": "Category",
-        "iconPath": "pages/images/cocktail-2.png",
-        "selectedIconPath": "pages/images/cocktail-2.png"
+        "iconPath": "pages/images/HESHAbanner.png",
+        "selectedIconPath": "pages/images/HESHAbanner.png"
       },
       {
         "pagePath": "pages/profile/profile",
@@ -43,6 +43,7 @@
       }
     ]
   },
+  
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

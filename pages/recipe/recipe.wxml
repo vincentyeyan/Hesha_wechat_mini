@@ -1,12 +1,12 @@
 <!--pages/recipe/recipe.wxml-->
-<image class='img' src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2628118445,2362529036&fm=26&gp=0.jpg"></image>
+<image class='img' src=""></image>
   <view class="row">
     <view class="post-card">
       <view class="local">
-          <view class="h2">Whiskey Sour</view>
+          <view class="h2">{{recipe.name}}</view>
           <!-- <view class="p2">{{cocktail.post.count}}people made this</view> -->
-          <view class="p1"> Sour</view>
-        <view class="h4">Spirit, citrus and sugar—the original big three—come together in the Whiskey Sour, whose history stretches back to the Lincoln administration.</view>
+          <view class="p1">{{recipe.description}}</view>
+        
           
       </view>
       <!-- not sure how the ingredience and instrution seed will look like -->

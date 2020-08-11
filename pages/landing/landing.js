@@ -1,6 +1,7 @@
 // pages/posts/posts.js
 const app = getApp()
-const base_url = app.globalData.host;
+// const base_url = app.globalData.host;
+const recipes = app.globalData.recipes;
 Page({
 
 
@@ -15,11 +16,15 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    console.log(recipes)
+    this.setData({
+      recipes: recipes
+    })
   },
-  GoToRecipe: function(){
+  GoToRecipe: function(event){
+    let id = event.currentTarget.dataset.id
     wx.navigateTo({
-      url: '../recipe/recipe'
+      url: `../recipe/recipe?id=${id}`
     })
   },
 

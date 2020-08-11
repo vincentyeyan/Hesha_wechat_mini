@@ -103,7 +103,7 @@
   z-index: 11;
 }
 
-.searchbar {
+/* .searchbar {
   display: flex;
   align-items:center;
   margin: 0 auto;
@@ -113,23 +113,25 @@
   width: 600rpx;
   padding-left: 40rpx;
   height: 50rpx;
-}
+} */
 
-.btn {
+/* .btn {
   background-color: none;
   margin-top: 30rpx;
   color: white;
-}
+} */
 
 .card-box {
-  display: flex;
+  margin-left:35rpx;
+  display: inline-block;
   justify-content: center;
 }
 
 .index-card {
   display: inline-flex;
-  margin-top: 16rpx;
-  background-color: lightgray;
+  margin-top: 32rpx;
+  background-color: white;
+  box-shadow: 2rpx 2rpx 8rpx rgba(0,0,0,0.1);
   width: 90vw;
   height: 18vh;
   border-radius: 8rpx;
@@ -144,18 +146,18 @@
 .text {
   margin-bottom: 21rpx;
   margin-left: 22rpx;
-  margin-top: 20rpx;
+  /* margin-top: 20rpx; */
   display: flex;
   flex-direction: column;
 }
 
 .h2 {
   font-size: 34rpx;
-  margin-bottom: 6rpx;
+  /* margin-bottom: 6rpx; */
 }
 
 .h4 {
-  margin-top: 32rpx;
+  /* margin-top: 32rpx; */
   padding-right: 20rpx;
   font-size: 24rpx;
   width: 360rpx;

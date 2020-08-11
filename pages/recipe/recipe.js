@@ -1,4 +1,7 @@
 // pages/recipe/recipe.js
+const app = getApp()
+// const base_url = app.globalData.host;
+const recipes = app.globalData.recipes;
 Page({
 
   /**
@@ -12,7 +15,9 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    const recipes = app.globalData.recipes;
+    let r = recipes.find((recipe) => recipe.id == options.id)
+    this.setData({recipe: r})
   },
 
   /**

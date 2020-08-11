@@ -1,21 +1,16 @@
 <!--pages/recipe/recipe.wxml-->
+
 <image class='img' src=""></image>
   <view class="row">
     <view class="post-card">
       <view class="local">
           <view class="h2">{{recipe.name}}</view>
-          <!-- <view class="p2">{{cocktail.post.count}}people made this</view> -->
           <view class="p1">{{recipe.description}}</view>
-        
-          
       </view>
-      <!-- not sure how the ingredience and instrution seed will look like -->
-        <!-- <view class="p1">{{cocktail.ingredients}}</view>  -->
-        <!-- <view class="p1">{{cocktail.instructions}}</view>  -->
-    </view>
+        </view>
     <!-- <image class="bookmark" src="../images/bookmark.png"></image>
     <image class="bookmark" src="../images/share.png"></image> -->
   </view>
-  <button class="like-button {{liked? 'liked': 'Like'}}" bindtap="likeButton">{{liked ? 'Liked!' : 
+  <button class="like-button {{liked? 'liked': 'Like'}}" style="background-color: rgb(47, 188, 246);" bindtap="likeButton">{{liked ? 'Liked!' : 
   'Like'}}</button>
   

@@ -1,1 +1,16 @@
 /* pages/profile/profile.wxss */
+.card {
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); */
+  max-width: 300px;
+  padding: 130rpx;
+  text-align: center;
+}
+.h1{
+  font-size: 24px;
+  margin:30rpx;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+  margin:30rpx;
+}

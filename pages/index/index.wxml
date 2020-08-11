@@ -1,13 +1,20 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="search-bar">
+  <view class="section">
+    <view class="section__title"></view>
+    <input class="searchbar" bindinput="searchInput" name="input" placeholder="Search" />
+    <button class="btn" style="background: grey" bindtap="searchForm">..</button>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+</view>
+
+<view class="card-box">
+  <view class="index-card">
+    <image class="img"></image>
+    <view class="text">
+      <view class="h2">Cocktail Name</view>
+      <view class="p">Users made this</view>
+      <view class="h4">Description Lorem ipsum dolor sit amet, 
+      consectetur adipiscing elit Nunc vitae leo dapibus</view>
+    </view>
   </view>
 </view>

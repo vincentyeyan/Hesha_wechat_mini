@@ -1,0 +1,5 @@
+<!--pages/multi/multi.wxml-->
+
+<view class="grid"></view>
+
+

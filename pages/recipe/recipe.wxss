@@ -5,6 +5,7 @@
   width: 100vw;
   object-fit: cover;
 }
+
 .h2 {
   font-size: 40rpx;
 }

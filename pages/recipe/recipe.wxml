@@ -1,17 +1,18 @@
 <!--pages/recipe/recipe.wxml-->
-<image class='img' src="{{cocktail.image}}"></image>
+<image class='img' src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2628118445,2362529036&fm=26&gp=0.jpg"></image>
   <view class="row">
     <view class="post-card">
       <view class="local">
-          <view class="h2">{{cocktail.name}}</view>
-          <view class="p2">{{cocktail.post.count}}people made this</view>
-          <view class="p1">{{cocktail.description}}</view>
+          <view class="h2">Whiskey Sour</view>
+          <!-- <view class="p2">{{cocktail.post.count}}people made this</view> -->
+          <view class="p1"> A delicious cocktail</view>
+          
       </view>
       <!-- not sure how the ingredience and instrution seed will look like -->
         <!-- <view class="p1">{{cocktail.ingredients}}</view>  -->
         <!-- <view class="p1">{{cocktail.instructions}}</view>  -->
     </view>
-    <image class="bookmark" src="../images/bookmark.png"></image>
-    <image class="bookmark" src="../images/share.png"></image>
+    <!-- <image class="bookmark" src="../images/bookmark.png"></image>
+    <image class="bookmark" src="../images/share.png"></image> -->
   </view>
   

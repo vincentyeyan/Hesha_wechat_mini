@@ -17,6 +17,11 @@ Page({
   onLoad: function (options) {
 
   },
+  GoToRecipe: function(){
+    wx.navigateTo({
+      url: '../recipe/recipe'
+    })
+  },
 
   /**
    * Lifecycle function--Called when page is initially rendered

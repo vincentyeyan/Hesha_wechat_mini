@@ -1,0 +1,6 @@
+/* pages/camera/camera.wxss */
+.image-upload {
+  width: 600rpx;
+  height:600rpx;
+  object-fit: fill;
+}

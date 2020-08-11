@@ -1,0 +1,6 @@
+<!--pages/camera/camera.wxml-->
+<camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+<button type="primary" bindtap="takePhoto">Choose photo</button>
+<view>preview</view>
+<image class="image-upload"src="{{src}}"></image> 
+<button type="primary" bindtap="backtoForm">Done</button>

@@ -1,2 +1,17 @@
 <!--pages/recipe/recipe.wxml-->
-<text>pages/recipe/recipe.wxml</text>
+<image class='img' src="{{cocktail.image}}"></image>
+  <view class="row">
+    <view class="post-card">
+      <view class="local">
+          <view class="h2">{{cocktail.name}}</view>
+          <view class="p2">{{cocktail.post.count}}people made this</view>
+          <view class="p1">{{cocktail.description}}</view>
+      </view>
+      <!-- not sure how the ingredience and instrution seed will look like -->
+        <!-- <view class="p1">{{cocktail.ingredients}}</view>  -->
+        <!-- <view class="p1">{{cocktail.instructions}}</view>  -->
+    </view>
+    <image class="bookmark" src="../images/bookmark.png"></image>
+    <image class="bookmark" src="../images/share.png"></image>
+  </view>
+  

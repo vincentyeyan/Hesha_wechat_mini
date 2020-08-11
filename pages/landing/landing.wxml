@@ -7,7 +7,7 @@
   </view>
 </view>
 <!-- <view class="divider"></view> -->
-<view class="row">
+<!-- <view class="row">
   <view class="card-product" wx:for="{{posts}}" wx:for-item="post" data-id="{{post.id}}" bindtap="goToShowPost">
     <image class='avatar' src="{{post.image}}"></image>
   <view class='h2'>{{post.title}} </view> 
@@ -16,4 +16,34 @@
   <view class='p1'>{{post.recipe}}</view>
   </view>
   <view wx:for="{{posts.length%2}}" class="card-product-1"></view>
+</view> -->
+<view class="card-box">
+  <view class="index-card">
+    <image class="img"src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2283410517,4058650898&fm=26&gp=0.jpg"></image>
+    <view class="text">
+      <view class="h2">Whisky Sour</view>
+      <view class="p"> 12 users made this</view>
+      <view class="h4">Spirit, citrus and sugar—the original big three—come together in the Whiskey Sour, whose history stretches back to the Lincoln administration. Few drinks in the cocktail canon are as quick to satisfy and endlessly mutable as the Whiskey Sour.</view>
+    </view>
+  </view>
+</view>
+<view class="card-box">
+  <view class="index-card">
+    <image class="img" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3444113146,295815774&fm=26&gp=0.jpg"></image>
+    <view class="text">
+      <view class="h2">Gin and Tonic</view>
+      <view class="p"> 32 Users made this</view>
+      <view class="h4">gin tonic is a highball cocktail made with gin and tonic water poured over a large amount of ice.</view>
+    </view>
+  </view>
+</view>
+<view class="card-box">
+  <view class="index-card">
+    <image class="img" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2001660812,1671141479&fm=26&gp=0.jpg"></image>
+    <view class="text">
+      <view class="h2">Mojito</view>
+      <view class="p">6 Users made this</view>
+      <view class="h4">Its combination of sweetness, citrus, and herbaceous mint flavors is intended to complement the rum, and has made the mojito a popular summer drink.</view>
+    </view>
+  </view>
 </view>

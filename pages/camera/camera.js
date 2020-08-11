@@ -1,17 +1,27 @@
-// pages/createpost/createpost.js
+// pages/camera/camera.js
 Page({
-
+  takePhoto() {
+    wx.chooseImage({
+      quality: 'high',
+      success: (res) => {
+        console.log(res)
+        this.setData({
+          src: res.tempFilePaths
+        })
+      }
+      })
+  },
+  backtoForm() {
+    // wx.navigateTo({
+    //   url: '../createpost/createpost',
+    // })
+  },
+  
   /**
    * Page initial data
    */
   data: {
-    array: ["Shanghai", "Taipei", "Hong Kong", "Xi'an", "Beijing", "Tianjin", "Haerbin", "Gaoxiong", "Pingdong"],
-  },
-  bindPickerChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail)
-    this.setData({
-      index: e.detail.value
-    })
+
   },
 
   /**
@@ -32,9 +42,7 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-    // wx.navigateTo({
-    //   url: '../camera/camera',
-    // })
+
   },
 
   /**
@@ -70,21 +78,6 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  takePhoto() {
-    wx.chooseImage({
-      quality: 'high',
-      success: (res) => {
-        console.log(res)
-        this.setData({
-          src: res.tempFilePaths
-        })
-      }
-      })
-  },
-  formSubmit() {
-    wx.navigateTo({
-      url: '../post/post',
-    })
   }
+
 })

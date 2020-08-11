@@ -9,7 +9,8 @@
     "pages/cocktail/cocktail",
     "pages/category/category",
     "pages/createpost/createpost",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/camera/camera"
   ],
   "window":{
     "backgroundTextStyle":"light",

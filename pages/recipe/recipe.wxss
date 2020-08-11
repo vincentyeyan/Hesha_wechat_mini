@@ -1,1 +1,45 @@
 /* pages/recipe/recipe.wxss */
+.img {
+  position: center;
+  background-position: cover;
+  width: 100vw;
+  object-fit: cover;
+}
+.h2 {
+  font-size: 40rpx;
+}
+.p1 {
+  background-color: rgb(255, 255, 255);
+  font-size: 32rpx;
+  border-radius: 8rpx;
+  padding: 10rpx;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.local {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.post-card {
+background-color:rgb(243, 243, 243);
+margin-top: 20rpx;
+padding: 40rpx;
+height: 400rpx;
+width: 80vw;
+border-radius: 8rpx;
+}
+
+.description {
+  margin-top: 60rpx;
+  margin-left: 20rpx;
+}
+.bookmark {
+  height: 80rpx;
+  width: 80rpx;
+}

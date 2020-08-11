@@ -24,3 +24,8 @@
     display: flex;
     justify-content: space-between;
   }
+  .image-upload {
+    width: 300rpx;
+    height:300rpx;
+    object-fit: fill;
+  }

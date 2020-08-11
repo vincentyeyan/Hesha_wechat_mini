@@ -44,3 +44,17 @@ border-radius: 8rpx;
   height: 80rpx;
   width: 80rpx;
 }
+
+.hover-like {
+  opacity: 0.5;
+}
+.like-icon{
+  width:50rpx;
+  height:50rpx;
+}
+.like {
+
+}
+.liked {
+  color:red;
+}

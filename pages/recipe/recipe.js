@@ -5,9 +5,13 @@ Page({
    * Page initial data
    */
   data: {
-
+    liked: false
   },
-
+  likeButton: function(){
+      this.setData({
+        liked: true
+      })
+  },
   /**
    * Lifecycle function--Called when page load
    */

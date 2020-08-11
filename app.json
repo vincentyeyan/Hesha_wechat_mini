@@ -10,7 +10,8 @@
     "pages/category/category",
     "pages/createpost/createpost",
     "pages/profile/profile",
-    "pages/camera/camera"
+    "pages/camera/camera",
+    "pages/multi/multi"
   ],
   "window":{
     "backgroundTextStyle":"light",

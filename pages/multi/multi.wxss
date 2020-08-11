@@ -1,0 +1,9 @@
+/* pages/multi/multi.wxss */
+
+
+.grid {
+  background-color: lightgreen;
+  margin:20rpx;
+  width: 180rpx;
+  height: 180rpx;
+}

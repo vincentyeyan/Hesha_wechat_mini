@@ -9,7 +9,7 @@
 
 <view class="card-box">
   <view class="index-card">
-    <image class="img"></image>
+    <image class="img" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2283410517,4058650898&fm=26&gp=0.jpg"></image>
     <view class="text">
       <view class="h2">Cocktail Name</view>
       <view class="p">Users made this</view>

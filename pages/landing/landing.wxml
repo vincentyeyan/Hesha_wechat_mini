@@ -18,7 +18,7 @@
   <view wx:for="{{posts.length%2}}" class="card-product-1"></view>
 </view> -->
 <view class="card-box">
-  <view class="index-card">
+  <view class="index-card" bindtap="GoToRecipe">
     <image class="img"src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2283410517,4058650898&fm=26&gp=0.jpg"></image>
     <view class="text">
       <view class="h2">Whisky Sour</view>

@@ -45,24 +45,23 @@
   border-radius: 4px 4px 0px 0px;
   
 }
-
 .banner-wrapper-landing {
   display: flex;
   justify-content: center;
   position: relative;
   width: 100vw;
-  height: 480rpx;
+  height: 280rpx;
   align-items: center;
   padding-top: 5vw;
+  padding-bottom: 0vw;
 }
-
 .banner-hesha {
   position: absolute;
   background-size: cover;
   background-position: center;
   width: 40vw;
   height: 10vw;
-  padding-bottom: 130rpx;
+  /* padding-bottom: 130rpx; */
 }
 
 
@@ -79,7 +78,7 @@
   box-shadow: 2rpx 2rpx 5rpx rgba(0,0,0,0.1);
   justify-content: space-between;
   border-radius: 4px;
-  margin: 16rpx;
+  /* margin: 16rpx; */
   
 }
 .card-product-1 {
@@ -88,8 +87,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 16px;
-  margin: 8px;
+  /* padding: 16px; */
+  /* margin: 8px; */
   border-radius: 4px;
 }
 .row {
@@ -99,7 +98,7 @@
 }
 
 .section {
-  margin-top: 100rpx;
+  /* margin-top: 100rpx; */
   z-index: 11;
 }
 
@@ -138,10 +137,18 @@
 }
 .img {
   object-fit: cover;
-  background-color: lightgreen;
+  background-color: lightpink;
   height: 100%;
-  width: 18vh;
+  width: 50vh;
   border-radius: 8rpx 0rpx 0rpx 8rpx;
+  position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-class{
+  height: 50%;
+  width:50%;
 }
 .text {
   margin-bottom: 21rpx;

@@ -151,7 +151,7 @@ App({
     {
       "id": 7,
       "liked": false,
-      "name": "Sex on the beach cocktail",
+      "name": "On the beach cocktail",
       "description": "Combine vodka with peach schnapps and cranberry juice to make a classic sex on the beach cocktail. Garnish with cocktail cherries and orange slices",
       "ingredients": [
         "Ice",

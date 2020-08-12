@@ -3,10 +3,10 @@
 
 <view class="banner-wrapper-landing">
   <image class="banner-hesha" src="../images/HESHAbanner.png"></image>
-  <!-- <view class="section">
+  <view class="section">
     <view class="section__title"></view>
     <view class="searchbar" bindtap="GoToSearch">Search</view>
-  </view> -->
+  </view>
 </view>
 
 <view class="divider"></view>

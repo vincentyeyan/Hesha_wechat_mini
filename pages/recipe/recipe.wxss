@@ -8,8 +8,6 @@
 .im {
   width: 50rpx;
   height: 50rpx;
-
-
 }
 
 .flex {
@@ -96,7 +94,7 @@ border-radius: 8rpx;
 
 }
 .liked {
-  border-radius: 100rpx;
-  color: white;
+  border-radius: 8rpx;
+  color: black;
   
 }

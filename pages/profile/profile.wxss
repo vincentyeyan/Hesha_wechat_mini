@@ -1,4 +1,5 @@
 /* pages/profile/profile.wxss */
+
 /* .container {
   background-color:lightgrey;
   height: 80vh;
@@ -10,12 +11,10 @@
 } */
 
 .blue-bar {
-  margin-left: 6rpx;
   margin-top: 10px;
   height: 100rpx;
-  width: 100%;
-  background-color: #6fb9f5;
-
+  width: 390px;
+  background-color: white
 }
 .avatar-div {
   display: flex;
@@ -28,8 +27,20 @@
 }
 
 .usernickname {
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
   }
+
+  .section-line {
+    display: flex;
+    justify-content: center;
+  }
+
+.my-likes {
+  margin-left: 50rpx;
+  margin-top: 40rpx;
+}
 
 .btn-authorize {
   margin-top: 10rpx;
@@ -63,7 +74,12 @@
   margin-top:8rpx;
   padding-left: 32rpx;
   padding-right: 32rpx ;
-  padding-bottom: 20rpx;
+  font-size: 24rpx;
+  width: 360rpx;
+  word-wrap: wrap;
+  overflow: hidden;
+  max-height: 2.5em;
+  line-height: 1.26em;
   
 }
 .p1 {
@@ -200,16 +216,22 @@
   width: 50vh;
   border-radius: 8rpx 0rpx 0rpx 8rpx;
   position: center;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .img-class{
-  height: 50%;
-  width:50%;
+  border-radius: 8rpx 0rpx 0rpx 8rpx;
+  object-fit: cover;
+  background-size: cover;
+  /* position: center; */
+  height: 100%;
+  width: 220rpx;
 }
+  
 .text {
-  margin-bottom: 21rpx;
+  margin-top: 6rpx;
+  margin-bottom: 16rpx;
   margin-left: 22rpx;
   /* margin-top: 20rpx; */
   display: flex;

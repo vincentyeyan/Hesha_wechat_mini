@@ -143,7 +143,7 @@
 }
 .img {
   object-fit: cover;
-  background-color: lightpink;
+  /* background-color: lightpink; */
   height: 100%;
   width: 50vh;
   border-radius: 8rpx 0rpx 0rpx 8rpx;
@@ -153,11 +153,16 @@
   align-items: center;
 }
 .img-class{
-  height: 50%;
-  width:50%;
+  border-radius: 8rpx 0rpx 0rpx 8rpx;
+  object-fit: cover;
+  background-size: cover;
+  /* position: center; */
+  height: 100%;
+  width: 220rpx;
 }
 .text {
-  margin-bottom: 21rpx;
+  margin-top: 6rpx;
+  margin-bottom: 16rpx;
   margin-left: 22rpx;
   /* margin-top: 20rpx; */
   display: flex;
@@ -183,4 +188,8 @@
 
 .p {
   font-size: 22rpx;
+  overflow: hidden;
+  max-height: 3em;
+  line-height: 1.40em;
+  
 }

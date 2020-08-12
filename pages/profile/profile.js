@@ -40,7 +40,6 @@ Page({
       url: `../recipe/recipe?id=${id}`
     })
   },
-
   /**
    * Lifecycle function--Called when page show
    */
@@ -51,11 +50,9 @@ Page({
       likedrecipes.push(recipe);
     }
   })
-    console.log(111,likedrecipes);
     this.setData({
       recipes: likedrecipes
     })
-
   },
 
   /**

@@ -1,1 +1,64 @@
 /* pages/category/category.wxss */
+.container {
+  text-align: left;
+  justify-content: center;
+  padding: 20rpx;
+  height: 90vh;
+}
+
+.category-title {
+  margin-bottom: 20rpx;
+  font-weight: bold;
+  font-size: x-large;
+}
+.category-section {
+  margin-left: 10rpx;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin: 0 auto;
+}
+.each-tile {
+  height: 150rpx;
+  width: 150rpx;
+  font-size: medium;
+  color: rgb(235, 216, 213);
+  border-radius: 5px;
+}
+
+.flavour-title {
+  margin-top: 40rpx;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.flavour-section {
+  margin-left: 10rpx;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16rpx;
+  margin: 0 auto;
+}
+/* .each-flavour {
+  height: 150rpx;
+  width: 150rpx;
+  font-size: medium;
+  color: rgb(235, 216, 213);
+  border-radius: 5px;
+} */
+
+
+
+/* // Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+} */

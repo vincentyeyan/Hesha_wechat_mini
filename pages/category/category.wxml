@@ -1,2 +1,77 @@
 <!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<view class="container">
+  <view class="category-title">
+    <view class="h1">Category</view>
+  </view>
+
+  <view class="category-section">
+    <view class="each-tile" style="background-image: url(https://tse3-mm.cn.bing.net/th/id/OIP.OjUwc1pIcmKfbedAo-2PvwHaIH?w=192&h=211&c=7&o=5&dpr=2&pid=1.7)">
+      Collins
+    </view>
+
+  <view class="each-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse2-mm.cn.bing.net/th/id/OIP.j5RCoVIlTya-EDBk1uNF3QHaLG?w=116&h=185&c=7&o=5&dpr=2&pid=1.7)">
+    Classics
+  </view>
+
+  <view class="each-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse1-mm.cn.bing.net/th/id/OIP.pPvoa6tuAbuCy0VL-xTcsQHaLH?w=192&h=288&c=7&o=5&dpr=2&pid=1.7)">
+    Fizzes
+  </view>
+
+  <view class="each-tile" style="background-image: url(https://tse1-mm.cn.bing.net/th/id/OIP.wblPvLyTQDWIvLfjaWoTyAHaHa?w=145&h=180&c=7&o=5&dpr=2&pid=1.7)">
+      Sours
+    </view>
+
+  <view class="each-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse1-mm.cn.bing.net/th/id/OIP.aBv2plXSEm3Gvooeb-DmNgHaHa?w=204&h=204&c=7&o=5&dpr=2&pid=1.7)">
+    Highballs
+  </view>
+
+  <view class="each-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse1-mm.cn.bing.net/th/id/OIP.DTQ88-SuMo5N1USgxt6VxwHaHa?w=186&h=186&c=7&o=5&dpr=2&pid=1.7)">
+    Juleps
+  </view>
+
+  <view class="each-tile" style="background-image: url(https://tse3-mm.cn.bing.net/th/id/OIP.nBA_KitZPak-LCM21YHLAgHaGu?w=192&h=174&c=7&o=5&dpr=2&pid=1.7)">
+      Martinis
+    </view>
+
+  <view class="each-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse4-mm.cn.bing.net/th/id/OIP.mT22sc7acMFEMTbJmU80WgHaHa?w=161&h=180&c=7&o=5&dpr=2&pid=1.7)">
+    Hot Drinks
+  </view>
+
+  <view class="each-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse2-mm.cn.bing.net/th/id/OIP.uKiFQJT-pvPDd7qi7VvS7wHaFj?w=233&h=180&c=7&o=5&dpr=2&pid=1.7)">
+    Nogs
+  </view>
+
+  <view class="each-tile" style="background-image: url(https://tse4-mm.cn.bing.net/th/id/OIP.bTwynLRcJOj5jmpzDDyQewHaK1?w=192&h=281&c=7&o=5&dpr=2&pid=1.7)">
+      Tropical
+    </view>
+
+  <view class="each-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse3-mm.cn.bing.net/th/id/OIP.W-QrwrCJp6TylU9Q9YSDZwHaLH?w=115&h=180&c=7&o=5&dpr=2&pid=1.7)">
+    Mocktails
+  </view>
+
+  <view class="each-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse3-mm.cn.bing.net/th/id/OIP.Tp4EPfFvbMwvbhJwIsmmtAHaJz?w=192&h=254&c=7&o=5&dpr=2&pid=1.7)">
+    Margaritas
+  </view>
+</view>
+<view class="flavour-title">
+  <view class="h1">Flavour</view>
+</view>
+<view class="flavour-section">
+  <view class="each-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse2-mm.cn.bing.net/th/id/OIP.em1opqrWRJCBdPmhesqJfgHaLH?w=192&h=288&c=7&o=5&dpr=2&pid=1.7)">
+    Sweet
+  </view>
+  <view class="each-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse3-mm.cn.bing.net/th/id/OIP.U2R1xndJmwPskmli8sMc8QHaHa?w=180&h=180&c=7&o=5&dpr=2&pid=1.7)">
+    Sour
+  </view>
+  <view class="each-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse1-mm.cn.bing.net/th/id/OIP.QPd7KpWSwpLDAxhr_DnK_wHaLH?w=125&h=187&c=7&o=5&dpr=2&pid=1.7)">
+    Bitter
+  </view>
+  <view class="each-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse1-mm.cn.bing.net/th/id/OIP.e9g9YaLHdtrow54S44DyvwHaFi?w=228&h=180&c=7&o=5&dpr=2&pid=1.7)">
+    Strong
+  </view>
+  <view class="each-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse1-mm.cn.bing.net/th/id/OIP.xndizwlhuioYgqdnyFbcNwHaIL?pid=Api&rs=1)">
+    Fruity
+  </view>
+</view>
+
+</view>

@@ -1,8 +1,9 @@
 /* pages/recipe/recipe.wxss */
 .img {
-  padding: 60rpx;
-  width: 60vw;
-  margin-left: 95rpx;
+  margin-left: 75rpx;
+  height: 500rpx;
+  width: 80vw;
+  object-fit: cover;
 }
 
 .h1 {

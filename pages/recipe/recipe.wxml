@@ -1,5 +1,5 @@
 <!--pages/recipe/recipe.wxml-->
-<image class='img' src="../images/cocktails.png"></image>
+<image class='img' src="{{recipe.image}}"></image>
   <view class="row">
     <view class="post-card">
       <view class="local">

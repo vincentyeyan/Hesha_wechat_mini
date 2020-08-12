@@ -1,17 +1,14 @@
 <!--pages/profile/profile.wxml-->
-
   <view class="blue-bar"></view>
    <view class="avatar-div">
     <image class="img-avatar" src="{{avatarUrl}}"></image>
   </view>
-
 <view class="usernickname">
     <open-data type="userNickName"></open-data>
  </view>
  <view class="section-line">
   <view class="line-above-likes">----------------------------------</view>
  </view>
- 
 <view class="my-likes">My Liked Recipes</view> 
   <view class="recipes-box">
   <view class="card-box" >
@@ -26,9 +23,4 @@
     </view>
   </view>
 </view> 
-
 <button class="btn-authorize" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">Log In</button>
-
-
-
-

@@ -1,20 +1,18 @@
 /* pages/profile/profile.wxss */
-
-/* .container {
-  background-color:lightgrey;
-  height: 80vh;
+.container {
+  height: 90vh;
   padding: 0 5rpx;
-} */
-/* .section-blue-bar {
+} 
+.section-blue-bar {
   justify-content: center;
   align-content: center;
-} */
+} 
 
 .blue-bar {
   margin-top: 10px;
   height: 100rpx;
   width: 390px;
-  background-color: white
+  background-color: white;
 }
 .avatar-div {
   display: flex;
@@ -24,6 +22,27 @@
   height: 45px;
   width: 45px;
   border-radius: 50%;
+  
+}
+
+.usernickname {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  }
+
+  .section-line {
+    display: flex;
+    justify-content: center;
+  }
+
+.my-likes {
+  margin-left: 50rpx;
+  margin-top: 40rpx;
+}
+
+.btn-authorize {
+  margin-top: 10rpx;
 }
 
 .usernickname {

@@ -2,6 +2,7 @@
 const app = getApp()
 // const base_url = app.globalData.host;
 const base_url = app.globalData.base_url;
+
 Page({
 
 
@@ -39,10 +40,6 @@ Page({
       url: '/pages/multi/multi'
   })
   },
-
-
-
-
   /**
    * Lifecycle function--Called when page is initially rendered
    */

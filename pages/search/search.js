@@ -1,6 +1,6 @@
 // pages/search/search.js
 const app = getApp()
-const base_url = app.globalData.base_url;
+const base_url = "http://localhost:3000/api/v1";
 Page({
 
   /**

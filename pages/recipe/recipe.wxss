@@ -3,17 +3,22 @@
   padding: 60rpx;
   width: 60vw;
   margin-left: 95rpx;
-
-  
 }
 
+.h1 {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
 .h2 {
-  font-size: 40rpx;
-  margin-bottom: 40rpx;
-}
-.p1 {
+  text-decoration: underline;
+  margin-top: 10rpx;
   font-size: 32rpx;
-  border-radius: 8rpx;
+  margin-bottom: 10rpx;
+}
+
+.p {
+  font-size: 24rpx;
   padding: 10rpx;
 }
 .row {

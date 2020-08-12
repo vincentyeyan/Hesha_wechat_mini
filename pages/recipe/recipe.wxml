@@ -4,8 +4,12 @@
   <view class="row">
     <view class="post-card">
       <view class="local">
-          <view class="h2">{{recipe.name}}</view>
-          <view class="p1">{{recipe.description}}</view>
+          <view class="h1">{{recipe.name}}</view>
+          <view class="p">{{recipe.description}}</view>
+          <view class="h2">Ingredients</view>
+          <view class="p">{{recipe.ingredients}}</view>
+
+
       </view>
         </view>
     <!-- <image class="bookmark" src="../images/bookmark.png"></image>

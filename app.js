@@ -1,6 +1,7 @@
 App({
   onLaunch: function () {
-    const base_url = 'http://localhost:3000/'
+    var liked = wx.getStorageSync('liked')
+    const base_url = 'http://localhost:3000/' 
     wx.login({
       success: (res) => {
         console.log('code', res)
@@ -17,6 +18,8 @@ App({
       })
       }
     })
+
+  
   },
 
   
@@ -28,6 +31,7 @@ App({
   recipes: [
     {
       "id": 1,
+      "liked": false,
       "name": "Mojito recipe",
       "description": "Mix this classic cocktail for a party using fresh mint, white rum, sugar, zesty lime and cooling soda water. Play with the quantities to suit your taste",
       "ingredients": [
@@ -45,6 +49,7 @@ App({
     },
     {
       "id": 2,
+      "liked": false,
       "name": "Rhubarb gin",
       "description": "Use seasonal rhubarb to make this for a G&T with a difference, or top the finished gin with soda water for a refreshing summertime drink in glorious pink",
       "ingredients": [
@@ -60,6 +65,7 @@ App({
     },
     {
       "id": 3,
+      "liked": false,
       "name": "Easy sangria",
       "description": "Embrace balmy summer days with a jug of sangria. With red wine, Spanish brandy, sparkling water, cinnamon and chopped fruit, it's a lovely sharing cocktail",
       "ingredients": [
@@ -82,6 +88,7 @@ App({
     },
     {
       "id": 4,
+      "liked": false,
       "name": "Espresso martini",
       "description": "Learn how to make this classic coffee cocktail. Our easy recipe uses freshly brewed espresso, a dash of coffee liqueur and a simple sugar syrup",
       "ingredients": [
@@ -102,6 +109,7 @@ App({
     },
     {
       "id": 5,
+      "liked": false,
       "name": "New York sour",
       "description": "Kick back and enjoy a New York sour. With whiskey, red wine, orange bitters and lemon juice, one sip will whisk you away to a Manhattan cocktail bar",
       "ingredients": [
@@ -122,6 +130,7 @@ App({
     },
     {
       "id": 6,
+      "liked": false,
       "name": "Mudslide",
       "description": "Share this creamy adults-only drink with the chocolate lover in your life. For extra indulgence, grate over some chocolate before serving",
       "ingredients": [
@@ -141,6 +150,7 @@ App({
     },
     {
       "id": 7,
+      "liked": false,
       "name": "Sex on the beach cocktail",
       "description": "Combine vodka with peach schnapps and cranberry juice to make a classic sex on the beach cocktail. Garnish with cocktail cherries and orange slices",
       "ingredients": [
@@ -159,6 +169,7 @@ App({
     },
     {
       "id": 8,
+      "liked": false,
       "name": "Pink gin iced tea",
       "description": "Blend pink gin with iced tea and you have this unique cocktail, made with spiced rum, elderflower and pink grapefruit. Serve in a jug for a sharing cocktail ",
       "ingredients": [
@@ -178,6 +189,7 @@ App({
     },
     {
       "id": 9,
+      "liked": false,
       "name": "Hurricane cocktail",
       "description": "Our tropical, rum-based hurricane cocktail is easy to make and sure to get your party started. Garnish with orange and cocktail cherries for a kitsch touch",
       "ingredients": [
@@ -200,6 +212,7 @@ App({
     },
     {
       "id": 10,
+      "liked": false,
       "name": "Pink negroni",
       "description": "Go pink with this fabulous cocktail flavoured with pink gin, rose vermouth and Aperol. Garnish with a wedge of pink grapefruit and a basil leaf to serve",
       "ingredients": [

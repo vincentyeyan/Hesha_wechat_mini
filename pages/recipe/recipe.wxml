@@ -11,6 +11,5 @@
     <!-- <image class="bookmark" src="../images/bookmark.png"></image>
     <image class="bookmark" src="../images/share.png"></image> -->
   </view>
-  <button class="like-button {{liked? 'liked': 'Like'}}" style="background-color: rgb(47, 188, 246);" bindtap="likeButton">{{liked ? 'Liked!' : 
-  'Like'}}</button>
+  <button style="background-color: rgb(47, 188, 246);" bindtap="likeButton">{{recipe.liked ? 'Liked!' : 'Like'}}</button>
   

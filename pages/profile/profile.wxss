@@ -1,7 +1,6 @@
 /* pages/profile/profile.wxss */
 .container {
-  background-color:lightgrey;
-  height: 80vh;
+  height: 90vh;
   padding: 0 5rpx;
 }
 .section-blue-bar {
@@ -11,7 +10,6 @@
 
 
 .blue-bar {
-  margin-left: 6rpx;
   margin-top: 10px;
   height: 100rpx;
   width: 390px;
@@ -30,8 +28,20 @@
 }
 
 .usernickname {
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
   }
+
+  .section-line {
+    display: flex;
+    justify-content: center;
+  }
+
+.my-likes {
+  margin-left: 50rpx;
+  margin-top: 40rpx;
+}
 
 .btn-authorize {
   margin-top: 10rpx;

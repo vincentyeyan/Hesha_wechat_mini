@@ -21,8 +21,10 @@ Page({
 onShareAppMessage: function (res) {
   //可以先看看页面数据都有什么，得到你想要的数据
 var shareData = this.data
+console.log(res)
 
-if (res.from === 'button') {
+if (res.from === 'image') {
+
   // 来自页面内转发按钮
   return {
     title: "Have a look at this!",

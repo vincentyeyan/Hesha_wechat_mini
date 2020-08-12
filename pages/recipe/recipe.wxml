@@ -7,14 +7,20 @@
           <view class="p">{{recipe.description}}</view>
           <view class="h2">Ingredients</view>
           <view class="p">{{recipe.ingredients}}</view>
-
-
       </view>
         </view>
     <!-- <image class="bookmark" src="../images/bookmark.png"></image>
     <image class="bookmark" src="../images/share.png"></image> -->
   </view>
-<button  class="share-button" open-type="share" style="background-color: rgb(188, 46, 246);">Share</button>
-<button style="background-color: rgb(47, 188, 246);" bindtap="likeButton">{{recipe.liked ? 'Liked!' : 'Like'}}</button>
 
+<view class="flex">
+
+<button style="background-color: rgb(47, 188, 246);" bindtap="likeButton">{{recipe.liked ? 'Liked!' : 'Like'}}</button>
+  
+
+<button class="but" open-type="share" bindtap="onShareAppMessage">
+<image class="im" src="../images/share.png">Share</image> 
+</button>
+
+</view>
   

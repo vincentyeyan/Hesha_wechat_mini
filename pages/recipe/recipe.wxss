@@ -4,6 +4,28 @@
   width: 60vw;
   margin-left: 95rpx;
 }
+.im {
+  width: 50rpx;
+  height: 50rpx;
+
+
+}
+
+.flex {
+  display: flex;
+  margin-top: 60rpx;
+  align-items: center;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+} 
+
+.but {
+  background-color: white;
+  width: 50rpx;
+  padding: 0;
+  display: inline;
+  margin-right: 60rpx;
+}
 
 .h1 {
   font-size: 36rpx;

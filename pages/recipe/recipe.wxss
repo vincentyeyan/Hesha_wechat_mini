@@ -3,23 +3,29 @@
   padding: 60rpx;
   width: 60vw;
   margin-left: 95rpx;
-
-  
 }
 
+.h1 {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
 .h2 {
-  font-size: 40rpx;
-  margin-bottom: 40rpx;
-}
-.p1 {
+  text-decoration: underline;
+  margin-top: 10rpx;
   font-size: 32rpx;
-  border-radius: 8rpx;
+  margin-bottom: 10rpx;
+}
+
+.p {
+  font-size: 24rpx;
   padding: 10rpx;
 }
 .row {
   display: flex;
   justify-content: center;
 }
+
 
 .local {
   display:flex;
@@ -45,6 +51,7 @@ border-radius: 8rpx;
   width: 80rpx;
 }
 
+
 .hover-like {
   opacity: 0.5;
 }
@@ -54,6 +61,13 @@ border-radius: 8rpx;
 }
 .like-button {
   margin-top:40rpx;
+  color: white;
+  text-shadow: 2rpx 2rpx 4rpx rgba(0,0,0,0.2);
+
+}
+
+.share-button {
+  margin-top:10rpx;
   color: white;
   text-shadow: 2rpx 2rpx 4rpx rgba(0,0,0,0.2);
 

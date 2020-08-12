@@ -1,4 +1,6 @@
 <!--pages/posts/posts.wxml-->
+
+
 <view class="banner-wrapper-landing">
   <image class="banner-hesha" src="../images/HESHAbanner.png"></image>
   <!-- <view class="section">

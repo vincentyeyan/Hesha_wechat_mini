@@ -1,6 +1,7 @@
 // pages/profile/profile.js
+const app = getApp()
+const recipes = app.globalData.recipes;
 Page({
-
   /**
    * Page initial data
    */
@@ -22,6 +23,7 @@ Page({
         }
       }
     })
+    
   },
   bindGetUserInfo (e) {
     console.log(e.detail.userInfo)
@@ -35,11 +37,27 @@ Page({
   onReady: function () {
 
   },
+  GoToRecipe: function(event){
+    let id = event.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `../recipe/recipe?id=${id}`
+    })
+  },
 
   /**
    * Lifecycle function--Called when page show
    */
   onShow: function () {
+    let likedrecipes = [];
+    recipes.forEach((recipe) => {
+    if (recipe.liked == true) {
+      likedrecipes.push(recipe);
+    }
+  })
+    console.log(111,likedrecipes);
+    this.setData({
+      recipes: likedrecipes
+    })
 
   },
 

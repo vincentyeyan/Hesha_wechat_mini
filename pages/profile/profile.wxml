@@ -1,13 +1,11 @@
 <!--pages/profile/profile.wxml-->
-<open-data type="userAvatarUrl"></open-data>
-<open-data type="userNickName"></open-data>
-<view class="container">
- <view class="section-blue-bar">	
+
   <view class="blue-bar"></view>
    <view class="avatar-div">
     <image class="img-avatar" src="{{avatarUrl}}"></image>
   </view>
 </view>
+
 <view class="usernickname">
     <open-data type="userNickName"></open-data>
  </view>
@@ -15,7 +13,7 @@
   <view class="line-above-likes">----------------------------------</view>
  </view>
  
-<view class="my-likes">My Likes</view> 
+<view class="my-likes">My Liked Recipes</view> 
   <view class="recipes-box">
   <view class="card-box" >
     <view class="index-card" bindtap="GoToRecipe" wx:for="{{recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}">
@@ -29,12 +27,9 @@
     </view>
   </view>
 </view> 
-  
 </view>
-  
-
-<!-- 需要使用 button 来授权登录 -->
 <button class="btn-authorize" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">Log In</button>
+
 
 
 

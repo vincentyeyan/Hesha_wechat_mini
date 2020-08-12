@@ -4,8 +4,15 @@
 <view class="banner-wrapper-landing">
   <image class="banner-hesha" src="../images/HESHAbanner.png"></image>
   <view class="section">
+
+    <view class="section__title">
+    <view class="searchbar" bindtap="GoToSearch">Search</view>
+    <view class="searchbar" bindtap="GoToMulti">Multi Search</view>
+    </view>
+
     <view class="section__title"></view>
     <view class="searchbar" bindtap="GoToSearch">Search</view>
+
   </view>
 </view>
 

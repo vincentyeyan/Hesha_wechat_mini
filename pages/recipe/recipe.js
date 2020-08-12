@@ -1,6 +1,5 @@
 // pages/recipe/recipe.js
 const app = getApp()
-// const base_url = app.globalData.host;
 const recipes = app.globalData.recipes;
 Page({
 
@@ -10,7 +9,6 @@ Page({
    * Page initial data
    */
   data: {
-    liked: false
   },
 
 
@@ -54,9 +52,13 @@ return {
   },
   
   likeButton: function(){
+    const recipes = app.globalData.recipes;
+    let r = this.data.recipe
+    r["liked"] = true
       this.setData({
-        liked: true
+        recipe: r
       })
+      wx.setStorageSync('liked', true)
   },
   /**
    * Lifecycle function--Called when page load
@@ -65,6 +67,7 @@ return {
     const recipes = app.globalData.recipes;
     let r = recipes.find((recipe) => recipe.id == options.id)
     this.setData({recipe: r})
+    
   },
 
   /**

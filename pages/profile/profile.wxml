@@ -7,11 +7,9 @@
   <image class="img img-circle" src="{{avatarUrl}}"></image>
  </view>
 </view>
-
 <!-- 需要使用 button 来授权登录 -->
 <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">Authorize</button>
-
-<!-- <view>My Likes</view> 
+<view>My Likes</view> 
 <view class="recipes-box">
 <view class="card-box" >
   <view class="index-card" bindtap="GoToRecipe" wx:for="{{recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}">
@@ -24,5 +22,5 @@
     </view>
   </view>
 </view>
-</view> --> 
+</view> 
 

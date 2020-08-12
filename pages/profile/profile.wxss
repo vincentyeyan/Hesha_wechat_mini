@@ -185,7 +185,6 @@
 }
 .img {
   object-fit: cover;
-  background-color: lightpink;
   height: 100%;
   width: 50vh;
   border-radius: 8rpx 0rpx 0rpx 8rpx;

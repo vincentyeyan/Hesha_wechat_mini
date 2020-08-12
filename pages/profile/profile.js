@@ -8,6 +8,7 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   onLoad: function() {
+    console.log(getApp().globalData)
     // 查看是否授权
     wx.getSetting({
       success (res){
@@ -24,6 +25,8 @@ Page({
   },
   bindGetUserInfo (e) {
     console.log(e.detail.userInfo)
+    let userInfo = e.detail.userInfo
+    this.setData(userInfo)
   },
 
   /**

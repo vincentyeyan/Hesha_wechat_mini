@@ -1,4 +1,6 @@
 // pages/post/post.js
+const app = getApp()
+const base_url = app.globalData.base_url
 Page({
 
   /**
@@ -12,7 +14,17 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-  
+    const page  = this
+    wx.request({
+      url: `${base_url}/posts/${options.id}`,
+      method: 'GET',
+      success(res) {
+        const post = res.data;
+        page.setData({
+          post: post,
+        });
+      }
+    })
   },
 
   /**
@@ -40,7 +52,17 @@ Page({
    * Lifecycle function--Called when page unload
    */
   onUnload: function () {
-
+    const page  = this
+    wx.request({
+      url: `${base_url}/posts`,
+      method: 'GET',
+      success(res) {
+        const posts = res.data;
+        page.setData({
+          posts: posts,
+        });
+      }
+    })
   },
 
   /**

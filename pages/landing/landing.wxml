@@ -8,9 +8,11 @@
     <view class="searchbar" bindtap="GoToSearch">Search</view>
   </view> -->
 </view>
-<!-- <view class="divider"></view> -->
-<!-- <view class="row">
-  <view class="card-product" wx:for="{{posts}}" wx:for-item="post" data-id="{{post.id}}" bindtap="goToShowPost">
+
+<view class="divider"></view>
+
+<view class="row">
+  <view class="card-product" wx:for="{{posts.posts}}" wx:for-item="post" data-id="{{post.id}}" bindtap="goToPost">
     <image class='avatar' src="{{post.image}}"></image>
   <view class='h2'>{{post.title}} </view> 
   <view class='h3'>{{post.description}}</view>

@@ -4,7 +4,6 @@
    <view class="avatar-div">
     <image class="img-avatar" src="{{avatarUrl}}"></image>
   </view>
-</view>
 
 <view class="usernickname">
     <open-data type="userNickName"></open-data>
@@ -27,7 +26,7 @@
     </view>
   </view>
 </view> 
-</view>
+
 <button class="btn-authorize" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">Log In</button>
 
 

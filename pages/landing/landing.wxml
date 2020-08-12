@@ -10,9 +10,6 @@
     <view class="searchbar" bindtap="GoToMulti">Multi Search</view>
     </view>
 
-    <view class="section__title"></view>
-    <view class="searchbar" bindtap="GoToSearch">Search</view>
-
   </view>
 </view>
 

@@ -4,12 +4,19 @@
 <view class="container">
  <view class="section-blue-bar">	
   <view class="blue-bar"></view>
-  <image class="img img-circle" src="{{avatarUrl}}"></image>
- </view>
+   <view class="avatar-div">
+    <image class="img-avatar" src="{{avatarUrl}}"></image>
+   </view>
+  </view>
+
+  <view class="posts-bookmarks-likes">
+  
+  </view>
 </view>
+  
 
 <!-- 需要使用 button 来授权登录 -->
-<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">Authorize</button>
+<button class="btn-authorize" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">Authorize</button>
 
 <!-- <view>My Likes</view> 
 <view class="recipes-box">

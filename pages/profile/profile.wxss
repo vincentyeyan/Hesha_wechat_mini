@@ -11,17 +11,26 @@
 
 
 .blue-bar {
-  margin-left: 8rpx;
+  margin-left: 6rpx;
   margin-top: 10px;
   height: 100rpx;
   width: 390px;
   background-color: rgb(52, 48, 236);
+  z-index: 9;
 }
-
-.img {
+.avatar-div {
+  display: flex;
+  justify-content: center;
+}
+.img-avatar {
   height: 45px;
   width: 45px;
   border-radius: 50%;
+  z-index: 11;
+}
+
+.btn-authorize {
+  margin-top: 10rpx;
 }
 
 

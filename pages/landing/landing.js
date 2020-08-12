@@ -64,6 +64,13 @@ Page({
       url: `/pages/search/search`,
     })
   },
+
+  onShareAppMessage(){
+    // return {
+    //   title: "Have a look at this!",
+    //   desc: "Let's learn how to make it",
+    //   path: "/pages/post/post"
+  },
   /**
    * Lifecycle function--Called when page hide
    */

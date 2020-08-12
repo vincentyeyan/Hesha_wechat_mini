@@ -1,6 +1,6 @@
 // pages/profile/profile.js
 const app = getApp()
-const recipes = app.globalData.recipes;
+// const recipes = app.globalData.recipes;
 Page({
   /**
    * Page initial data
@@ -9,7 +9,6 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   onLoad: function() {
-    console.log(getApp().globalData)
     // 查看是否授权
     wx.getSetting({
       success (res){

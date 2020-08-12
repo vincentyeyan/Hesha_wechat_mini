@@ -1,7 +1,7 @@
 // pages/posts/posts.js
 const app = getApp()
-// const base_url = app.globalData.host;
-const recipes = app.globalData.recipes;
+const base_url = app.globalData.base_url
+// const recipes = app.globalData.recipes;
 Page({
 
 
@@ -27,10 +27,11 @@ Page({
       url: `../recipe/recipe?id=${id}`
     })
   },
-
-
-
-
+  GoToMulti: function(event){
+    wx.navigateTo({
+      url: '/pages/multi/multi'
+  })
+  },
   /**
    * Lifecycle function--Called when page is initially rendered
    */

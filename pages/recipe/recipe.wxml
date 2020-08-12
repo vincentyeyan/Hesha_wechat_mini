@@ -1,5 +1,5 @@
 <!--pages/recipe/recipe.wxml-->
-<image class='img' src="../images/cocktails.png"></image>
+<image class='img' src="{{recipe.image}}"></image>
   <view class="row">
     <view class="post-card">
       <view class="local">
@@ -15,7 +15,8 @@
 
 <view class="flex">
 
-<button style="background-color: rgb(47, 188, 246);" bindtap="likeButton">{{recipe.liked ? 'Liked!' : 'Like'}}</button>
+<button style="background-color: {{recipe.liked ? 'white' : 'rgb(47, 188, 246)'}};" 
+class="buton"  bindtap="likeButton">{{recipe.liked ? 'You liked this!' : 'Like'}}</button>
   
 
 <button class="but" open-type="share" bindtap="onShareAppMessage">

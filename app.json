@@ -29,6 +29,18 @@
         "iconPath": "pages/images/home.png",
         "selectedIconPath": "pages/images/home.png"
       },
+    {
+        "pagePath": "pages/category/category",
+        "text": "Category",
+        "iconPath": "pages/images/cocktail-2.png",
+        "selectedIconPath": "pages/images/cocktail-2.png"
+      },
+      {
+        "pagePath": "pages/createpost/createpost",
+        "text": "Post",
+        "iconPath":  "pages/images/photo-camera.png",
+        "selectedIconPath": "pages/images/photo-camera.png"
+      },
       {
         "pagePath": "pages/profile/profile",
         "text": "Profile",

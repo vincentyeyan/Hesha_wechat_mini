@@ -28,6 +28,9 @@ Page({
     })
   },
 
+
+
+
   /**
    * Lifecycle function--Called when page is initially rendered
    */
@@ -39,30 +42,24 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-    const page  = this
-    wx.request({
-      // url: `${base_url}/posts`,
-      method: 'GET',
-      success(res) {
-        console.log('in show', res)
-        const posts = res.data;
-        page.setData({
-          posts: posts,
-        });
-        console.log(posts)
-      }
-    })
+    
+    
   },
-  goToShowPost: function (e) {
+
+
+
+  goToPost: function (e) {
     let id = e.currentTarget.dataset.id
     wx.navigateTo({
-      // url: `/pages/post/post?id=${id}`,
+      url: `/pages/post/post?id=${id}`,
     })
   },
-  GoToSearch: function (e) {
-    wx.navigateTo({
-      url: `/pages/search/search`,
-    })
+
+  onShareAppMessage(){
+    // return {
+    //   title: "Have a look at this!",
+    //   desc: "Let's learn how to make it",
+    //   path: "/pages/post/post"
   },
   /**
    * Lifecycle function--Called when page hide
@@ -97,5 +94,12 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  GoToSearch: function (e) {
+    wx.navigateTo({
+      url: `/pages/search/search`,
+    })
+  },
+
 })

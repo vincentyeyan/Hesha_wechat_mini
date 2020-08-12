@@ -1,5 +1,11 @@
 /* pages/posts/posts.wxss */
-.p {
+.like-button {
+  margin-top:40rpx;
+  color: white;
+  text-shadow: 2rpx 2rpx 4rpx rgba(0,0,0,0.2);
+}
+
+  .p {
   font-size:24rpx;
   margin-top:8rpx;
   padding-left: 32rpx;

@@ -1,6 +1,6 @@
 // pages/search/search.js
 const app = getApp()
-const base_url = app.globalData.host;
+const base_url = app.globalData.base_url;
 Page({
 
   /**
@@ -9,33 +9,45 @@ Page({
   data: {
 
   },
-
-  /**
-   * Lifecycle function--Called when page load
-   */
+  
+ 
+    onLoad: function () {
+  },
+  
+  
   onLoad: function (options) {
 
   },
+
   searchInput: function(e) {
     console.log(e)
     this.setData({
       searchKeyWord: e.detail.value
+      // .split(" ")
     })
   },
+  
   searchForm: function(e) {
     let page = this
-    let searchKeyWord = page.data.searchKeyWord
+    let word_arr = page.data.searchKeyWord
     wx.request({
-    //  url: `${base_url}/cocktail?query=${searchKeyWord}`,
+    url: `${base_url}/recipes?query=${word_arr}`,
      method: 'GET',
      success(res) {
-       const hosts = res.data;
+       const recipes = res.data;
        page.setData({
-         cocktails: cocktails,
+         recipes: recipes,
        });
       }
     })
    },
+
+   goToRecipe: function (e) {
+    let id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `/pages/recipe/recipe?id=${id}`,
+    })
+  },
 
   /**
    * Lifecycle function--Called when page is initially rendered
@@ -85,4 +97,8 @@ Page({
   onShareAppMessage: function () {
 
   }
+
+
+
+
 })

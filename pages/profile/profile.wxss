@@ -75,7 +75,12 @@
   margin-top:8rpx;
   padding-left: 32rpx;
   padding-right: 32rpx ;
-  padding-bottom: 20rpx;
+  font-size: 24rpx;
+  width: 360rpx;
+  word-wrap: wrap;
+  overflow: hidden;
+  max-height: 2.5em;
+  line-height: 1.26em;
   
 }
 .p1 {
@@ -208,21 +213,26 @@
 }
 .img {
   object-fit: cover;
-  background-color: lightpink;
   height: 100%;
   width: 50vh;
   border-radius: 8rpx 0rpx 0rpx 8rpx;
   position: center;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .img-class{
-  height: 50%;
-  width:50%;
+  border-radius: 8rpx 0rpx 0rpx 8rpx;
+  object-fit: cover;
+  background-size: cover;
+  /* position: center; */
+  height: 100%;
+  width: 220rpx;
 }
+  
 .text {
-  margin-bottom: 21rpx;
+  margin-top: 6rpx;
+  margin-bottom: 16rpx;
   margin-left: 22rpx;
   /* margin-top: 20rpx; */
   display: flex;

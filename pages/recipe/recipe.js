@@ -1,6 +1,6 @@
 // pages/recipe/recipe.js
 const app = getApp()
-const recipes = app.globalData.recipes;
+const base_url = app.globalData.base_url;
 Page({
 
   
@@ -18,6 +18,8 @@ Page({
     //   desc: "Let's learn how to make it",
     //   path: "/pages/post/post"
   },
+
+
 onShareAppMessage: function (res) {
   //可以先看看页面数据都有什么，得到你想要的数据
 var shareData = this.data
@@ -39,7 +41,6 @@ return {
   desc: "Let's learn how to make it",
   path: "/pages/post/post",
   imageUrl: "/images/HESHAbanner.png",
-  
 
   success: function (res) {
     // 转发成功
@@ -66,11 +67,19 @@ return {
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    const recipes = app.globalData.recipes;
-    let r = recipes.find((recipe) => recipe.id == options.id)
-    this.setData({recipe: r})
-    
-  },
+    const page = this
+    wx.request ({
+      url: `${base_url}/recipes/${options.id}`,
+      method: 'GET',
+      success(res) {
+      const recipe = res.data;
+      page.setData({
+          recipe: recipe,
+        })
+      }
+    })
+
+    },
 
   /**
    * Lifecycle function--Called when page is initially rendered

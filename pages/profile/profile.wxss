@@ -15,8 +15,8 @@
   margin-top: 10px;
   height: 100rpx;
   width: 390px;
-  background-color: rgb(52, 48, 236);
-  z-index: 9;
+  background-color: #46A5F4;
+
 }
 .avatar-div {
   display: flex;
@@ -26,8 +26,12 @@
   height: 45px;
   width: 45px;
   border-radius: 50%;
-  z-index: 11;
+  
 }
+
+.usernickname {
+  align-items: center;
+  }
 
 .btn-authorize {
   margin-top: 10rpx;

@@ -34,7 +34,7 @@
   
 
 <!-- 需要使用 button 来授权登录 -->
-<button class="btn-authorize" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">Authorize</button>
+<button class="btn-authorize" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">Log In</button>
 
 
 

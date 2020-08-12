@@ -13,7 +13,7 @@
   margin-top: 10px;
   height: 100rpx;
   width: 390px;
-  background-color: #46A5F4;
+  background-color: white
 
 }
 .avatar-div {

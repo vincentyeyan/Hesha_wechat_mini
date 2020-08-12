@@ -9,8 +9,7 @@
  <view class="section-line">
   <view class="line-above-likes">----------------------------------</view>
  </view>
- 
-<view class="my-likes">My Likes</view> 
+<view class="my-likes">My Liked Recipes</view> 
   <view class="recipes-box">
   <view class="card-box" >
     <view class="index-card" bindtap="GoToRecipe" wx:for="{{recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}">

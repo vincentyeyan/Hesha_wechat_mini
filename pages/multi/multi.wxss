@@ -1,9 +1,43 @@
 /* pages/multi/multi.wxss */
 
 
-.grid {
-  background-color: lightgreen;
-  margin:20rpx;
+.banner {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: lightslategray;
+}
+
+.box {
+  margin: 16rpx;
+  position: sticky;
+  top: 260rpx;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8rpx;
+  background-color:orange;
+  color: white;
+  margin:16rpx;
   width: 180rpx;
   height: 180rpx;
+}
+
+.btn-green {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 60vw;
+  height: 4vh;
+  margin-bottom: 22%;
+  background-color:lightblue;
 }

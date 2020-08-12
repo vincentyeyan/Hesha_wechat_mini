@@ -1,5 +1,35 @@
 <!--pages/multi/multi.wxml-->
 
-<view class="grid"></view>
-
+<view class="banner">
+  <view class="box">
+    <view class="block">
+      <view class="item">Gin</view>
+    </view>
+    <view class="block">
+      <view class="item">Gin</view>
+    </view>
+    <view class="block">
+      <view class="item">Gin</view>
+    </view>
+    <view class="block">
+      <view class="item">Gin</view>
+    </view>
+    <view class="block">
+      <view class="item">Gin</view>
+    </view>
+    <view class="block">
+      <view class="item">Gin</view>
+    </view>
+    <view class="block">
+      <view class="item">Gin</view>
+    </view>
+    <view class="block">
+      <view class="item">Gin</view>
+    </view>
+    <view class="block">
+      <view class="item">Gin</view>
+    </view>
+  </view>
+</view>
+<button style="width: 480rpx;" class="btn-green"></button>
 

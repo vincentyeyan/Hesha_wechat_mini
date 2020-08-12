@@ -1,11 +1,11 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs",
     "pages/landing/landing",
+    "pages/search/search",
+
+    "pages/logs/logs",
     "pages/post/post",
     "pages/recipe/recipe",
-    "pages/search/search",
     "pages/cocktail/cocktail",
     "pages/category/category",
     "pages/createpost/createpost",

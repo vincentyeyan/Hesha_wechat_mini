@@ -1,4 +1,5 @@
 <!--pages/search/search.wxml-->
+
 <view class="container">
 <view class="banner-wrapper">
   <view class="section">
@@ -7,6 +8,21 @@
     <button class="btn" style="background: grey" bindtap="searchForm">Search</button>
   </view>
 </view>
+
+<view class="card-box">
+  <view class="index-card" wx:for="{{recipes.recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}" bindtap="goToRecipe">
+    <image class="img" src="{{recipe.image}}"></image>
+    <view class="text">
+      <view class="h2">{{recipe.name}}</view>
+      <view class="p">{{recipe.description}}</view>
+      <view class="h4">{{recipe.ingredients}}</view>
+    </view>
+  </view>
+</view>
+
+
+
+
  <!-- <view class="row">
 <view class="search-tag" bindtap="GoTo1">1</view>
 <view class="search-tag" bindtap="GoTo2">2</view>

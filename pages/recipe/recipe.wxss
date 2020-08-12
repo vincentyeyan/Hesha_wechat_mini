@@ -21,6 +21,7 @@
   justify-content: center;
 }
 
+
 .local {
   display:flex;
   flex-direction: column;
@@ -45,6 +46,7 @@ border-radius: 8rpx;
   width: 80rpx;
 }
 
+
 .hover-like {
   opacity: 0.5;
 }
@@ -54,6 +56,13 @@ border-radius: 8rpx;
 }
 .like-button {
   margin-top:40rpx;
+  color: white;
+  text-shadow: 2rpx 2rpx 4rpx rgba(0,0,0,0.2);
+
+}
+
+.share-button {
+  margin-top:10rpx;
   color: white;
   text-shadow: 2rpx 2rpx 4rpx rgba(0,0,0,0.2);
 

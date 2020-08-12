@@ -1,5 +1,4 @@
 <!--pages/recipe/recipe.wxml-->
-
 <image class='img' src="../images/cocktails.png"></image>
   <view class="row">
     <view class="post-card">
@@ -11,11 +10,7 @@
     <!-- <image class="bookmark" src="../images/bookmark.png"></image>
     <image class="bookmark" src="../images/share.png"></image> -->
   </view>
-
-
-
-       <button  class="share-button" open-type="share" style="background-color: rgb(188, 46, 246);">Share</button>
-
-  <button style="background-color: rgb(47, 188, 246);" bindtap="likeButton">{{recipe.liked ? 'Liked!' : 'Like'}}</button>
+<button  class="share-button" open-type="share" style="background-color: rgb(188, 46, 246);">Share</button>
+<button style="background-color: rgb(47, 188, 246);" bindtap="likeButton">{{recipe.liked ? 'Liked!' : 'Like'}}</button>
 
   

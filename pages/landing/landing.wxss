@@ -1,6 +1,4 @@
 /* pages/posts/posts.wxss */
-
-
 .like-button {
   margin-top:40rpx;
   color: white;

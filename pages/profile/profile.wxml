@@ -1,35 +1,37 @@
 <!--pages/profile/profile.wxml-->
-<!-- <open-data type="userAvatarUrl"></open-data>
-<open-data type="userNickName"></open-data> -->
+<!-- <open-data type="userAvatarUrl"></open-data> -->
+
 <view class="container">
  <view class="section-blue-bar">	
   <view class="blue-bar"></view>
    <view class="avatar-div">
     <image class="img-avatar" src="{{avatarUrl}}"></image>
-   </view>
   </view>
+</view>
+  <view class="usernickname">
+    <open-data type="userNickName"></open-data>
+ </view>
 
-  <view class="posts-bookmarks-likes">
-  
+  <view>My Likes</view> 
+  <view class="recipes-box">
+  <view class="card-box" >
+    <view class="index-card" bindtap="GoToRecipe" wx:for="{{recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}">
+    <view class="img">
+      <image class="img-class" src="../images/cocktails.png"></image>
+      </view>
+      <view class="text">
+        <view class="h2">{{recipe.name}}</view>
+        <view class="p"> {{recipe.description}}</view>
+      </view>
+    </view>
   </view>
+</view> 
+  
 </view>
   
 
 <!-- 需要使用 button 来授权登录 -->
 <button class="btn-authorize" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">Authorize</button>
 
-<!-- <view>My Likes</view> 
-<view class="recipes-box">
-<view class="card-box" >
-  <view class="index-card" bindtap="GoToRecipe" wx:for="{{recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}">
-  <view class="img">
-    <image class="img-class" src="../images/cocktails.png"></image>
-    </view>
-    <view class="text">
-      <view class="h2">{{recipe.name}}</view>
-      <view class="p"> {{recipe.description}}</view>
-    </view>
-  </view>
-</view>
-</view> --> 
+
 

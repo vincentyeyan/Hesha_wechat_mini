@@ -93,8 +93,8 @@ border-radius: 8rpx;
   text-shadow: 2rpx 2rpx 4rpx rgba(0,0,0,0.2);
 
 }
-.like {
+.liked {
   border-radius: 8rpx;
-  color: white;
+  color: black;
   
 }

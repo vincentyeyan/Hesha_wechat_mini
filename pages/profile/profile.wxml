@@ -1,6 +1,6 @@
 <!--pages/profile/profile.wxml-->
-<!-- <open-data type="userAvatarUrl"></open-data>
-<open-data type="userNickName"></open-data> -->
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>
 <view class="container">
  <view class="section-blue-bar">	
   <view class="blue-bar"></view>

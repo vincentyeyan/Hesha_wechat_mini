@@ -10,28 +10,9 @@
 </view>
 
 <view class="divider"></view>
-
 <view class="row">
-  <view class="card-product" wx:for="{{posts.posts}}" wx:for-item="post" data-id="{{post.id}}" bindtap="goToPost">
-    <image class='avatar' src="{{post.image}}"></image>
-  <view class='h2'>{{post.title}} </view> 
-  <view class='h3'>{{post.description}}</view>
-  <view class='p'>{{post.user}}</view>
-  <view class='p1'>{{post.recipe}}</view>
-  </view>
-  <view wx:for="{{posts.length%2}}" class="card-product-1"></view>
-</view>
-<!-- <view  wx:for="{{stories}}" wx:for-item="story"> -->
-<view class="recipes-box">
-<view class="card-box" >
-  <view class="index-card" bindtap="GoToRecipe" wx:for="{{recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}">
-  <view class="img">
-    <image class="img-class" src="{{recipe.image}}"></image>
-    </view>
-    <view class="text">
-      <view class="h2">{{recipe.name}}</view>
-      <view class="p"> {{recipe.description}}</view>
-    </view>
-  </view>
+<view class="card-product" wx:for="{{posts.posts}}" wx:for-item="post" data-id="{{post.id}}" bindtap="goToPost">
+<image class='avatar' src="{{post.image}}"></image>
+<view class='h4'>{{post.description}}</view>
 </view>
 </view>

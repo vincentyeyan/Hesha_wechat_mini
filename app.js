@@ -227,7 +227,7 @@ App({
         "2 Garnish with a wedge of pink grapefruit and a basil leaf."
       ],
       "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/cropped-winter-warmer-smoothie.jpg?itok=DnXj2xmP"
-    },
+    }
   ]
 }
 })

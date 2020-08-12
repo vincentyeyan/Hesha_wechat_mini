@@ -27,6 +27,11 @@ Page({
       url: `../recipe/recipe?id=${id}`
     })
   },
+  GoToMulti: function(event){
+    wx.navigateTo({
+      url: '/pages/multi/multi'
+  })
+  },
 
 
 

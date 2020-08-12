@@ -1,27 +1,38 @@
 /* pages/profile/profile.wxss */
-.container {
+/* .container {
   background-color:lightgrey;
   height: 80vh;
   padding: 0 5rpx;
-}
-.section-blue-bar {
+} */
+/* .section-blue-bar {
   justify-content: center;
   align-content: center;
-}
-
+} */
 
 .blue-bar {
-  margin-left: 8rpx;
+  margin-left: 6rpx;
   margin-top: 10px;
   height: 100rpx;
-  width: 390px;
-  background-color: rgb(52, 48, 236);
-}
+  width: 100%;
+  background-color: #6fb9f5;
 
-.img {
+}
+.avatar-div {
+  display: flex;
+  justify-content: center;
+}
+.img-avatar {
   height: 45px;
   width: 45px;
   border-radius: 50%;
+}
+
+.usernickname {
+  align-items: center;
+  }
+
+.btn-authorize {
+  margin-top: 10rpx;
 }
 
 

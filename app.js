@@ -45,7 +45,7 @@ App({
         "1 Muddle the lime juice, sugar and mint leaves in a small jug, crushing the mint as you go – you can use the end of a rolling pin for this. Pour into a tall glass and add a handful of ice.",
         "2 Pour over the rum, stirring with a long-handled spoon. Top up with soda water, garnish with mint and serve."
       ],
-      "image": "www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2013/11/mojito-cocktails.jpg"
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/afternoon-pick-me-up-smoothie.jpg?itok=qfhjHf6l"
     },
     {
       "id": 2,
@@ -61,7 +61,7 @@ App({
         "1 Wash the rhubarb, trim the stalks and discard the base and any leaves. Cut the stalks into 3cm lengths. Put in a large jar with the sugar. Shake everything around, put the lid on and leave overnight. The sugar will draw the juice out of the rhubarb.",
         "2 After 24 hrs, add the gin, seal and shake everything around. Leave for about 4 weeks before drinking. You can strain the liquor off through a muslin-lined sieve and transfer to a bottle, but I often just leave the rhubarb and booze in the jar and ladle it into drinks that way. Over time the rhubarb and the gin go a much paler colour – this doesn’t look as dramatic. The upside is you that have to get through it fairly quickly!"
       ],
-      "image": "www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2017/04/rhubarb-gin.jpg"
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--879_12.jpg?itok=bnusLHEF"
     },
     {
       "id": 3,
@@ -84,7 +84,7 @@ App({
         "1 Put the chopped fruit in a bowl and sprinkle over the sugar and cinnamon, then stir to coat. Cover and leave to macerate in the fridge for at least 1 hr, or ideally overnight.",
         "2 Fill a large jug with ice. Stir the macerated fruit mixture to ensure the sugar is dissolved, then tip into the jug with the wine and brandy. Stir, then top up with the sparkling water and serve."
       ],
-      "image": "www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2019/06/sangria-new-crop.jpg"
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2019/06/smoothie.jpg?itok=rQNcvHlR"
     },
     {
       "id": 4,
@@ -105,7 +105,7 @@ App({
         "3 Once the sugar syrup is cold, pour 1 tbsp into a cocktail shaker along with a handful of ice, the vodka, espresso and coffee liqueur. Shake until the outside of the cocktail shaker feels icy cold. ",
         "4 Strain into the chilled glasses. Garnish each one with coffee beans if you like."
       ],
-      "image": "www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/12/espresso-martini.jpg"
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2018/05/440-400-strawberry-green-goddess-smoothie.jpg?itok=DC3oWZOR"
     },
     {
       "id": 5,
@@ -126,7 +126,7 @@ App({
         "2 Once the outside of the shaker is really cold, double strain into a glass filled with ice. ",
         "3 Slowly pour the red wine on top and leave to settle for a few moments – the wine will rise to just under the frothy egg white. "
       ],
-      "image": "www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2020/05/new-york-sour.jpg"
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/carrot-clementine-pineapple-juice_0.jpg?itok=Xy8hoZhq"
     },
     {
       "id": 6,
@@ -146,7 +146,7 @@ App({
         "2 Fill a cocktail shaker with ice, then pour in the coffee-flavoured liqueur, vodka, Irish cream liqueur and double cream. Shake until the outside of the shaker is very cold. ",
         "3 Put a few ice cubes in the prepared glasses, then strain in the cocktail. Finely grate over the remaining chocolate and serve with a paper straw. "
       ],
-      "image": "www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2019/10/mudslide.jpg"
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/afternoon-pick-me-up-smoothie.jpg?itok=qfhjHf6l"
     },
     {
       "id": 7,
@@ -165,7 +165,7 @@ App({
         "1 Fill two tall glasses with ice cubes. Pour the vodka, peach schnapps and fruit juices into a large jug and stir.",
         "2 Divide the mixture between the two glasses and stir gently to combine. Garnish with the cocktail cherries and orange slices. "
       ],
-      "image": "www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2019/10/sex_on_the_beach.jpg"
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2017/01/kiwi-smoothie.jpg?itok=WBwVk8Zq"
     },
     {
       "id": 8,
@@ -185,7 +185,7 @@ App({
         "1 Brew the chamomile tea bag with 500ml boiling water, steep for 2-3 mins or following pack instructions. Remove the bag and leave to cool for 5 mins. ",
         "2 Pour into a large jug with the pink gin, rum, elderflower cordial and juice. Add ice and stir, then add the thyme sprigs and stir again before serving. "
       ],
-      "image": "www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2019/10/gin_iced_tea.jpg"
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/cropped-clean-green-smoothie.jpg?itok=9qA-Z_N4"
     },
     {
       "id": 9,
@@ -208,7 +208,7 @@ App({
         "2 Shake well until the outside of the cocktail shaker feels icy cold. Fill two hurricane glasses with fresh ice then double strain the drink into the prepared glasses.   ",
         "3 Garnish each one with an orange slice skewered onto a cocktail stick and a couple of cocktail cherries. "
       ],
-      "image": "www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2019/11/hurricane.jpg"
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/cropped-immune-boosting-smoothie.jpg?itok=14tZLFCh"
     },
     {
       "id": 10,
@@ -226,7 +226,7 @@ App({
         "1 Combine the pink gin, vermouth and Aperol in a tumbler with a small handful of ice. Stir until the outside of the glass feels cold. ",
         "2 Garnish with a wedge of pink grapefruit and a basil leaf."
       ],
-      "image": "www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2019/10/classic-negroni.jpg"
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/cropped-winter-warmer-smoothie.jpg?itok=DnXj2xmP"
     },
   ]
 }

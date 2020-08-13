@@ -10,39 +10,20 @@ class="buton"  bindtap="likeButton">{{recipe.liked ? 'You liked this!' : 'Like'}
 <view class="banner">
 <view class="mainFrame">
   <swiper class="container" indicator-dots="{{indicatorDots}}"  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{nineblocks}}" wx:for-item="nineblock" >
+    <block wx:for="{{nineblocks}}" wx:for-item="nineblock" wx:for-index="i">
       <swiper-item class="vol-swiper-item" bindtap="onItemClick">
+
   <view class="box">
-    <view class="block gin">
-      <view class="item">Gin</view>
-    </view>
-    <view     class="block" style="background-image: url({{nineblock[0]}})">
-      <view class="item">Vodka</view>
-    </view>
-    <view class="block" style="background-image: url({{nineblock[1]}}">
-      <view class="item">Light Rum</view>
-    </view>
-    <view class="block" style="background-image: url({{nineblock[2]}})">
-      <view class="item">Sugar</view>
-    </view>
-    <view class="block" style="background-image: url({{nineblock[3]}})">
-      <view class="item">Lemon</view>
-    </view>
-    <view class="block" style="background-image: url({{nineblock[4]}})">
-      <view class="item">Whisky</view>
-    </view>
-    <view class="block" style="background-image: url({{nineblock[5]}})">
-      <view class="item">Dark Rum</view>
-    </view>
-    <view class="block" style="background-image: url({{nineblock[6]}})">
-      <view class="item">Lime</view>
-    </view>
-    <view class="block" style="background-image: url({{nineblock[7]}})">
-      <view class="item">Tequila</view>
-    </view>
+  <view wx:for="{{nineblock}}" wx:for-item="block" >
+  <view class="{{nineblocks[i][index][2]? 'active block':'block'}}"
+  style="background-image: url({{block[0]}}" bindtap="selectMultiple" data-id2="{{index}}" data-id1="{{i}}" >
+<!-- class="{{nineblocks[i][index][2]}}? ‘inactive’:‘active’" -->
+  
+    <view class="item" >{{block[1]}}</view>
+
   </view>
-
-
+  </view>
+  </view>
 
       </swiper-item>
     </block>

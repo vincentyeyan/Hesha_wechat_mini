@@ -1,5 +1,18 @@
 /* pages/multi/multi.wxss */
 
+.mainFrame {
+  margin-top: 0rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 0px solid #ebebeb;
+  
+}
+
+.container {
+  height: 1000rpx;
+}
+
 .banner {
   position: fixed;
   height: 100vh;

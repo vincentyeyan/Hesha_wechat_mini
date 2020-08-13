@@ -73,6 +73,7 @@ return {
       method: 'GET',
       success(res) {
       const recipe = res.data;
+      console.log
       page.setData({
           recipe: recipe,
         })
@@ -80,6 +81,16 @@ return {
     })
 
     },
+
+    goToPopup: function(e) {
+      let id = this.data.recipe.id
+      console.log(id)
+      wx.navigateTo({
+        url: `/pages/recipe/recipe?id=${id}`,
+      })
+
+    },
+
 
   /**
    * Lifecycle function--Called when page is initially rendered

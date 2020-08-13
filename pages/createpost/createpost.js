@@ -2,12 +2,12 @@
 const app = getApp()
 const base_url = app.globalData.base_url;
 Page({
-
+  tempFilePaths: '',
   /**
    * Page initial data
    */
   data: {
-    array: ["Shanghai", "Taipei", "Hong Kong", "Xi'an", "Beijing", "Tianjin", "Haerbin", "Gaoxiong", "Pingdong"],
+    array: ["Mojito recipe", "Rhubarb Gin", "Easy sangria", "Espresso martini", "New York sour", "Sex on the beach cocktail", "Pink gin iced tea", "Hurricane Cocktail", "Pink negroni"],
   },
   bindPickerChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail)
@@ -22,7 +22,26 @@ Page({
   onLoad: function (options) {
 
   },
-
+  chooseimage: function chooseimage() {
+    var _this = this;
+    wx.chooseImage({
+      count: 1, 
+      sizeType: ['original', 'compressed'], 
+      sourceType: ['album', 'camera'], 
+      success: function success(res) {
+        wx.showToast({
+          title: '正在上传...',
+          icon: 'loading',
+          mask: true,
+          duration: 1000
+        });
+        _this.setData({
+          tempFilePaths: res.tempFilePaths
+        });
+        console.log(res.tempFilePaths);
+      }
+    });
+  },
   /**
    * Lifecycle function--Called when page is initially rendered
    */
@@ -34,9 +53,7 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-    // wx.navigateTo({
-    //   url: '../camera/camera',
-    // })
+ 
   },
 
   /**

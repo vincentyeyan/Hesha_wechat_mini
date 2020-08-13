@@ -7,6 +7,7 @@ class="buton"  bindtap="likeButton">{{recipe.liked ? 'You liked this!' : 'Like'}
 <image class="im" src="../images/share.png">Share</image> 
 </button> -->
 
+
 <view class="banner">
 <view class="mainFrame">
   <swiper class="container" indicator-dots="{{indicatorDots}}"  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
@@ -32,5 +33,6 @@ class="buton"  bindtap="likeButton">{{recipe.liked ? 'You liked this!' : 'Like'}
 </view>
 
 
-<button style="width: 480rpx;" class="btn-green">Search recipes</button>
+<button style="width: 480rpx;" class="btn-green">Generate Recipes ☞</button>
+
 

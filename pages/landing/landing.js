@@ -22,6 +22,7 @@ Page({
     url: `${base_url}/posts`,
     method: 'GET',
     success(res) {
+    console.log(res)
     const posts = res.data;
     page.setData({
     posts: posts,

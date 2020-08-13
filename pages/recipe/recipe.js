@@ -21,12 +21,12 @@ Page({
     let recipe = page.data.recipe;
     let userId = app.globalData.userId
     wx.request({
-      url: `${base_url}/recipes/id/toggle_favorite?user_id=${userId}`,
+      url: `${base_url}/recipes/${recipe.id}/toggle_favorite?user_id=${userId}`,
       method: 'GET',
       success(res) {
         console.log(111,res)
         const recipe = res.data;
-        this.setData({
+        page.setData({
           liked: recipe.liked,
         });
       }

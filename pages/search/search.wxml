@@ -5,7 +5,7 @@
 <view class="section">
 <view class="section__title"></view>
 <input class="searchbar" bindinput="searchInput" name="input" placeholder="Search" />
-<button class="btn" style="background: grey" bindtap="searchForm">Search</button>
+<button class="search-btn" bindtap="searchForm">Search</button>
 </view>
 </view>
 <view class="card-box">

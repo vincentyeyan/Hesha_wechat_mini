@@ -18,7 +18,8 @@
   <view class='h2'>{{post.title}} </view> 
   <view class='h3'>{{post.description}}</view>
   <image class='avatar' src="{{post.user.avatar}}"></image>
-  <view class='p1'>{{post.recipe.name}}</view>
+   <view class='p1'>{{post.recipe.name}}</view>
+  <view class='p1'>{{post.user.name}}</view>
   </view>
   <view wx:for="{{posts.length%2}}" class="card-product-1"></view>
 </view> 

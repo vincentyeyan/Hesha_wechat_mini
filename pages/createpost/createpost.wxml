@@ -1,7 +1,8 @@
 <!--pages/createpost/createpost.wxml-->
 <view class="form">
 <form bindsubmit="formSubmit" bindreset="formReset">
-  <textarea placeholder=" Description.." auto-focus />
+<view class="content"> 
+<view class="big">Share your cocktail🔈</view>
 <view class="picker-section">
 <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
     <view class="picker">
@@ -9,18 +10,19 @@
     </view>
   </picker>
 </view>
+  <textarea class="text-box"placeholder=" Write some description for more likes..." auto-focus />
+
 <view class="section section_gap">
-  <text class="section__title">Rate this recipe </text>
+  <text class="section__title">Rate this recipe:</text>
   <view class="body-view">
     <slider bindchange="slider4change" min="1" max="10" name="rating" show-value/>
   </view>
 </view>
-<button type="primary" bindtap="takePhoto">Choose photo</button>
-<view>Preview photo</view>
-<image class="image-upload"src="{{src}}"></image> 
-<view class="btn-area">
-<button type="primary" form-type="submit">Post</button>
-<button form-type="reset">Cancel</button>
+<view>
+<view class="upload" bindtap="chooseimage">+</view>
+<view></view>
+<image src="{{tempFilePaths}}" style="width:450rpx; height: 450rpx" />
+</view>
 </view>
 </form>
 </view>

@@ -29,7 +29,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size:26rpx;
+  font-size:28rpx;
   padding-right: 25rpx ;
   padding-top: 10rpx;
   padding-bottom: 10rpx;
@@ -81,9 +81,9 @@
   align-items: center;
   background-size: cover;
   background-position: center;
-  margin-top: 60rpx;
-  width: 40%;
-  height: 90%;
+  width: 45vw;
+  height: 25vw;
+  padding-bottom: 50rpx;
 }
 
 
@@ -113,14 +113,15 @@
   padding: 16px; 
   margin: 8px;
   border-radius: 4px;
+  background-color: lightgray;
 }
 .avatarr {
-  margin-left:20rpx ;
-  width: 55rpx;
-  height: 55rpx;
+  width: 60rpx;
+  height: 60rpx;
   border-radius: 50%;
 }
 .row {
+  margin-top: 100rpx;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -140,24 +141,28 @@
   margin-bottom: 100rpx;
   background-color:rgb(235, 235, 235);
   border-radius: 8rpx;
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
-  width: 80vw;
-  height: 5vh;
+  box-shadow: 3rpx 3rpx 3rpx 5rpx rgba(0,0,0,0.2);
+  width: 600rpx;
+  padding-left: 40rpx;
+  height: 52rpx;
   opacity: 0.5;
 } 
 .multisearch-tool{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #FF8552;
-  margin: 0 auto;
+  align-items:center;
+  margin: 50rpx 10rpx 10rpx 90rpx;
   border-radius: 8rpx;
-  width: 60vw;
-  height: 5vh;
-  opacity: 0.9;
+  width: 450rpx;
+  height: 65rpx;
+  padding-left: 35rpx;
+  opacity: 0.75;
   color:white;
   font-size: 26rpx;
 }
+.section__title{
+  margin-top: 250rpx;
+}
+
 .btn {
   background-color: none;
   margin-top: 30rpx;
@@ -230,6 +235,18 @@
   line-height: 1.40em;
   
 }
-.section__title{
-  margin-top: 100rpx;
+.search-tag1 {
+  display: flex;
+  align-items:center;
+  background-color: lightgrey;
+  width: 160rpx;
+  height: 20rpx;
+  border-radius: 5%;
+  justify-content: center;
+  margin: 0 0 20rpx 140rpx;
+  font-weight: 150;
+  opacity: 0.9;
+  padding:10rpx;
+  font-size:20rpx;
+  /* if ur looking to make the tags smaller, changing the tag width doenst work coz some recipe names are too long */
 }

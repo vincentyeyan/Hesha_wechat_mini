@@ -1,5 +1,17 @@
 /* pages/multi/multi.wxss */
 
+.active {
+  border: solid;
+  border-color: orange;
+  border-width: 7rpx;
+}
+
+.inactive {
+ 
+
+}
+
+
 .mainFrame {
   margin-top: 0rpx;
   height: 100%;
@@ -55,6 +67,7 @@ font-size: 24rpx;
 color: #191F24;
 
 }
+
 
 .btn-green {
   display: flex;

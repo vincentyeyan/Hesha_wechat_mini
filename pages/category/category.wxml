@@ -1,6 +1,6 @@
 <!--pages/category/category.wxml-->
 <view class="container">
-  <view class="category-title">
+  <view class="category-title-div">
     <view class="h1">Category</view>
   </view>
 
@@ -53,10 +53,10 @@
     Margaritas
   </view>
 </view>
-<view class="flavour-title">
+<view class="flavour-title-div">
   <view class="h1">Flavour</view>
 </view>
-<view class="flavour-section">
+<view class="category-section">
   <view class="image-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse2-mm.cn.bing.net/th/id/OIP.em1opqrWRJCBdPmhesqJfgHaLH?w=192&h=288&c=7&o=5&dpr=2&pid=1.7)">
     Sweet
   </view>

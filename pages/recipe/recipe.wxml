@@ -14,9 +14,8 @@
 
 <view class="flex">
 
-<button style="background-color: {{recipe.liked ? 'white' : 'rgb(47, 188, 246)'}};" 
-class="buton"  bindtap="likeButton">{{recipe.liked ? 'You liked this!' : 'Like'}}</button>
-  
+<button bindtap="likeRecipe" style="background-color: {{recipe.liked ? 'white' : 'rgb(47, 188, 246)'}};"class="buton">{{recipe.liked ? 'You liked this!' : 'Like'}}</button>
+
 
 <button class="but" open-type="share" bindtap="onShareAppMessage">
 <image class="im" src="../images/share.png">Share</image> 

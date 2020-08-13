@@ -1,6 +1,6 @@
 // pages/profile/profile.js
 const app = getApp()
-// const recipes = app.globalData.recipes;
+const base_url = app.globalData.base_url;
 Page({
   /**
    * Page initial data
@@ -46,15 +46,15 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-    let likedrecipes = [];
-    recipes.forEach((recipe) => {
-    if (recipe.liked == true) {
-      likedrecipes.push(recipe);
-    }
-  })
-    this.setData({
-      recipes: likedrecipes
-    })
+  //   let likedrecipes = [];
+  //   recipes.forEach((recipe) => {
+  //   if (recipe.liked == true) {
+  //     likedrecipes.push(recipe);
+  //   }
+  // })
+    // this.setData({
+    //   recipes: likedrecipes
+    // })
   },
 
   /**

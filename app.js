@@ -1,11 +1,11 @@
 App({
   onLaunch: function () {
-    const base_url = 'http://localhost:3000/' 
     wx.login({
       success: (res) => {
         console.log('code', res)
       wx.request({
-        url: this.globalData.base_url + '/login',
+        url: "https://hesha.wogengapp.cn/api/v1/login",
+        // url: "http://localhost:3000/api/v1/login",
         method: 'post',
         data: {
           code: res.code
@@ -24,7 +24,8 @@ App({
   
   globalData: {
     userInfo: null,
-    //base_url: "http://localhost:3000/api/v1"
+    userId: null,
+    // base_url: "http://localhost:3000/api/v1"
     base_url: "https://hesha.wogengapp.cn/api/v1" 
     }
 })

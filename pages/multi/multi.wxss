@@ -78,8 +78,7 @@ color: #181F25;
   right: 0;
   bottom: 0;
   width: 60vw;
-  height: 6vh;
-
+  height: 5vh;
   margin-bottom: 20%;
   background-color: #F08A5E;
 }

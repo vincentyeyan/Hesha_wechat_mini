@@ -3,11 +3,14 @@
 
 <view class="banner-wrapper-landing">
   <image class="banner-hesha" src="../images/HESHALOGObig.png"></image>
+     </view>
   <view class="section">
     <view class="section__title">
+
     <view class="searchbar" bindtap="GoToSearch">🔍Search Cocktails</view>
     <view class="multisearch-tool" bindtap="GoToMulti"> Search with what you have →</view>
     </view>
+
   </view>
 </view>
 

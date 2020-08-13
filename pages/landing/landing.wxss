@@ -19,9 +19,9 @@
   justify-content: flex-end;
   align-items: center;
   font-size:24rpx;
-  padding-right: 32rpx ;
+  padding-right: 20rpx ;
   padding-top: 10rpx;
-  padding-bottom: 8rpx;
+  padding-bottom: 10rpx;
   object-fit: cover;
   
 }
@@ -33,7 +33,7 @@
   padding-right: 25rpx ;
   padding-top: 10rpx;
   padding-bottom: 10rpx;
-  margin-left: 10rpx;
+  margin-left: 16rpx;
 }
 .avatar-box{
   display: flex;
@@ -62,22 +62,23 @@
   height: 250rpx;
   object-fit: cover;
   /* background-position: top; */
-  border-radius: 2px 2px 2px 2px;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: center;
 }
 .banner-wrapper-landing {
   display: flex;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
   width: 100vw;
-  height: 250rpx;
+  height: 150rpx;
   align-items: center;
   padding-top: 5vw;
   padding-bottom: 0vw;
 }
 .banner-hesha {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-size: cover;
   background-position: center;
   width: 45vw;
@@ -127,15 +128,18 @@
 }
 
 .section {
-  margin-top: 100rpx;
-  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 .searchbar {
   display: flex;
   align-items:center;
-  margin: 10rpx;
-  background-color:lightgrey;
+  padding-left: 20rpx;
+  margin-bottom: 100rpx;
+  background-color:rgb(235, 235, 235);
   border-radius: 8rpx;
   box-shadow: 3rpx 3rpx 3rpx 5rpx rgba(0,0,0,0.2);
   width: 600rpx;
@@ -144,7 +148,6 @@
   opacity: 0.5;
 } 
 .multisearch-tool{
-  background-color: #FF8552;
   display: flex;
   align-items:center;
   margin: 50rpx 10rpx 10rpx 90rpx;
@@ -154,6 +157,7 @@
   padding-left: 35rpx;
   opacity: 0.75;
   color:white;
+  font-size: 26rpx;
 }
 .section__title{
   margin-top: 250rpx;

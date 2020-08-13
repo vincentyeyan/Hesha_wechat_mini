@@ -1,6 +1,4 @@
-// pages/cocktail/cocktail.js
-const app = getApp()
-const base_url = app.globalData.host;
+// pages/singleTag/singleTag.js
 Page({
 
   /**
@@ -64,33 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  goToCocktailShow: function (e) {
-    let id = e.currentTarget.dataset.id
-    wx.navigateTo({
-      url: `/pages/cocktail/cocktail?id=${id}`,
-    })
-  },
-  searchInput: function(e) {
-    console.log(e)
-    this.setData({
-      searchKeyWord: e.detail.value
-    })
-  },
- 
- searchForm: function(e) {
-   let page = this
-   let searchKeyWord = page.data.searchKeyWord
-   wx.request({
-    url: `${base_url}/hosts?query=${searchKeyWord}`,
-    method: 'GET',
-    success(res) {
-      const hosts = res.data;
-      page.setData({
-        cocktail: cocktail,
-      });
-      console.log(cocktail)
-    }
-  })
- },
+  }
 })

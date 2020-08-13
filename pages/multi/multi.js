@@ -70,15 +70,21 @@ Page({
 
 ['https://cdn.shoplightspeed.com/shops/609238/files/3155755/patron-silver-tequila-proof-80-50-ml.jpg','Tequila', false] 
 ],
-]
+], 
   
   },
+
+
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    let lastPage = getCurrentPages().slice(-2, -1)[0]
+    let lastPageData = lastPage.data
+      this.setData ({
+      lastPageData: lastPageData
+    })
   },
   selectMultiple: function(e) {
     console.log(e)

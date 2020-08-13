@@ -4,12 +4,12 @@
     <view class="h1">Category</view>
   </view>
 
-  <view class="category-section">
+  <view class="category-section" >
     <view class="image-tile" style="background-image: url(https://tse3-mm.cn.bing.net/th/id/OIP.OjUwc1pIcmKfbedAo-2PvwHaIH?w=192&h=211&c=7&o=5&dpr=2&pid=1.7)">
       Collins
     </view>
 
-  <view class="image-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse2-mm.cn.bing.net/th/id/OIP.j5RCoVIlTya-EDBk1uNF3QHaLG?w=116&h=185&c=7&o=5&dpr=2&pid=1.7)">
+  <view class="image-tile" data-name="classic" bindtap="findTag" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse2-mm.cn.bing.net/th/id/OIP.j5RCoVIlTya-EDBk1uNF3QHaLG?w=116&h=185&c=7&o=5&dpr=2&pid=1.7)">
     Classics
   </view>
 

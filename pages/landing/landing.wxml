@@ -3,11 +3,12 @@
 
 <view class="banner-wrapper-landing">
   <image class="banner-hesha" src="../images/HESHALOGObig.png"></image>
+     </view>
   <view class="section">
     <view class="section__title">
     <view class="searchbar" bindtap="GoToSearch">Search</view>
-    <view class="multisearch-tool" bindtap="GoToMulti">Multi Search</view>
-    </view>
+    <view class="multisearch-tool" bindtap="GoToMulti">Multi Item Search</view>
+ 
   </view>
 </view>
 

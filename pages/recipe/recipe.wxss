@@ -1,4 +1,5 @@
 /* pages/recipe/recipe.wxss */
+
 .img {
   margin-left: 75rpx;
   height: 500rpx;

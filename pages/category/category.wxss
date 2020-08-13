@@ -6,46 +6,52 @@
   height: 90vh;
 }
 
-.category-title {
+.category-title-div {
   margin-bottom: 20rpx;
   font-weight: bold;
-  font-size: x-large;
+  font-size: large;
 }
 .category-section {
   margin-left: 10rpx;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
-.each-tile {
+.image-tile {
   height: 150rpx;
   width: 150rpx;
-  font-size: medium;
-  color: rgb(235, 216, 213);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  font-size: 27rpx;
+  color: rgb(247, 241, 240);
   border-radius: 5px;
+  text-shadow: 4px 4px 4px black;
 }
 
-.flavour-title {
+.flavour-title-div {
   margin-top: 40rpx;
+  margin-bottom: 10rpx;
   font-weight: bold;
-  font-size: x-large;
+  font-size: large;
 }
 
 .flavour-section {
   margin-left: 10rpx;
+  margin-bottom: 20rpx;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16rpx;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
-/* .each-flavour {
-  height: 150rpx;
-  width: 150rpx;
-  font-size: medium;
-  color: rgb(235, 216, 213);
-  border-radius: 5px;
-} */
+.question-user-section {
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
 
 
 

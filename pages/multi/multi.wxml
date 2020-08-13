@@ -1,35 +1,44 @@
 <!--pages/multi/multi.wxml-->
+<!-- <button style="background-color: {{recipe.liked ? 'white' : 'rgb(47, 188, 246)'}};" 
+class="buton"  bindtap="likeButton">{{recipe.liked ? 'You liked this!' : 'Like'}}</button>
+  
+ -->
+<!-- <button class="but" open-type="share" bindtap="onShareAppMessage">
+<image class="im" src="../images/share.png">Share</image> 
+</button> -->
 
+
+  
 <view class="banner">
   <view class="box">
-    <view class="block">
+    <view class="block gin">
       <view class="item">Gin</view>
     </view>
-    <view class="block">
-      <view class="item">Gin</view>
+    <view class="block" style="background-image: url(https://media-verticommnetwork1.netdna-ssl.com/wines/absolut-vodka-350ml-1195115.jpg)">
+      <view class="item">Vodka</view>
     </view>
-    <view class="block">
-      <view class="item">Gin</view>
+    <view class="block" style="background-image: url(https://specsonline.com/wp-content/uploads/2018/09/008048001540.jpg)">
+      <view class="item">Light Rum</view>
     </view>
-    <view class="block">
-      <view class="item">Gin</view>
+    <view class="block" style="background-image: url(https://cdn.shopify.com/s/files/1/0069/6467/4613/products/a9b2fb0ad5854d3d4cd4b872e5b53ba7_1200x1200.jpg?v=1591203093)">
+      <view class="item">Sugar</view>
     </view>
-    <view class="block">
-      <view class="item">Gin</view>
+    <view class="block" style="background-image: url(https://nationaltoday.com/wp-content/uploads/2019/08/national-lemon-juice-day.jpg)">
+      <view class="item">Lemon</view>
     </view>
-    <view class="block">
-      <view class="item">Gin</view>
+    <view class="block" style="background-image: url(https://cdn.enterwine.com/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/j/a/jack-daniels.jpg)">
+      <view class="item">Whisky</view>
     </view>
-    <view class="block">
-      <view class="item">Gin</view>
+    <view class="block" style="background-image: url(https://target.scene7.com/is/image/Target/GUEST_d14cb77d-252e-4ed7-a8e2-34039c2c36b5?wid=488&hei=488&fmt=pjpeg)">
+      <view class="item">Dark Rum</view>
     </view>
-    <view class="block">
-      <view class="item">Gin</view>
+    <view class="block" style="background-image: url(https://www.freshfruitportal.com/assets/uploads/2016/04/Lima-shutterstock_135849644-npanorama-1024x683.jpg)">
+      <view class="item">Lime</view>
     </view>
-    <view class="block">
-      <view class="item">Gin</view>
+    <view class="block" style="background-image: url(https://cdn.shoplightspeed.com/shops/609238/files/3155755/patron-silver-tequila-proof-80-50-ml.jpg)">
+      <view class="item">Tequila</view>
     </view>
   </view>
 </view>
-<button style="width: 480rpx;" class="btn-green"></button>
+<button style="width: 480rpx;" class="btn-green">Search recipes</button>
 

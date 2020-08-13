@@ -6,7 +6,7 @@
   height: 90vh;
 }
 
-.category-title {
+.category-title-div {
   margin-bottom: 20rpx;
   font-weight: bold;
   font-size: large;
@@ -26,13 +26,13 @@
   align-items: center;
   justify-content: center;
   background-position: center;
-  font-size: medium;
+  font-size: 27rpx;
   color: rgb(247, 241, 240);
   border-radius: 5px;
   text-shadow: 4px 4px 4px black;
 }
 
-.flavour-title {
+.flavour-title-div {
   margin-top: 40rpx;
   margin-bottom: 10rpx;
   font-weight: bold;
@@ -52,14 +52,6 @@
   font-size: larger;
   font-weight: bold;
 }
-
-/* .each-flavour {
-  height: 150rpx;
-  width: 150rpx;
-  font-size: medium;
-  color: rgb(235, 216, 213);
-  border-radius: 5px;
-} */
 
 
 

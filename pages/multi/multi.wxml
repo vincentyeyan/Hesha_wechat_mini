@@ -18,7 +18,7 @@ class="buton"  bindtap="likeButton">{{recipe.liked ? 'You liked this!' : 'Like'}
   <view class="{{nineblocks[i][index][2]? 'active block':'block'}}"
   style="background-image: url({{block[0]}}" bindtap="selectMultiple" data-id2="{{index}}" data-id1="{{i}}" >
 <!-- class="{{nineblocks[i][index][2]}}? ‘inactive’:‘active’" -->
-  
+
     <view class="item" >{{block[1]}}</view>
 
   </view>

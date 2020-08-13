@@ -10,13 +10,7 @@ Page({
         })
       }
       })
-  },
-  backtoForm() {
-    // wx.navigateTo({
-    //   url: '../createpost/createpost',
-    // })
-  },
-  
+  },  
   /**
    * Page initial data
    */

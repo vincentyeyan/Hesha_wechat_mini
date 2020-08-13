@@ -1,67 +1,36 @@
 // pages/recipe/recipe.js
-const app = getApp()
+const app = getApp();
 const base_url = app.globalData.base_url;
 Page({
-
-  
-
   /**
    * Page initial data
    */
   data: {
   },
-
-
-  onShareAppMessage(){
-    // return {
-    //   title: "Have a look at this!",
-    //   desc: "Let's learn how to make it",
-    //   path: "/pages/post/post"
-  },
-
-
-onShareAppMessage: function (res) {
-  //可以先看看页面数据都有什么，得到你想要的数据
-var shareData = this.data
-console.log(res)
-
-if (res.from === 'image') {
-
-  // 来自页面内转发按钮
-  return {
-    title: "Have a look at this!",
-    desc: "Let's learn how to make it",
-    path: "/pages/post/post",
-    imageUrl: "/images/HESHAbanner.png"
-  }
-}
-
-return {
-  title: "Have a look at this!",
-  desc: "Let's learn how to make it",
-  path: "/pages/post/post",
-  imageUrl: "/images/HESHAbanner.png",
-
-  success: function (res) {
-    // 转发成功
-    console.log("转发成功:" + JSON.stringify(res));
-  },
-  fail: function (res) {
-    // 转发失败
-    console.log("转发失败:" + JSON.stringify(res));
-  }
-
-    }
-  },
-  
-  likeButton: function(){
-    const recipes = app.globalData.recipes;
-    let r = this.data.recipe
-    r["liked"] = true
-      this.setData({
-        recipe: r
-      })
-      wx.setStorageSync('liked', true)
+  // likeButton: function(){
+  //   const recipes = app.globalData.recipes;
+  //   let r = this.data.recipe
+  //   r["liked"] = true
+  //     this.setData({
+  //       recipe: r
+  //     })
+  //     wx.setStorageSync('liked', true)
+  // },
+  likeRecipe: function(){
+    let page = this;
+    let recipe = page.data.recipe;
+    let userId = app.globalData.userId
+    wx.request({
+      url: `${base_url}/recipes/id/toggle_favorite?user_id=${userId}`,
+      method: 'GET',
+      success(res) {
+        console.log(111,res)
+        const recipe = res.data;
+        this.setData({
+          liked: recipe.liked,
+        });
+      }
+    })
   },
   /**
    * Lifecycle function--Called when page load

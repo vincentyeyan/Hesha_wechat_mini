@@ -1,6 +1,6 @@
 // pages/cocktail/cocktail.js
 const app = getApp()
-const base_url = app.globalData.host;
+const base_url = app.globalData.base_url;
 Page({
 
   /**

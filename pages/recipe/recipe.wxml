@@ -22,5 +22,9 @@ class="buton"  bindtap="likeButton">{{recipe.liked ? 'You liked this!' : 'Like'}
 <image class="im" src="../images/share.png">Share</image> 
 </button>
 
+<button bindtap="goToPopup" class="button"> 
+<image class="im" src="../images/zoom-in.png"></image> 
+</button>
+
 </view>
   

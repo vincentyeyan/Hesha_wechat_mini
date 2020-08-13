@@ -1,6 +1,4 @@
-// pages/search/search.js
-const app = getApp()
-const base_url = app.globalData.base_url
+// pages/popup/popup.js
 Page({
 
   /**
@@ -9,44 +7,12 @@ Page({
   data: {
 
   },
-  
- 
-    onLoad: function () {
-  },
-  
-  
+
+  /**
+   * Lifecycle function--Called when page load
+   */
   onLoad: function (options) {
 
-  },
-
-  searchInput: function(e) {
-    console.log(e)
-    this.setData({
-      searchKeyWord: e.detail.value
-      // .split(" ")
-    })
-  },
-  
-  searchForm: function(e) {
-    let page = this
-    let word_arr = page.data.searchKeyWord
-    wx.request({
-    url: `${base_url}/recipes?query=${word_arr}`,
-     method: 'GET',
-     success(res) {
-       const recipes = res.data;
-       page.setData({
-         recipes: recipes,
-       });
-      }
-    })
-   },
-
-   goToRecipe: function (e) {
-    let id = e.currentTarget.dataset.id
-    wx.navigateTo({
-      url: `/pages/recipe/recipe?id=${id}`,
-    })
   },
 
   /**
@@ -97,8 +63,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-
-
-
-
 })

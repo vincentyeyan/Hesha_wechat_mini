@@ -4,7 +4,7 @@
 </view>
   <view class="section">
     <view class="section__title">
-    <view class="searchbar" bindtap="GoToSearch">🔍Search Cocktails</view>
+    <view class="searchbar" bindtap="GoToSearch">Search</view>
     </view>
 </view>
 <view class="roww">
@@ -16,7 +16,7 @@
   <image class='avatarr' src="{{post.user.avatar}}"></image>
   <view class='pp1'>{{post.user.name}}</view>
   </view>
-  <view class='search-tag1'>{{post.recipe.name}}</view>
+    <view class='search-tag1'>{{post.recipe.name}}</view>
   </view>
   <view wx:for="{{posts.length%2}}" class="card-product-1"></view>
 </view> 

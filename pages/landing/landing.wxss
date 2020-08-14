@@ -29,7 +29,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size:28rpx;
+  font-size:24rpx;
+  font-weight: light;
   padding-right: 25rpx ;
   padding-top: 10rpx;
   padding-bottom: 10rpx;
@@ -61,6 +62,7 @@
   width: 100%;
   height: 250rpx;
   object-fit: cover;
+  border-radius: 8rpx 8rpx 0rpx 0rpx;
   /* background-position: top; */
   background-size: cover;
   background-position: center;
@@ -81,8 +83,9 @@
   align-items: center;
   background-size: cover;
   background-position: center;
-  width: 45vw;
-  height: 25vw;
+  margin-top: 80rpx;
+  width: 40vw;
+  height: 20vw;
   padding-bottom: 10rpx;
 }
 
@@ -101,7 +104,7 @@
   justify-content: space-between;
   border-radius: 4px;
   margin: 16rpx;
-  margin-top: 4rpx;
+  margin-top: 24rpx;
   
 }
 .card-product-1 {
@@ -116,6 +119,7 @@
   background-color: lightgray;
 }
 .avatarr {
+  margin-left: 16rpx;
   width: 60rpx;
   height: 60rpx;
   border-radius: 50%;
@@ -135,18 +139,18 @@
 }
 
 .searchbar {
+  color: rgb(129, 129, 129);
   display: flex;
   align-items:center;
-  padding-left: 20rpx;
-  margin-bottom: 45rpx;
-  background-color:rgb(235, 235, 235);
-  border-radius: 8rpx;
-  box-shadow: 3rpx 3rpx 3rpx 5rpx rgba(0,0,0,0.2);
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+  background-color:rgb(240, 240, 240);
+  box-shadow: 2px 2px 4px rgba(82, 82, 82, 0.2);
   width: 600rpx;
   padding-left: 40rpx;
-  height: 52rpx;
-  opacity: 0.5;
+  height: 60rpx;
 } 
+
 .multisearch-tool{
   display: flex;
   align-items:center;
@@ -239,15 +243,17 @@
 .search-tag1 {
   display: flex;
   align-items:center;
-  background-color: lightgrey;
-  width: 160rpx;
+  background-color: rgb(255, 251, 249);
+  width: 43vw;
   height: 20rpx;
-  border-radius: 5%;
-  justify-content: center;
-  margin: 0 0 20rpx 140rpx;
+  border-radius: 0rpx 0rpx 8rpx 8rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  justify-content: flex-end;
+  margin-right: 10rpx;
+  padding-right: 15rpx;
+  /* margin: 0 0 20rpx 140rpx; */
   font-weight: 150;
-  opacity: 0.9;
-  padding:10rpx;
   font-size:20rpx;
   /* if ur looking to make the tags smaller, changing the tag width doenst work coz some recipe names are too long */
 }

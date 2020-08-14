@@ -10,7 +10,9 @@
 <view class="roww">
   <view class="card-product" wx:for="{{posts.posts}}" wx:for-item="post" data-id="{{post.id}}" bindtap="goToPost" >
 
-    <image class='avatar' src="{{post.image}}"></image>
+    <view class="imgpic">
+      <image class='avatar' src="{{post.image}}"></image>
+    </view>
   <view class='h2'>{{post.title}} </view> 
  <view class="avatar-box">
   <image class='avatarr' src="{{post.user.avatar}}"></image>

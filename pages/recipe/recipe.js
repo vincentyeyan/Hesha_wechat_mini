@@ -6,6 +6,12 @@ Page({
    * Page initial data
    */
   data: {
+    hidden: false,
+    indicatorDots: true,
+    autoplay: false,
+    interval: 2000,
+    duration: 1000,
+
   },
   // likeButton: function(){
   //   const recipes = app.globalData.recipes;

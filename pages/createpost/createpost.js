@@ -7,20 +7,40 @@ Page({
    * Page initial data
    */
   data: {
-    array: ["Mojito recipe", "Rhubarb Gin", "Easy sangria", "Espresso martini", "New York sour", "Sex on the beach cocktail", "Pink gin iced tea", "Hurricane Cocktail", "Pink negroni"],
   },
   bindPickerChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail)
-    this.setData({
-      index: e.detail.value
-    })
+    const page = this
+    const index = e.detail.value
+    let recipeName = this.data.recipeNames[index]
+    const key = Object.keys(this.data.arrayRecipes).find(key => this.data.arrayRecipes[key] === recipeName);
+    page.setData({
+      recipeId: key
+    });
+  
+
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    const page = this
+    wx.request({
+      url: `${base_url}/recipes`,
+      method: 'GET',
+      success(res) {
+        const recipes = res.data.recipes; //array of hashes
+        // console.log(1221,recipes)
+        const arrayRecipes = {}
+        recipes.forEach(recipe => arrayRecipes[recipe.id] = recipe.name)
+        // console.log(18888,arrayRecipes)
+        page.setData({
+          recipes: recipes,
+          arrayRecipes:arrayRecipes,
+          recipeNames: Object.values(arrayRecipes)
+        });
+      }
+    })
   },
   chooseimage: function chooseimage() {
     var _this = this;
@@ -41,6 +61,31 @@ Page({
         console.log(res.tempFilePaths);
       }
     });
+  },
+  formSubmit: function(event) {
+    console.log(181,event)
+    let description = event.detail.value.description;
+    let recipe = this.data.recipeId;
+    let id = this.data.id;
+    let post = {
+      user_id: app.globalData.userId,
+      recipe: recipe,
+      description: description,
+      recipe:recipe
+
+    }
+    console.log(post)
+    wx.request({
+      url: `${base_url}/posts`,
+      method: 'POST',
+      data: post,
+      success: (res) => {
+        console.log('create', res)
+        wx.redirectTo({
+          url: '/pages/search/search'
+        })
+      }
+    })
   },
   /**
    * Lifecycle function--Called when page is initially rendered
@@ -100,10 +145,5 @@ Page({
         })
       }
       })
-  },
-  formSubmit() {
-    wx.navigateTo({
-      url: '../post/post',
-    })
   }
 })

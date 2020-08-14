@@ -83,7 +83,7 @@
   background-position: center;
   width: 45vw;
   height: 25vw;
-  padding-bottom: 50rpx;
+  padding-bottom: 10rpx;
 }
 
 
@@ -120,8 +120,8 @@
   height: 60rpx;
   border-radius: 50%;
 }
-.row {
-  margin-top: 100rpx;
+.roww {
+  margin-top: 10rpx;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -138,7 +138,7 @@
   display: flex;
   align-items:center;
   padding-left: 20rpx;
-  margin-bottom: 100rpx;
+  margin-bottom: 45rpx;
   background-color:rgb(235, 235, 235);
   border-radius: 8rpx;
   box-shadow: 3rpx 3rpx 3rpx 5rpx rgba(0,0,0,0.2);
@@ -150,7 +150,7 @@
 .multisearch-tool{
   display: flex;
   align-items:center;
-  margin: 50rpx 10rpx 10rpx 90rpx;
+  margin: 0 10rpx 40rpx 90rpx;
   border-radius: 8rpx;
   width: 450rpx;
   height: 65rpx;
@@ -158,9 +158,10 @@
   opacity: 0.75;
   color:white;
   font-size: 26rpx;
+  background-color: lightsalmon;
 }
 .section__title{
-  margin-top: 250rpx;
+  margin-top: 30rpx;
 }
 
 .btn {

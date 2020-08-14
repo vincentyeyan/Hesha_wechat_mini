@@ -16,7 +16,6 @@
 
 <button bindtap="likeRecipe" style="background-color:{{liked ? 'white' : 'rgb(47, 188, 246)'}}">{{liked ? 'You liked this!' : 'Like'}}</button>
 
-
 <button class="but" open-type="share" bindtap="onShareAppMessage">
 <image class="im" src="../images/share.png">Share</image> 
 </button>

@@ -1,9 +1,10 @@
 /* pages/createpost/createpost.wxss */
+page{background-color:#ACD0C4;}
 .form {
   width: 100%;
   height: 100%;
   display: flex;
-  padding: 10rpx 0 0 20rpx;
+  padding: 10rpx 20rpx 0 40rpx;
   }
   .content{
     margin-top: 80rpx;
@@ -16,9 +17,12 @@
   justify-content: space-evenly;
   }
   .text-box{
-    background-color: lightgray;
-    width: 700rpx;
+    background-color: #E4EAE8;
+    width: 675rpx;
     height: 200rpx;
+    margin-top: 20rpx;
+    padding: 15rpx 0 0 10rpx;
+
   }
   .body-view{
     width: 350rpx;
@@ -35,18 +39,38 @@
     width: 150rpx;
     height: 150rpx;
     border-radius: 5%;
-    background-color: lightgray;
+    background-color: #E4EAE8;
     display: flex;
     align-items: center;
     justify-content: center;
   }
- 
-  .image-upload {
-    width: 300rpx;
-    height:300rpx;
-    object-fit: fill;
+  .upload-image {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 5%;
+    object-fit: cover;
+    background-position: center;
+    margin-left: 20rpx;
+  }
+  .upload-box{
+    display: flex;
+    margin-top:20rpx;
   }
   .big{
-    font-weight: 1600;
-    font-size: 42rpx;
+    font-weight: 10000;
+    font-size: 48rpx;
+  }
+  .rating-box{
+    margin-top: 30rpx;
+  }
+  .createe{
+    margin-top: 30rpx;
+    margin-left:550rpx;
+    margin-bottom:5rpx ;
+    background-color: #E4EAE8;
+    width: 100rpx;
+    height: 40rpx;
+    border-radius: 5%;
+    font-size:30rpx;
+    padding:5rpx 0 5rpx 17rpx;
   }

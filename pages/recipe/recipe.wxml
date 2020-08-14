@@ -20,7 +20,6 @@
 
 
 
-
 <button class="but" open-type="share" bindtap="onShareAppMessage">
 <image class="im" src="../images/share.png">Share</image> 
 </button>

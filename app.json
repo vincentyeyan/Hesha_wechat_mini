@@ -31,8 +31,8 @@
         "selectedIconPath": "pages/images/home.png"
       },
     {
-        "pagePath": "pages/category/category",
-        "text": "Category",
+        "pagePath": "pages/multi/multi",
+        "text": "Ingredients",
         "iconPath": "pages/images/cocktail-2.png",
         "selectedIconPath": "pages/images/cocktail-2.png"
       },

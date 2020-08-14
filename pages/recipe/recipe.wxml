@@ -14,7 +14,10 @@
 
 <view class="flex">
 
+
 <button style="background-color: {{recipe.liked ? 'white' : 'rgb(47, 188, 246)'}};"class="buton" bindtap="likeRecipe">{{recipe.liked ? 'You liked this!' : 'Like'}}</button>
+
+
 
 
 

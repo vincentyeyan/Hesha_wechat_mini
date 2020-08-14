@@ -20,6 +20,7 @@ Page({
     let page = this;
     let recipe = page.data.recipe;
     let userId = app.globalData.userId
+    console.log(userId)
     wx.request({
       url: `${base_url}/recipes/${recipe.id}/toggle_favorite?user_id=${userId}`,
       method: 'GET',

@@ -20,6 +20,7 @@ Page({
     let page = this;
     let recipe = page.data.recipe;
     let userId = app.globalData.userId
+    console.log(userId)
     wx.request({
       url: `${base_url}/recipes/${recipe.id}/toggle_favorite?user_id=${userId}`,
       method: 'GET',
@@ -41,14 +42,15 @@ Page({
       url: `${base_url}/recipes/${options.id}`,
       method: 'GET',
       success(res) {
-      const recipe = res.data;
-      console.log
+      console.log(res)
+      const recipe = res.data.recipe;
+      const posts = res.data.posts
       page.setData({
           recipe: recipe,
+          posts: posts
         })
       }
     })
-
     },
 
     goToPopup: function(e) {

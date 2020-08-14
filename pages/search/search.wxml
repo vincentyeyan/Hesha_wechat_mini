@@ -1,29 +1,27 @@
 <!--pages/search/search.wxml-->
 <!--pages/search/search.wxml-->
 <view class="container">
-<view class="banner-wrapper">
-<view class="section">
-<view class="section__title"></view>
-<input class="searchbar" bindinput="searchInput" name="input" placeholder="Search" />
-<button class="search-btn" bindtap="searchForm">Search</button>
-</view>
-</view>
-<view class="card-box">
-<view class="index-card" wx:for="{{recipes.recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}" bindtap="goToRecipe">
-<image class="img" src="http://{{recipe.image}}"></image>
-<view class="text">
-<view class="h2">{{recipe.name}}</view>
-<view class="p">{{recipe.description}}</view>
-<view class="h4">{{recipe.ingredients}}</view>
-</view>
-</view>
-</view>
-<!-- <view class="row">
-<view class="search-tag" bindtap="GoTo1">1</view>
-<view class="search-tag" bindtap="GoTo2">2</view>
-<view class="search-tag" bindtap="GoTo3">3</view>
-<view class="search-tag" bindtap="GoTo4">4</view>
-<view class="search-tag" bindtap="GoTo5">5</view>
-<view class="search-tag" bindtap="GoTo6">6</view>
-</view> -->
+  <view class="banner-wrapper">
+    <view class="section">
+      <view class="section__title"></view>
+      <input class="searchbar" bindinput="searchInput" name="input" placeholder="Search" />
+      <button class="search-btn" bindtap="searchForm">Search</button>
+    </view>
+  </view>
+
+
+  <view class="card-box">
+    <view class="index-card" wx:for="{{recipes.recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}" bindtap="goToRecipe">
+       <view class="imagebox">
+        <image class="img" src="http://{{recipe.image}}"></image>
+       </view>
+        <view class="text">
+          <view class="h2">{{recipe.name}}</view>
+          <view class="p1">10 people made this</view>
+
+          <view class="p">{{recipe.description}}</view>
+          
+        </view>
+    </view>
+  </view>
 </view>

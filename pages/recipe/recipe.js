@@ -72,14 +72,15 @@ return {
       url: `${base_url}/recipes/${options.id}`,
       method: 'GET',
       success(res) {
-      const recipe = res.data;
-      console.log
+      console.log(res)
+      const recipe = res.data.recipe;
+      const posts = res.data.posts
       page.setData({
           recipe: recipe,
+          posts: posts
         })
       }
     })
-
     },
 
     goToPopup: function(e) {

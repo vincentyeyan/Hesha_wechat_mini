@@ -2,7 +2,7 @@ App({
   onLaunch: function () {
     wx.login({
       success: (res) => {
-        console.log('code', res)
+        console.log('login', res)
       wx.request({
         // url: "https://hesha.wogengapp.cn/api/v1/login",
         url: "http://localhost:3000/api/v1/login",

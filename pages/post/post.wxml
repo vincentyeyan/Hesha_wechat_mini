@@ -12,7 +12,7 @@
     </view>
   </view>
   <view class="button">
-    <button class="btn-orange" style="margin: 20rpx" data-id="{{post.id}}" plain="{{plain}}"  bindtap="">Upvote</button>
+    <button class="btn-orange" style="margin: 20rpx" data-id="{{post.id}}" plain="{{plain}}"  bindtap="">Like</button>
     
   </view> 
 

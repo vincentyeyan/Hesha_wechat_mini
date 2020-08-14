@@ -2,12 +2,15 @@
 
 
 <view class="banner-wrapper-landing">
-  <image class="banner-hesha" src="../images/HESHAbanner.png"></image>
+  <image class="banner-hesha" src="../images/HESHALOGObig.png"></image>
+     </view>
   <view class="section">
     <view class="section__title">
-    <view class="searchbar" bindtap="GoToSearch">Search</view>
-    <view class="searchbar" bindtap="GoToMulti">Multi Search</view>
+
+    <view class="searchbar" bindtap="GoToSearch">🔍Search Cocktails</view>
+    <view class="multisearch-tool" bindtap="GoToMulti"> Search with what you have →</view>
     </view>
+
   </view>
 </view>
 
@@ -16,9 +19,11 @@
   <view class="card-product" wx:for="{{posts.posts}}" wx:for-item="post" data-id="{{post.id}}" bindtap="goToPost">
     <image class='avatar' src="{{post.image}}"></image>
   <view class='h2'>{{post.title}} </view> 
-  <view class='h3'>{{post.description}}</view>
-  <image class='avatar' src="{{post.user.avatar}}"></image>
-  <view class='p1'>{{post.recipe.name}}</view>
+  <view class="avatar-box">
+  <image class='avatarr' src="{{post.user.avatar}}"></image>
+  <view class='pp1'>{{post.user.name}}</view>
+  </view>
+  <view class='search-tag1'>{{post.recipe.name}}</view>
   </view>
   <view wx:for="{{posts.length%2}}" class="card-product-1"></view>
 </view> 

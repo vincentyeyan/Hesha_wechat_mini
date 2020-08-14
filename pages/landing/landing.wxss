@@ -13,17 +13,31 @@
   padding-bottom: 20rpx;
   
 }
-.p1 {
+.p11 {
   background-color: #F5F5F5;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size:24rpx;
-  padding-right: 32rpx ;
+  padding-right: 20rpx ;
   padding-top: 10rpx;
   padding-bottom: 10rpx;
   object-fit: cover;
   
+}
+.pp1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size:28rpx;
+  padding-right: 25rpx ;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  margin-left: 16rpx;
+}
+.avatar-box{
+  display: flex;
+  padding-bottom: 15rpx; 
 }
 .h3  {
   font-size:28rpx;
@@ -45,29 +59,31 @@
 }
 .avatar {
   width: 100%;
-  height: 200rpx;
+  height: 250rpx;
   object-fit: cover;
-  background-position: top;
-  border-radius: 4px 4px 0px 0px;
-  
+  /* background-position: top; */
+  background-size: cover;
+  background-position: center;
 }
 .banner-wrapper-landing {
   display: flex;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
   width: 100vw;
-  height: 250rpx;
+  height: 150rpx;
   align-items: center;
   padding-top: 5vw;
   padding-bottom: 0vw;
 }
 .banner-hesha {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-size: cover;
   background-position: center;
-  width: 40vw;
-  height: 10vw;
-  /* padding-bottom: 130rpx; */
+  width: 45vw;
+  height: 25vw;
+  padding-bottom: 50rpx;
 }
 
 
@@ -84,7 +100,8 @@
   box-shadow: 2rpx 2rpx 5rpx rgba(0,0,0,0.1);
   justify-content: space-between;
   border-radius: 4px;
-  /* margin: 16rpx; */
+  margin: 16rpx;
+  margin-top: 4rpx;
   
 }
 .card-product-1 {
@@ -93,32 +110,58 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  /* padding: 16px; */
-  /* margin: 8px; */
+  padding: 16px; 
+  margin: 8px;
   border-radius: 4px;
+  background-color: lightgray;
+}
+.avatarr {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
 }
 .row {
+  margin-top: 100rpx;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .section {
-  margin-top: 100rpx;
-  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 .searchbar {
   display: flex;
   align-items:center;
-  margin: 10rpx;
-  background-color:lightgrey;
+  padding-left: 20rpx;
+  margin-bottom: 100rpx;
+  background-color:rgb(235, 235, 235);
   border-radius: 8rpx;
-  /* box-shadow: 2px 2px 3px rgba(0,0,0,0.2); */
+  box-shadow: 3rpx 3rpx 3rpx 5rpx rgba(0,0,0,0.2);
   width: 600rpx;
   padding-left: 40rpx;
-  height: 50rpx;
+  height: 52rpx;
+  opacity: 0.5;
 } 
+.multisearch-tool{
+  display: flex;
+  align-items:center;
+  margin: 50rpx 10rpx 10rpx 90rpx;
+  border-radius: 8rpx;
+  width: 450rpx;
+  height: 65rpx;
+  padding-left: 35rpx;
+  opacity: 0.75;
+  color:white;
+  font-size: 26rpx;
+}
+.section__title{
+  margin-top: 250rpx;
+}
 
 .btn {
   background-color: none;
@@ -192,6 +235,18 @@
   line-height: 1.40em;
   
 }
-.section__title{
-  margin-top: 100rpx;
+.search-tag1 {
+  display: flex;
+  align-items:center;
+  background-color: lightgrey;
+  width: 160rpx;
+  height: 20rpx;
+  border-radius: 5%;
+  justify-content: center;
+  margin: 0 0 20rpx 140rpx;
+  font-weight: 150;
+  opacity: 0.9;
+  padding:10rpx;
+  font-size:20rpx;
+  /* if ur looking to make the tags smaller, changing the tag width doenst work coz some recipe names are too long */
 }

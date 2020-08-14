@@ -1,0 +1,10 @@
+<!--pages/singleTag/singleTag.wxml-->
+<!-- <view class="card-box">
+<view class="index-card" wx:for="{{recipes.recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}" bindtap="goToRecipe">
+<image class="img" src="http://{{recipe.image}}"></image>
+<view class="text">
+<view class="h2">{{recipe.name}}</view>
+<view class="p">{{recipe.description}}</view>
+<view class="h4">{{recipe.ingredients}}</view>
+</view>
+</view> -->

@@ -4,6 +4,7 @@
     "pages/search/search",
     "pages/popup/popup",
     "pages/logs/logs",
+    "pages/singleTag/singleTag",
     "pages/post/post",
     "pages/recipe/recipe",
     "pages/cocktail/cocktail",

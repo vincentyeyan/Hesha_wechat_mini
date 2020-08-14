@@ -9,9 +9,11 @@
       Collins
     </view>
 
-  <view class="image-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse2-mm.cn.bing.net/th/id/OIP.j5RCoVIlTya-EDBk1uNF3QHaLG?w=116&h=185&c=7&o=5&dpr=2&pid=1.7)">
+ 
+ <view class="image-tile" data-name="classic" bindtap="findTag" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse2-mm.cn.bing.net/th/id/OIP.j5RCoVIlTya-EDBk1uNF3QHaLG?w=116&h=185&c=7&o=5&dpr=2&pid=1.7)">
     Classics
   </view>
+
 
   <view class="image-tile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tse1-mm.cn.bing.net/th/id/OIP.pPvoa6tuAbuCy0VL-xTcsQHaLH?w=192&h=288&c=7&o=5&dpr=2&pid=1.7)">
     Fizzes

@@ -14,7 +14,8 @@
 
 <view class="flex">
 
-<button bindtap="likeRecipe" style="background-color:{{liked ? 'white' : 'rgb(47, 188, 246)'}}">{{liked ? 'You liked this!' : 'Like'}}</button>
+<button style="background-color: {{recipe.liked ? 'white' : 'rgb(47, 188, 246)'}};"class="buton" bindtap="likeButton">{{recipe.liked ? 'You liked this!' : 'Like'}}</button>
+
 
 
 <button class="but" open-type="share" bindtap="onShareAppMessage">
@@ -27,3 +28,7 @@
 
 </view>
   
+ <view class="posts" wx:for="{{posts}}" wx:for-item="post" data-id="{{post.id}}">
+    <image src="{{post.image}}"></image>
+  <view class='h3'>{{post.description}}</view>
+  </view>

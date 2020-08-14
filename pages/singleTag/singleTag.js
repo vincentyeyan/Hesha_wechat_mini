@@ -1,7 +1,4 @@
-// pages/category/category.js
-
-const app = getApp()
-const base_url = app.globalData.base_url
+// pages/singleTag/singleTag.js
 Page({
 
   /**
@@ -11,34 +8,15 @@ Page({
 
   },
 
-
-
-
-findTag: function(e) {
-  let tag = e.currentTarget.dataset.name
-  let page = this
-  wx.request({
-  url: `${base_url}/tagged?tag=${tag}`,
-   method: 'GET',
-   success(res) {
-     console.log(res)
-     const tagResult = res.data;
-     page.setData({
-       tagResult: tagResult,
-     });
-    }
-  })
-  wx.navigateTo({
-    url: `../singleTag/singleTag`
-  })
- },
-
-
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+      let lastPage = getCurrentPages().slice(-2, -1)[0]
+      let lastPageData = lastPage.data
+        this.setData ({
+        lastPageData: lastPageData
+      })
   },
 
   /**

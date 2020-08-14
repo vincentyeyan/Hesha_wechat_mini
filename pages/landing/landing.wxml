@@ -18,24 +18,12 @@
   <view class="card-product" wx:for="{{posts.posts}}" wx:for-item="post" data-id="{{post.id}}" bindtap="goToPost">
     <image class='avatar' src="{{post.image}}"></image>
   <view class='h2'>{{post.title}} </view> 
-  <view class="avatar-box">
+ <view class="avatar-box">
   <image class='avatarr' src="{{post.user.avatar}}"></image>
   <view class='pp1'>{{post.user.name}}</view>
   </view>
-  <view class='search-tag1'>{{post.recipe.name}}</view>
+  <view class='search-tag1' >{{post.recipe.name}}</view>
   </view>
-  <view wx:for="{{posts.length%2}}" class="card-product-1"></view>
+  <view wx:for="{{posts.length%2}}" class="card-product-1"></view> 
 </view> 
-<view class="recipes-box">
-<view class="card-box" >
-  <view class="index-card" bindtap="GoToRecipe" wx:for="{{recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}">
-  <view class="img">
-    <image class="img-class" src="{{recipe.image}}"></image>
-    </view>
-    <view class="text">
-      <view class="h2">{{recipe.name}}</view>
-      <view class="p"> {{recipe.description}}</view>
-    </view>
-  </view>
-</view>
-</view>
+

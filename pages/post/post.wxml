@@ -1,5 +1,7 @@
 <!--pages/post/post.wxml-->
+<view class="image">
 <image class='img' src="{{post.image}}"></image>
+</view>
   <view class="row">
     <view class="post-card">
       <view class="local">

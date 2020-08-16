@@ -1,5 +1,5 @@
 <!--pages/recipe/recipe.wxml-->
-<image class='img' src="http://{{recipe.image}}"></image>
+<image class='img' src="{{recipe.image}}"></image>
   <view class="row">
     <view class="post-card">
       <view class="local">
@@ -19,18 +19,25 @@
 
 
 
-
 <button class="but" open-type="share" bindtap="onShareAppMessage">
 <image class="im" src="../images/share.png">Share</image> 
 </button>
 
-<button bindtap="goToPopup" class="button"> 
+<!-- <button bindtap="goToPopup" class="button"> 
 <image class="im" src="../images/zoom-in.png"></image> 
-</button>
+</button> -->
 
 </view>
-  
- <view class="posts" wx:for="{{posts}}" wx:for-item="post" data-id="{{post.id}}">
-    <image src="{{post.image}}"></image>
-  <view class='h3'>{{post.description}}</view>
+
+ <view class="row">
+  <view class="card-product" wx:for="{{posts}}" wx:for-item="post" data-id="{{post.id}}" bindtap="goToPost">
+    <image class='avatar' src="{{post.image}}"></image>
+  <view class='search-tag1' >{{post.description}}</view>
+  </view> 
   </view>
+
+
+
+
+
+

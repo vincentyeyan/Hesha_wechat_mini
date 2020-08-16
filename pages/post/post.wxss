@@ -1,8 +1,25 @@
 /* pages/post/post.wxss */
+
+.image {
+  margin-top: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8rpx;
+
+}
+
+
+
 .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: center;
+  border-radius: 8rpx;
   background-position: cover;
-  width: 100vw;
+  width: 80vw;
+  height: 500rpx;
   object-fit: cover;
 }
 .h2 {

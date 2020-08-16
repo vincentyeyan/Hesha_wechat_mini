@@ -8,7 +8,7 @@
   </view>
 </view>
 <view class="cocktail-card" wx:for="{{cocktails}}" wx:for-item="cocktail" data-id="{{cocktail.id}}" bindtap="goToCocktailShow">
-    <image class='avatar' src="{{cocktail.url}}"></image>
+    <image class='avatar' src="{{cocktail.image}}"></image>
   <view class='h2'>{{cocktail.name}} </view> 
   <view class='h3'>{{cocktail.category}}</view>
   <view class='p'>{{cocktail.description}}</view>

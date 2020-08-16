@@ -1,8 +1,10 @@
 /* pages/multi/multi.wxss */
 page{
-  background-color:#242424;}
+  background-color:black;}
 .active  {
-  opacity: 0.4;
+  border-style: solid;
+  border-width: 6rpx;
+  border-color:orange;
   }
 
 .vol-swiper-item {
@@ -46,12 +48,15 @@ page{
 
 .block {
   border-radius: 16rpx;
-  background-color: rgba(0,0,0,0.2);
+  /* background-color: rgba(0,0,0,0.2); */
   display: flex;
   align-items: flex-end;
   justify-content: center;
   background-size: cover;
   background-position: center;
+  border-style: solid;
+  border-width: 6rpx;
+  border-color: none;
   margin:16rpx;
   width: 180rpx;
   height: 180rpx;

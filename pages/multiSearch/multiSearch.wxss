@@ -1,0 +1,105 @@
+/* pages/multiSearch/multiSearch.wxss */
+
+.section {
+  margin-top: 60rpx;
+  margin-bottom: 10rpx;
+}
+
+.card-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-card {
+  display:flex;
+  margin-bottom: 32rpx;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2rpx 2rpx 40rpx rgba(0,0,0,0.1);
+  width: 90vw;
+  height: 18vh;
+  border-radius: 8rpx;
+}
+
+.imagebox {
+  display: flex;
+  align-items: center;
+  width: 250rpx;
+  height: 100%;
+  object-fit: cover;
+  background-position: center; 
+  background-size: cover;
+
+}
+
+
+ .img {
+  object-fit: cover;
+  background-size: cover;
+  background-position: center; 
+  margin-left: 32rpx;
+  height:90%;
+  width: 180rpx;
+  border-radius: 8rpx 0rpx 0rpx 8rpx;
+} 
+
+.text {
+ padding-top: 16rpx;
+  
+}
+
+
+.h2 {
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  font-weight:light;
+  font-size: 36rpx;
+  margin-left: 20rpx;
+  margin-left: 20rpx;
+}
+
+
+
+
+.p {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  font-weight: lighter;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-left: 20rpx; 
+  word-wrap: wrap;
+  white-space: nowrap;
+  width: 340rpx; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+} 
+
+.p1 {
+  font-size: 22rpx;
+  font-weight: light;
+  margin-top: 24rpx;
+  margin-left: 20rpx;
+  margin-left: 20rpx; 
+  word-wrap: wrap;
+  white-space: nowrap; 
+  width: 260rpx; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  color: rgb(102, 102, 102);
+} 
+
+.p2 {
+  font-size: 24rpx;
+  font-weight: light;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-left: 20rpx; 
+  word-wrap: wrap;
+  white-space: nowrap; 
+  width: 320rpx; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+} 
+

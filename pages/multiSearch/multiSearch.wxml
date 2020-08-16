@@ -1,0 +1,17 @@
+<!--pages/multiSearch/multiSearch.wxml-->
+ <view wx:for="{{keywords}}" wx:for-item="keyword">
+ {{keyword}}
+ </view>
+ 
+  <view class="card-box">
+    <view class="index-card" wx:for="{{recipes.recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}" bindtap="goToRecipe">
+       <view class="imagebox">
+        <image class="img" src="{{recipe.image}}"></image>
+       </view>
+        <view class="text">
+          <view class="h2">{{recipe.name}}</view>
+          <view class="p2">{{recipe.ingredients[0][1]}}{{" and "}}{{recipe.ingredients[1][1]}}</view>
+          <view class="p1">{{recipe.ingredients.length}}{{" ingredients"}}</view>
+        </view>
+    </view>
+  </view>

@@ -31,6 +31,7 @@ Page({
   searchForm: function(e) {
     let page = this
     let word_arr = page.data.searchKeyWord
+    console.log(word_arr)
     wx.request({
     url: `${base_url}/recipes?query=${word_arr}`,
      method: 'GET',

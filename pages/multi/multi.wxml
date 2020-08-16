@@ -35,6 +35,6 @@ class="buton"  bindtap="likeButton">{{recipe.liked ? 'You liked this!' : 'Like'}
 </view>
 
 
-<button style="width: 480rpx;" class="btn-green">Generate cocktails!</button>
+<button style="width: 480rpx;" class="btn-green" bindtap="multiSearch">Generate cocktails!</button>
 
 

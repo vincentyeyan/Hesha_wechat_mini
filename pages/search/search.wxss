@@ -81,15 +81,14 @@
 } 
 
 .text {
- 
-  margin-top:10rpx;
-  padding: 20rpx;
+ padding-top: 16rpx;
   
 }
 
 
 .h2 {
-  margin-top: 10rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
   font-weight:light;
   font-size: 36rpx;
   margin-left: 20rpx;
@@ -100,9 +99,10 @@
 
 
 .p {
+  margin-top: 20rpx;
   font-size: 26rpx;
   font-weight: lighter;
-  margin-top: 30rpx;
+  margin-top: 10rpx;
   margin-left: 20rpx;
   margin-left: 20rpx; 
   word-wrap: wrap;
@@ -115,7 +115,7 @@
 .p1 {
   font-size: 22rpx;
   font-weight: light;
-  margin-top: 10rpx;
+  margin-top: 24rpx;
   margin-left: 20rpx;
   margin-left: 20rpx; 
   word-wrap: wrap;
@@ -123,4 +123,19 @@
   width: 260rpx; 
   overflow: hidden;
   text-overflow: ellipsis; 
+  color: rgb(102, 102, 102);
 } 
+
+.p2 {
+  font-size: 24rpx;
+  font-weight: light;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-left: 20rpx; 
+  word-wrap: wrap;
+  white-space: nowrap; 
+  width: 320rpx; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+} 
+

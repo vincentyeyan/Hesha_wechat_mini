@@ -59,6 +59,8 @@
 }
 
 .imagebox {
+  display: flex;
+  align-items: center;
   width: 250rpx;
   height: 100%;
   object-fit: cover;
@@ -72,8 +74,9 @@
   object-fit: cover;
   background-size: cover;
   background-position: center; 
-  height:100%;
-  width: 250rpx;
+  margin-left: 32rpx;
+  height:90%;
+  width: 180rpx;
   border-radius: 8rpx 0rpx 0rpx 8rpx;
 } 
 
@@ -86,6 +89,7 @@
 
 
 .h2 {
+  margin-top: 10rpx;
   font-weight:light;
   font-size: 36rpx;
   margin-left: 20rpx;
@@ -103,20 +107,20 @@
   margin-left: 20rpx; 
   word-wrap: wrap;
   white-space: nowrap;
-  width: 360rpx; 
+  width: 340rpx; 
   overflow: hidden;
   text-overflow: ellipsis; 
 } 
 
 .p1 {
-  font-size: 20rpx;
+  font-size: 22rpx;
   font-weight: light;
   margin-top: 10rpx;
   margin-left: 20rpx;
   margin-left: 20rpx; 
   word-wrap: wrap;
   white-space: nowrap; 
-  width: 360rpx; 
+  width: 260rpx; 
   overflow: hidden;
   text-overflow: ellipsis; 
 } 

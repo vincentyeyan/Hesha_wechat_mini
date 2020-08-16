@@ -12,7 +12,8 @@
     "pages/createpost/createpost",
     "pages/profile/profile",
     "pages/camera/camera",
-    "pages/multi/multi"
+    "pages/multi/multi",
+    "pages/shake/shake"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -37,10 +38,10 @@
         "selectedIconPath": "pages/images/cocktail-2.png"
       },
       {
-        "pagePath": "pages/createpost/createpost",
-        "text": "Post",
-        "iconPath":  "pages/images/photo-camera.png",
-        "selectedIconPath": "pages/images/photo-camera.png"
+        "pagePath": "pages/shake/shake",
+        "text": "Shake",
+        "iconPath":  "pages/images/cocktails.png",
+        "selectedIconPath": "pages/images/cocktails.png"
       },
       {
         "pagePath": "pages/profile/profile",

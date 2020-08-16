@@ -1,6 +1,7 @@
 // pages/createpost/createpost.js
 const app = getApp()
 const base_url = app.globalData.base_url;
+
 Page({
   tempFilePaths: '',
   /**
@@ -16,8 +17,6 @@ Page({
     page.setData({
       recipeId: key
     });
-  
-
   },
 
   /**
@@ -42,26 +41,7 @@ Page({
       }
     })
   },
-  chooseimage: function chooseimage() {
-    var _this = this;
-    wx.chooseImage({
-      count: 1, 
-      sizeType: ['original', 'compressed'], 
-      sourceType: ['album', 'camera'], 
-      success: function success(res) {
-        wx.showToast({
-          title: '正在上传...',
-          icon: 'loading',
-          mask: true,
-          duration: 1000
-        });
-        _this.setData({
-          tempFilePaths: res.tempFilePaths
-        });
-        console.log(res.tempFilePaths);
-      }
-    });
-  },
+  
   formSubmit: function(event) {
     console.log(181,event)
     let description = event.detail.value.description;

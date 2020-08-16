@@ -21,7 +21,6 @@ Page({
   },
 
   searchInput: function(e) {
-    console.log(e)
     this.setData({
       searchKeyWord: e.detail.value
       // .split(" ")

@@ -1,4 +1,8 @@
 <!--pages/posts/posts.wxml-->
+<view class="share-post-box">
+<image class="photo-camera" bindtap="chooseImage" src="../images/photo-camera.png">Post</image>
+</view>
+
 <view class="banner-wrapper-landing">
   <image class="banner-hesha" src="../images/HESHALOGObig.png"></image>
 </view>
@@ -7,7 +11,7 @@
     <view class="searchbar" bindtap="GoToSearch">Search</view>
     </view>
 </view>
-<view class="roww">
+<!-- <view class="roww">
   <view class="card-product" wx:for="{{posts.posts}}" wx:for-item="post" data-id="{{post.id}}" bindtap="goToPost" >
 
     <view class="imgpic">
@@ -24,6 +28,5 @@
   </view>
   <view wx:for="{{posts.length%2}}" class="card-product-1"></view> 
 </view> 
-
 
 

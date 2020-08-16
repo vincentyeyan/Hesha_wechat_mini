@@ -10,8 +10,8 @@ Page({
     hidden: false,
     indicatorDots: true,
     autoplay: false,
-    interval: 2000,
-    duration: 1000,
+    interval: 1700,
+    duration: 800,
 
     nineblocks: [ 
       [ 
@@ -100,6 +100,45 @@ Page({
   onReady: function () {
 
   },
+
+
+
+  searchInput: function(e) {
+    console.log(e)
+    this.setData({
+      searchKeyWord: e.detail.value
+      // .split(" ")
+    })
+  },
+
+  multiSearch: function(e) {
+    const page = this
+    var searchKeyword = ""
+    const arrArr = page.data.nineblocks
+    arrArr.forEach(function (item) {
+      item.filter(item => item[2] === true)
+     .forEach(item => searchKeyword += `${item[1]} ` )
+    });
+    var keywords = searchKeyword.split(" ")
+    console.log(searchKeyword)
+    wx.request({
+    url: `${base_url}/recipes?query=${searchKeyword}`,
+     method: 'GET',
+     success(res) {
+       const recipes = res.data;
+       page.setData({
+         recipes: recipes,
+         keywords: keywords
+       });
+       wx.navigateTo({
+        url: '/pages/multiSearch/multiSearch'
+    })
+      }
+    })
+   
+    
+   },
+
 
   /**
    * Lifecycle function--Called when page show

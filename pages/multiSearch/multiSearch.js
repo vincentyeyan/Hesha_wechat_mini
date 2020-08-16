@@ -1,7 +1,4 @@
-// pages/search/search.js
-const app = getApp()
-const base_url = app.globalData.base_url;
-
+// pages/multiSearch/multiSearch.js
 Page({
 
   /**
@@ -10,43 +7,18 @@ Page({
   data: {
 
   },
-  
- 
-    onLoad: function () {
-  },
-  
-  
+
+  /**
+   * Lifecycle function--Called when page load
+   */
+
+
   onLoad: function (options) {
-
-  },
-
-  searchInput: function(e) {
-    this.setData({
-      searchKeyWord: e.detail.value
-      // .split(" ")
-    })
-  },
-  
-  searchForm: function(e) {
-    let page = this
-    let word_arr = page.data.searchKeyWord
-    console.log(word_arr)
-    wx.request({
-    url: `${base_url}/recipes?query=${word_arr}`,
-     method: 'GET',
-     success(res) {
-       const recipes = res.data;
-       page.setData({
-         recipes: recipes,
-       });
-      }
-    })
-   },
-
-   goToRecipe: function (e) {
-    let id = e.currentTarget.dataset.id
-    wx.navigateTo({
-      url: `/pages/recipe/recipe?id=${id}`,
+    let lastPage = getCurrentPages().slice(-2, -1)[0]
+    let lastPageData = lastPage.data
+      this.setData ({
+      recipes: lastPageData.recipes,
+      keywords: lastPageData.keywords
     })
   },
 
@@ -98,8 +70,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-
-
-
-
 })

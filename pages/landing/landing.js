@@ -1,7 +1,6 @@
 // pages/posts/posts.js
 const app = getApp()
 const base_url = app.globalData.base_url;
-
 Page({
   tempFilePaths: '',
 
@@ -48,6 +47,9 @@ Page({
           console.log(1998,res.tempFilePaths);
         },
     });
+    wx.navigateTo({
+      url: '../createpost/createpost',
+    })
   },
   // previewImg: function (e) {
   //   //获取当前图片的下标

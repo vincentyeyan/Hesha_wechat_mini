@@ -13,7 +13,7 @@
     <image class='img_loading' src='{{loading}}'></image><text class='text_lable'>Looking for a recipe...</text>
     </view>
     <view class='panel_result'  style="display:{{hasResutl==1?'block':'none'}}">
-    recipe card</view>
+    a random recipe card </view>
   </view>
   </view>
   </view>

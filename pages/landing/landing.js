@@ -3,7 +3,7 @@ const app = getApp()
 const base_url = app.globalData.base_url;
 
 Page({
-
+  tempFilePaths: '',
 
   /**
    * Page initial data
@@ -29,6 +29,48 @@ Page({
     }
     })
     },
+  chooseImage: function() {
+      var page = this;
+      wx.chooseImage({
+        count: 1, 
+        sizeType: ['original', 'compressed'], 
+        sourceType: ['album', 'camera'], 
+        success: function(res) {
+          wx.showToast({
+            title: 'Uploading..',
+            icon: '../images/cocktail-2.png',
+            mask: true,
+            duration: 1000
+          });
+          page.setData({
+            tempFilePaths: res.tempFilePaths
+          });
+          console.log(1998,res.tempFilePaths);
+        },
+    });
+  },
+  // previewImg: function (e) {
+  //   //获取当前图片的下标
+  //   var index = e.currentTarget.dataset.index;
+  //   //所有图片
+  //   var source = this.data.source;
+  //   wx.previewImage({
+  //     //当前显示图片
+  //     current: source[index],
+  //     //所有图片
+  //     urls: source
+  //   })
+  // },
+
+    // previewMyImage: function(files) {
+    //   wx.previewImage({
+    //     current: '',  // number of index or file path
+    //     urls: this.data.tempFilePaths  // Array of temp files
+    //   })
+    //   console.log(this.data.tempFilePaths)
+    // },
+    
+    
   GoToRecipe: function(event){
     let id = event.currentTarget.dataset.id
     wx.navigateTo({

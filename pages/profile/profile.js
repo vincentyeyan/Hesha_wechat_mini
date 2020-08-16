@@ -46,15 +46,24 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-  //   let likedrecipes = [];
-  //   recipes.forEach((recipe) => {
-  //   if (recipe.liked == true) {
-  //     likedrecipes.push(recipe);
-  //   }
-  // })
-    // this.setData({
-    //   recipes: likedrecipes
-    // })
+    let page = this
+    wx.request({
+      url: `${base_url}/recipes`,
+      method: 'GET',
+      success(res) {
+        const recipes = res.data.recipes; //array of hashes
+        // console.log(1221,recipes)
+        const likedRecipes = []
+        recipes.forEach((recipe) => {
+          if (recipe.liked == true) {
+            likedRecipes.push(recipe);
+          }
+        })
+        page.setData({
+          recipes: likedRecipes
+        });
+      }
+    })
   },
 
   /**

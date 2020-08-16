@@ -102,7 +102,9 @@
   border-radius: 4px;
   margin: 16rpx;
   margin-top: 4rpx;
-  
+}
+.share-post-box {
+  margin-left:60rpx;
 }
 .card-product-1 {
   height:303rpx;
@@ -114,6 +116,10 @@
   margin: 8px;
   border-radius: 4px;
   background-color: lightgray;
+} 
+.photo-camera{
+  width: 50rpx;
+  height: 50rpx;
 }
 .avatarr {
   width: 60rpx;

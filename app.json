@@ -24,12 +24,12 @@
   },
   "tabBar": {
     "color": "#00071E",
-    "selectedColor": "#00071E",
+    "selectedColor": "#6E6E6E",
     "list": [
       {
         "pagePath": "pages/landing/landing",
         "text": "Home",
-        "iconPath": "pages/36w/36w/Asset 13homewhi.png",
+        "iconPath": "pages/36w/36w/Asset 24home.png",
         "selectedIconPath": "pages/36w/36w/Asset 14homeblue.png"
       },
     {

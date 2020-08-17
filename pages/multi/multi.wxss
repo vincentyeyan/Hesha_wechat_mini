@@ -4,7 +4,8 @@ page{
 .active  {
   border-style: solid;
   border-width: 6rpx;
-  border-color:orange;
+  border-color:#68C8F2;
+
   }
 
 .vol-swiper-item {
@@ -34,12 +35,19 @@ page{
   width: 100vw;
   /* background-color:#f3f3f3; */
 }
+.titleee{
+  margin-top: 80rpx;
+  font-weight: 700;
+  margin-left: 60rpx;
+  font-size: 50rpx ;
+  color: #68C8F2;
+}
 
 .box {
   grid-column: 16rpx;
   grid-row: 16rpx;
   position: sticky;
-  top: 260rpx;
+  top: 55rpx;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -55,8 +63,7 @@ page{
   background-size: cover;
   background-position: center;
   border-style: solid;
-  border-width: 6rpx;
-  border-color: none;
+  border-width: 6rpx; 
   margin:16rpx;
   width: 180rpx;
   height: 180rpx;
@@ -80,14 +87,14 @@ color: #e4e4e4;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 26rpx;
+  font-size: 32rpx;
   color: white;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   width: 60vw;
-  height: 5vh;
-  margin-bottom: 12%;
-  background-color: #F08A5E;
+  height: 7vh;
+  margin-bottom: 50rpx;
+  background-color:#68C8F2;
 }

@@ -6,7 +6,7 @@
   </view>
   <view class='view_bottom' animation="{{animation2}}">
   <view class='win_line_bottom' style="display:{{bar_state==1?'block':'none'}}"></view>
-  <image class='img_bottom' src='{{img_url}}'></image>
+  <image class='img_bottom'> src='{{img_url}}'></image>
   <view class='panel_bottom'>
   <view class='panel_content' style="display:{{bar_state==0?'block':'none'}}">
     <view class='panel_loading' style="display:{{hasResutl==0?'block':'none'}}">

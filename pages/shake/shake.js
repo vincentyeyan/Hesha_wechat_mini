@@ -3,6 +3,8 @@ var socketOpen = false;
 var count = 0;
 var SocketTask;
 var url = 'xxxx';
+const app = getApp()
+const base_url = app.globalData.base_url;
 Page({
 
   /**
@@ -105,6 +107,7 @@ Page({
     })
   },
   startAnimation: function () {
+   
     let page = this
     let h1 = "35%";
     let h2 = "65%";
@@ -144,6 +147,19 @@ Page({
     wx.startAccelerometer({
       interval: 'ui'
     });
+    let rand = Math.floor(Math.random() * 78) + 1;
+    console.log(rand)
+    wx.request({
+      url: `${base_url}/recipes/${rand}`,
+       method: 'GET',
+       success(res) {
+         const recipe = res.data;
+         page.setData({
+           recipe: recipe.recipe,
+         });
+        }
+      })
+      // console.log(333,this.data.recipe)
     //监听加速度数据事件。频率根据 wx.startAccelerometer() 的 interval 参数, 接口调用后会自动开始监听
     wx.onAccelerometerChange(function (e) {
       if (e.x > .7 && e.y > .7) {
@@ -157,9 +173,10 @@ Page({
         }        
       }
     });
-    if (!socketOpen) {
-      that.webSocket()
-    }	
+    // if (!socketOpen) {
+    //   that.webSocket()
+    // }	
+  
   },
   /**
    * Lifecycle function--Called when page hide
@@ -178,6 +195,14 @@ Page({
    */
   onUnload: function () {
     wx.stopAccelerometer();
+  },
+
+  goToView: function (e) {
+      let id = e.currentTarget.dataset.id
+      console.log(e)
+      wx.navigateTo({
+        url: `/pages/recipe/recipe?id=${id}`,
+      })
   },
 
   /**

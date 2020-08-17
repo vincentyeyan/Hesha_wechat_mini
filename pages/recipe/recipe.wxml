@@ -1,17 +1,20 @@
 <!--pages/recipe/recipe.wxml-->
-<image class='img' src="{{recipe.image}}"></image>
+<view class="cocktail-img">
+  <image class='img' src="{{recipe.image}}"></image>
+</view>
   <view class="row">
     <view class="post-card">
       <view class="local">
           <view class="h1">{{recipe.name}}</view>
           <view class="p">{{recipe.description}}</view>
-          <view class="p">{{recipe.ingredients}}</view>
+           <view class="p">{{recipe.ingredients}}</view>
+            <view class="p">{{recipe.instructions}}</view>
+          
+      </view>
       </view>
         </view>
     <!-- <image class="bookmark" src="../images/bookmark.png"></image>
     <image class="bookmark" src="../images/share.png"></image> -->
-  </view>
-
 <view class="flex">
 
 

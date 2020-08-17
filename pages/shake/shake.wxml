@@ -12,8 +12,13 @@
     <view class='panel_loading' style="display:{{hasResutl==0?'block':'none'}}">
     <image class='img_loading' src='{{loading}}'></image><text class='text_lable'>Looking for a recipe...</text>
     </view>
-    <view class='panel_result'  style="display:{{hasResutl==1?'block':'none'}}">
-    a random recipe card </view>
+    <view class='panel_result'  style="display:{{hasResutl==1?'block':'none'}}" bindtap="goToView" data-id="{{recipe.id}}">
+    {{recipe.name}}</view>
+    <button bindtap="startAnimation">
+    <view>shake</view>
+    </button>
+    
+
   </view>
   </view>
   </view>

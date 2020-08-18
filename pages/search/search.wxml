@@ -8,8 +8,6 @@
       <button class="search-btn" bindtap="searchForm">Search</button>
     </view>
   </view>
-
-
   <view class="card-box">
     <view class="index-card" wx:for="{{recipes.recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}" bindtap="goToRecipe">
        <view class="imagebox">

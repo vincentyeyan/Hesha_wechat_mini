@@ -8,6 +8,7 @@
 <!-- 
 <view class='panel_root'>
   <view class='view_top' animation="{{animation1}}">
+
     <image class='img_top'  src='{{img_url}}'></image>
     <view class='win_line_top' style="display:{{bar_state==1?'block':'none'}}"></view>
   </view> -->

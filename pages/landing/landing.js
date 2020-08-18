@@ -1,29 +1,74 @@
 // pages/posts/posts.js
 const app = getApp()
 const base_url = app.globalData.base_url;
+const DEFAULT_PAGE = 0;
 Page({
   tempFilePaths: '',
+  startPageX: 0,
+  currentView: DEFAULT_PAGE,
 
   /**
    * Page initial data
    */
   data: {
+    toView: `card_${DEFAULT_PAGE}`,
+    list1: ['Whisky Sour', 'Amaretto Sour', 'Trinidad Sour', 'Vodka Sour', 'Fitzgerald'],
+    list2: ['Dry Martini', 'Negroni', 'Whisky Sour', 'Manhattan',"Old Fashioned"],
+    list3: ['Espresso Martini', 'Jungle Bird', 'Hanky Panky', 'Americano', 'Paper Plane'],
+    list4: ['Porn Star Martini', 'Hand Grenade', 'Aqua Velva', 'Mai Tai', 'Singapore Sling'],
+    list6: ['Limoncello Spritz', 'Cantaritos', 'Aperol Spritz', 'Ramos Gin Fizz', 'Limoncello Spritz']
+
 
   },
+  touchStart(e) {
+    this.startPageX = e.changedTouches[0].pageX;
+  },
+ 
+  touchEnd(e) {
+    const moveX = e.changedTouches[0].pageX - this.startPageX;
+    const maxPage = this.data.list.length - 1;
+    if (Math.abs(moveX) >= 150){
+      if (moveX > 0) {
+        this.currentView = this.currentView !== 0 ? this.currentView - 1 : 0;
+      } else {
+        this.currentView = this.currentView !== maxPage ? this.currentView + 1 : maxPage;
+      }
+    }
+    this.setData({
+      toView: `card_${this.currentView}`
+    });
+  },
 
-  /**
-   * Lifecycle function--Called when page load
-   */
+  GoToRecipee:function(){
+    wx.request({
+      url: `${base_url}/recipes?query=${item}`,
+       method: 'GET',
+       success(res) {
+         const recipes = res.data;
+         page.setData({
+           recipes: recipes,
+           keywords: keywords
+         });
+         wx.navigateTo({
+          url: '/pages/multiSearch/multiSearch'
+      })
+        }
+      })
+
+  },
+   
+    // Lifecycle function--Called when page load
+   
   onLoad: function (options) {
     const page = this
     wx.request({
-    url: `${base_url}/posts`,
+    url: `${base_url}/recipes`,
     method: 'GET',
     success(res) {
-    console.log(res)
-    const posts = res.data;
+    console.log(9987,res.data)
+    const recipes = res.data;
     page.setData({
-    posts: posts,
+    recipes: recipes,
     });
     }
     })
@@ -51,6 +96,8 @@ Page({
       url: '../createpost/createpost',
     })
   },
+
+
   // previewImg: function (e) {
   //   //获取当前图片的下标
   //   var index = e.currentTarget.dataset.index;
@@ -80,9 +127,9 @@ Page({
     })
   },
   GoToMulti: function(event){
-    wx.navigateTo({
-      url: '/pages/multi/multi'
-  })
+    wx.switchTab({
+      url:  '/pages/multi/multi'
+    })
   },
   /**
    * Lifecycle function--Called when page is initially rendered

@@ -12,7 +12,7 @@ Page({
    */
   data: {
   
-    swing: false, 
+    shakeY: false
 
   },
 
@@ -21,29 +21,59 @@ Page({
    */
   selectAnimate(e){
     this.setData({
-        swing: true
+        shakeY: true
     })
 },
   onLoad: function (options) {
+    
     let page = this
     wx.onAccelerometerChange(function (e) {
       if (e.x > .3 && e.y > .3) {
-        console.log(e)
-        page.selectAnimate()
-        const rand = Math.floor(Math.random() * 78) + 1;
-        // page.setData({
-        //   id: rand
-        // })
-        // setTimeout(function () {
-        //   console.log 
-        //   const id = this.data.id
-          wx.navigateTo({
-            url: `/pages/recipe/recipe?id=${rand}`,
+        wx.request({
+          url: `${base_url}/recipes/shaking`,
+           method: 'GET',
+           success(res) {
+            const rand = res.data.id;
+             page.setData({
+               rand: rand,
+             });
+            }
           })
-        //  }, 1000) 
+        page.selectAnimate()
+        setTimeout(function () {
+          console.log('inside setTImeout') 
+          wx.navigateTo({
+            url: `/pages/recipe/recipe?id=${page.data.rand}`,
+          })
+          page.setData({
+            shakeY: false
+        })
+         }, 4000) 
+       
       }
     });
   },
+
+
+  // gotoShow: function () {
+  //   const page = this
+  //   wx.request({
+  //     url: `${base_url}/recipes/shaking`,
+  //      method: 'GET',
+  //      success(res) {
+  //       const rand = res.data.id;
+  //        page.setData({
+  //          rand: rand,
+  //        });
+  //       }
+  //     })
+  //     setTimeout(function () {
+  //       console.log('inside setTImeout') 
+  //       wx.navigateTo({
+  //         url: `/pages/recipe/recipe?id=${page.data.rand}`,
+  //       })
+  //      }, 2000) 
+  // },
 
 
 

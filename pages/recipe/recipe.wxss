@@ -25,18 +25,22 @@
 }
 
 .row {
-  margin-top: 100rpx;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+.cocktail-img {
+display: flex;
+justify-content: center;
+height:550rpx;
+width: 100vw;
 
+}
 .img {
-  margin-left: 75rpx;
-  height: 500rpx;
-  width: 80vw;
-  object-fit: cover;
+  height: 550rpx;
+  width: 366rpx;
+
 }
 .im {
   width: 50rpx;
@@ -60,8 +64,8 @@
 }
 
 .h1 {
+  font-weight:light;
   font-size: 36rpx;
-  font-weight: bold;
   margin-bottom: 10rpx;
 }
 .h2 {
@@ -73,8 +77,19 @@
 
 .p {
   font-size: 24rpx;
+  font-weight: light;
   padding: 10rpx;
 }
+.ingreds {
+  font-size: 28rpx;
+  font-weight: light;
+  padding: 10rpx;
+}
+
+
+
+
+
 .row {
   display: flex;
   justify-content: center;
@@ -89,7 +104,6 @@
 
 .post-card {
 background-color:rgb(243, 243, 243);
-margin-top: 20rpx;
 padding: 40rpx;
 height: 400rpx;
 width: 80vw;

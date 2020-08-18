@@ -61,8 +61,9 @@
 .imagebox {
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 18vh;
   width: 250rpx;
-  height: 100%;
   object-fit: cover;
   background-position: center; 
   background-size: cover;
@@ -74,9 +75,8 @@
   object-fit: cover;
   background-size: cover;
   background-position: center; 
-  margin-left: 32rpx;
-  height:90%;
-  width: 180rpx;
+  height:100%;
+  width: 66%;
   border-radius: 8rpx 0rpx 0rpx 8rpx;
 } 
 

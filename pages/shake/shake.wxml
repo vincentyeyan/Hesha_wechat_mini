@@ -1,22 +1,33 @@
 <!--pages/shake/shake.wxml-->
+
+ <view class="text {{swing? ' animated swing' : ''}}">
+ <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=281166849,4212172334&fm=26&gp=0.jpg"> 
+</image>
+</view> 
+
+<!-- 
 <view class='panel_root'>
   <view class='view_top' animation="{{animation1}}">
-  <image class='img_top'  src='{{img_url}}'></image>
-  <view class='win_line_top' style="display:{{bar_state==1?'block':'none'}}"></view>
-  </view>
-  <view class='view_bottom' animation="{{animation2}}">
-  <view class='win_line_bottom' style="display:{{bar_state==1?'block':'none'}}"></view>
-  <image class='img_bottom'> src='{{img_url}}'></image>
-  <view class='panel_bottom'>
-  <view class='panel_content' style="display:{{bar_state==0?'block':'none'}}">
-    <view class='panel_loading' style="display:{{hasResutl==0?'block':'none'}}">
-    <image class='img_loading' src='{{loading}}'></image><text class='text_lable'>Looking for a recipe...</text>
-    </view>
-    <view class='panel_result'  style="display:{{hasResutl==1?'block':'none'}}">
-    a random recipe card </view>
-  </view>
-  </view>
-  </view>
-  </view>
- 
 
+    <image class='img_top'  src='{{img_url}}'></image>
+    <view class='win_line_top' style="display:{{bar_state==1?'block':'none'}}"></view>
+  </view> -->
+  
+  <!-- <view class='view_bottom' animation="selectAnimate"> -->
+    <!-- <view class='win_line_bottom' style="display:{{bar_state==1?'block':'none'}}"></view>
+    <image class='img_bottom' src='{{img_url}}'></image> -->
+    <!-- <view class='panel_bottom'>
+      <view class='panel_content' style="display:{{bar_state==0?'block':'none'}}">
+        <view class='panel_loading' style="display:{{hasResutl==0?'block':'none'}}">
+        <image class='img_loading' src='{{loading}}'></image><text class='text_lable'>Looking for a recipe...</text>
+      </view>
+      
+      <view class='panel_result'  style="display:{{hasResutl==1?'block':'none'}}" bindtap="goToView" data-id="{{recipe.id}}">
+      {{recipe.name}}</view>
+
+
+
+  </view>
+  </view>
+  </view> -->
+ 

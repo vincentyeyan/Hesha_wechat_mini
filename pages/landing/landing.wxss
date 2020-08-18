@@ -199,55 +199,67 @@ text-overflow: ellipsis;
 .category-card {
   background-color: white;
   background-position: center;
-  width: 100%;
+  width: 100rpx;
   height: 195rpx;
   border-radius: 8rpx;
-  display: flex;
+  /* display: flex; */
+  margin-top: 50rpx;
   align-items: center;
   justify-content: center;
   object-fit: cover;
 }
 
 .sours{
-  background-image: url(https://tse1-mm.cn.bing.net/th/id/OIP.wblPvLyTQDWIvLfjaWoTyAHaHa?w=145&h=180&c=7&o=5&dpr=2&pid=1.7);
+  /* background-image: url(https://tse1-mm.cn.bing.net/th/id/OIP.wblPvLyTQDWIvLfjaWoTyAHaHa?w=145&h=180&c=7&o=5&dpr=2&pid=1.7); */
   background-size: cover; /* or contain depending on what you want */
   padding-left: 20rpx;
   padding-right: 20rpx;
   margin-right: 10rpx;
+  /* margin-bottom: 150rpx; */
+  color: black;
 }
 .classics {
-  background-image: url(https://tse3-mm.cn.bing.net/th/id/OIP.OjUwc1pIcmKfbedAo-2PvwHaIH?w=192&h=211&c=7&o=5&dpr=2&pid=1.7);
+  /* background-image: url(https://tse3-mm.cn.bing.net/th/id/OIP.OjUwc1pIcmKfbedAo-2PvwHaIH?w=192&h=211&c=7&o=5&dpr=2&pid=1.7); */
   background-size: cover;
   padding-left: 4rpx;
   padding-right: 4rpx;
   margin-right: 10rpx;
+  margin-bottom: 150rpx;
+  color: black;
 }
 .bitters {
-  background-image: url(https://tse1-mm.cn.bing.net/th/id/OIP.e9g9YaLHdtrow54S44DyvwHaFi?w=228&h=180&c=7&o=5&dpr=2&pid=1.7);
+  /* background-image: url(https://tse1-mm.cn.bing.net/th/id/OIP.e9g9YaLHdtrow54S44DyvwHaFi?w=228&h=180&c=7&o=5&dpr=2&pid=1.7); */
   background-size: cover;
   padding-left: 16rpx;
   padding-right: 16rpx;
   margin-right: 10rpx;
+  margin-bottom: 150rpx;
+  color: black;
 }
 .tropicals{
-  background-image: url(https://tse4-mm.cn.bing.net/th/id/OIP.bTwynLRcJOj5jmpzDDyQewHaK1?w=192&h=281&c=7&o=5&dpr=2&pid=1.7);
+  /* background-image: url(https://tse4-mm.cn.bing.net/th/id/OIP.bTwynLRcJOj5jmpzDDyQewHaK1?w=192&h=281&c=7&o=5&dpr=2&pid=1.7); */
   background-size: cover;
   padding-left: 16rpx;
   padding-right: 16rpx;
   margin-right: 10rpx;
+  margin-bottom: 150rpx;
+  color: black;
 }
 
 .fizzy{
-  background-image: url(https://tse1-mm.cn.bing.net/th/id/OIP.pPvoa6tuAbuCy0VL-xTcsQHaLH?w=192&h=288&c=7&o=5&dpr=2&pid=1.7);
+  /* background-image: url(https://tse1-mm.cn.bing.net/th/id/OIP.pPvoa6tuAbuCy0VL-xTcsQHaLH?w=192&h=288&c=7&o=5&dpr=2&pid=1.7); */
   background-size: cover;
   padding-left: 16rpx;
   padding-right: 16rpx;
   margin-right: 10rpx;
+  margin-bottom: 150rpx;
+  color: black;
 }
 .scroll-box{
   white-space: nowrap;
-  height: 200rpx;
-
+  height: 270rpx;
+  /* width: calc(100% - 100rpx); */
+  width: 100%;
 }
  
 .card-box{
@@ -255,19 +267,34 @@ text-overflow: ellipsis;
 }
  
 .card{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   box-sizing: border-box;
   height: 190rpx;
   width: 180rpx;
   margin: 5rpx 10rpx;
   font-size: 20rpx;
-  background:lightgrey;
-  color: white;
+  color: black;
   border-radius: 4rpx;
+}
+.cardd {
+  height: 200rpx;
+  width: 100%;
+  object-fit: cover;
+  color: black;
+  object-fit: contain;
+
 }
 .ppp {
   width: 280rpx;
   height: 195rpx;
+}
+
+.text-boxx{
+  /* width: 1000rpx; */
+  height: 70rpx;
+  /* background-color: green; */
+  color: black;
+  text-align: center;
+  /* margin-right: 3000rpx;
+  margin-top: 500rpx; */
 }

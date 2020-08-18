@@ -11,15 +11,8 @@ Page({
    * Page initial data
    */
   data: {
-    toView: `card_${DEFAULT_PAGE}`,
-    list1: ['Whisky Sour', 'Amaretto Sour', 'Trinidad Sour', 'Vodka Sour', 'Fitzgerald'],
-    list2: ['Dry Martini', 'Negroni', 'Whisky Sour', 'Manhattan',"Old Fashioned"],
-    list3: ['Espresso Martini', 'Jungle Bird', 'Hanky Panky', 'Americano', 'Paper Plane'],
-    list4: ['Porn Star Martini', 'Hand Grenade', 'Aqua Velva', 'Mai Tai', 'Singapore Sling'],
-    list6: ['Limoncello Spritz', 'Cantaritos', 'Aperol Spritz', 'Ramos Gin Fizz', 'Limoncello Spritz']
-
-
-  },
+    toView: `card_${DEFAULT_PAGE}`
+   },
   touchStart(e) {
     this.startPageX = e.changedTouches[0].pageX;
   },
@@ -62,62 +55,22 @@ Page({
   onLoad: function (options) {
     const page = this
     wx.request({
-    url: `${base_url}/recipes`,
+    url: `${base_url}/tagged`,
     method: 'GET',
     success(res) {
-    console.log(9987,res.data)
-    const recipes = res.data;
-    page.setData({
-    recipes: recipes,
-    });
+    console.log(9987,res)
+    // const bitters = res.data.Bitter;
+    page.setData({recipes: res.data,
+      bitters : res.data.Bitter,
+      sours : res.data.Sour,
+      classics : res.data.Classic,
+      fizzys : res.data.Fizzy,
+      fruitys : res.data.Fruity
+    })
+    
     }
     })
     },
-  chooseImage: function() {
-      var page = this;
-      wx.chooseImage({
-        count: 1, 
-        sizeType: ['original', 'compressed'], 
-        sourceType: ['album', 'camera'], 
-        success: function(res) {
-          wx.showToast({
-            title: 'Uploading..',
-            icon: '../images/cocktail-2.png',
-            mask: true,
-            duration: 1000
-          });
-          page.setData({
-            tempFilePaths: res.tempFilePaths
-          });
-          console.log(1998,res.tempFilePaths);
-        },
-    });
-    wx.navigateTo({
-      url: '../createpost/createpost',
-    })
-  },
-
-
-  // previewImg: function (e) {
-  //   //获取当前图片的下标
-  //   var index = e.currentTarget.dataset.index;
-  //   //所有图片
-  //   var source = this.data.source;
-  //   wx.previewImage({
-  //     //当前显示图片
-  //     current: source[index],
-  //     //所有图片
-  //     urls: source
-  //   })
-  // },
-
-    // previewMyImage: function(files) {
-    //   wx.previewImage({
-    //     current: '',  // number of index or file path
-    //     urls: this.data.tempFilePaths  // Array of temp files
-    //   })
-    //   console.log(this.data.tempFilePaths)
-    // },
     
     
   GoToRecipe: function(event){

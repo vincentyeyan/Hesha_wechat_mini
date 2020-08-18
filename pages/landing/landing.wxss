@@ -112,10 +112,10 @@ text-overflow: ellipsis;
   margin: 16rpx;
   margin-top: 4rpx;
 }
-.share-post-box {
+/* .share-post-box {
   margin-left:60rpx;
   margin-top: 24rpx;
-}
+} */
 .card-product-1 {
   height:303rpx;
   width: 252rpx;
@@ -127,10 +127,10 @@ text-overflow: ellipsis;
   border-radius: 4px;
   background-color: lightgray;
 } 
-.photo-camera{
+/* .photo-camera{
   width: 50rpx;
   height: 50rpx;
-}
+} */
 .avatarr {
   margin-left: 16rpx;
   width: 60rpx;

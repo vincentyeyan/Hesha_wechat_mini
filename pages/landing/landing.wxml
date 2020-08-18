@@ -1,7 +1,7 @@
 <!--pages/posts/posts.wxml-->
-<view class="share-post-box">
+<!-- <view class="share-post-box">
 <image class="photo-camera" bindtap="chooseImage" src="../images/photo-camera.png">Post</image>
-</view>
+</view> -->
   <view class="section">
     <view class="section__title">
     <view class="searchbar" bindtap="GoToSearch">Search</view>

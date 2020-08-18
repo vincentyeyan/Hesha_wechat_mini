@@ -64,8 +64,10 @@ width: 100vw;
 }
 
 .h1 {
+  display: flex;
+  justify-content: center;
   font-weight:light;
-  font-size: 36rpx;
+  font-size: 40rpx;
   margin-bottom: 10rpx;
 }
 .h2 {
@@ -75,19 +77,32 @@ width: 100vw;
   margin-bottom: 10rpx;
 }
 
-.p {
-  font-size: 24rpx;
+.descript {
+  display: flex;
+  justify-content: center;
+  margin-left: 12rpx;
+  margin-right: 12rpx;
+  margin-bottom: 30rpx;
+  font-size: 26rpx;
   font-weight: light;
   padding: 10rpx;
 }
-.ingreds {
+
+.instruct {
+  margin-left: 12rpx;
+  margin-right: 12rpx;
+  margin-top: 30rpx;
   font-size: 28rpx;
   font-weight: light;
   padding: 10rpx;
 }
 
 
-
+.ingreds {
+  font-size: 28rpx;
+  font-weight: light;
+  padding: 10rpx;
+}
 
 
 .row {
@@ -103,9 +118,8 @@ width: 100vw;
 }
 
 .post-card {
-background-color:rgb(243, 243, 243);
+background-color:rgb(252, 252, 252);
 padding: 40rpx;
-height: 400rpx;
 width: 80vw;
 border-radius: 8rpx;
 }
@@ -141,7 +155,49 @@ border-radius: 8rpx;
 
 }
 .liked {
+ background-color: darkcyan;
+  
+}
+
+.ingredbox {
+  display: inline-flex;
+  align-items: center;
+}
+
+.dose {
+  display: flex;
+  align-items: center;
+  font-weight: light;
+  font-size: 26rpx;
+  margin-right: 8rpx;
+  margin-left: 16rpx;
+ 
+}
+
+.ingred {
+  margin-left: 12rpx;
+  display: flex;
+  align-items: center;
+  font-weight: light;
+  font-size: 26rpx;
+
+}
+
+.line1 {
   border-radius: 8rpx;
-  color: black;
+  margin: 12rpx;
+  display: inline-flex;
+  background-color:  #ffefdb;
+  width:100%; 
+  padding:10rpx;
+
+}
+.line2 {
+  border-radius: 8rpx;
+  margin: 12rpx;
+  display: inline-flex;
+  background-color: #e6e6e6;
+  width:100%;
+  padding:10rpx;
   
 }

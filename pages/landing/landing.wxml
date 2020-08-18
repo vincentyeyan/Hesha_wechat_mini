@@ -1,91 +1,16 @@
 <!--pages/posts/posts.wxml-->
-<view class="share-post-box">
-<image class="photo-camera" bindtap="chooseImage" src="../images/photo-camera.png">Post</image>
-</view>
-  <view class="section">
-    <view class="section__title">
+
+<view class="section">
+  <view class="section__title">
     <view class="searchbar" bindtap="GoToSearch">Search</view>
     <view class="newbanner">
-    <image src="../images/multi.gif" bindtap="GoToMulti" class="multisearch-tool"></image>
+      <image src="../images/multi.gif" bindtap="GoToMulti" class="multisearch-tool"></image>
     </view>
-    </view>
+  </view>
 </view> 
-<view class="categories-card">
-<view class="category-card sours">
-<view>Sour</view>
-</view>
-<scroll-view class="scroll-box" scroll-x scroll-with-animation 
-scroll-into-view="{{toView}}"
-  bindtouchstart="touchStart"
-  bindtouchend="touchEnd">
-    <view wx:for="{{list1}}" wx:key="{{item}}" class="card-box" id="card_{{index}}">
-      <view class="card" bindtap="GoToRecipee">
-        <text>{{item}}</text>
-      </view>
-    </view>
-</scroll-view>
-</view>
-<view class="categories-card">
-<view class="category-card classics">
-<view>Classic</view>
-</view>
-<scroll-view class="scroll-box" scroll-x scroll-with-animation 
-scroll-into-view="{{toView}}"
-  bindtouchstart="touchStart"
-  bindtouchend="touchEnd">
-    <view wx:for="{{list2}}" wx:key="{{item}}" class="card-box" id="card_{{index}}">
-      <view class="card">
-        <text>{{item}}</text>
-      </view>
-    </view>
-</scroll-view>
-</view>
-<view class="categories-card">
-<view class="category-card bitters">
-<view>Bitter</view>
-</view>
-<scroll-view class="scroll-box" scroll-x scroll-with-animation 
-scroll-into-view="{{toView}}"
-  bindtouchstart="touchStart"
-  bindtouchend="touchEnd">
-    <view wx:for="{{list3}}" wx:key="{{item}}" class="card-box" id="card_{{index}}">
-      <view class="card">
-        <text>{{item}}</text>
-      </view>
-    </view>
-</scroll-view>
-</view>
-<view class="categories-card">
-<view class="category-card tropicals">
-<view>Fruity</view>
-</view>
-<scroll-view class="scroll-box" scroll-x scroll-with-animation 
-scroll-into-view="{{toView}}"
-  bindtouchstart="touchStart"
-  bindtouchend="touchEnd">
-    <view wx:for="{{list4}}" wx:key="{{item}}" class="card-box" id="card_{{index}}">
-      <view class="card">
-        <text>{{item}}</text>
-      </view>
-    </view>
-</scroll-view>
-</view>
-<view class="categories-card">
-<view class="category-card fizzy">
-<view>Fizzy</view>
-</view>
-<scroll-view class="scroll-box" scroll-x scroll-with-animation 
-scroll-into-view="{{toView}}"
-  bindtouchstart="touchStart"
-  bindtouchend="touchEnd">
-    <view wx:for="{{list6}}" wx:key="{{item}}" class="card-box" id="card_{{index}}">
-      <view class="card">
-        <text>{{item}}</text>
-      </view>
-    </view>
-</scroll-view>
-</view>
 
-
-
-
+<drinks drinks="{{sours}}" label="Sours" />
+<drinks drinks="{{classics}}" label="Retro"/>
+<drinks drinks="{{bitters}}" label="Bitter"/>
+<drinks drinks="{{fruitys}}" label="Sweet" />
+<drinks drinks="{{fizzys}}" label="Fizzy" />

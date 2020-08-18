@@ -1,0 +1,18 @@
+<view class="categories-card">
+  <view class="category-card sours">
+    <view>{{label}}</view>
+  </view>
+  <scroll-view class="scroll-box" scroll-x scroll-with-animation 
+    scroll-into-view="{{toView}}"
+    bindtouchstart="touchStart"
+    bindtouchend="touchEnd">
+    <view class="scroll-drinks">
+      <view wx:for="{{drinks}}" wx:key="{{item}}" class="card-box" id="card_{{index}}">
+        <view class="card" bindtap="GoToRecipee">
+          <image class="cardd" src="{{item.image}}" mode="aspectFit"></image>
+          <view class="text-boxx">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

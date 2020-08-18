@@ -1,3 +1,10 @@
+const AV = require('./utils/av-weapp-min.js')
+const config = require('./key')
+AV.init({
+  appId: config.appId,
+  appKey: config.appKey,
+  serverURLs: "https://hesha.wogengapp.cn/api/v1"
+});
 App({
   onLaunch: function () {
     wx.login({

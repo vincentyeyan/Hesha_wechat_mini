@@ -1,7 +1,9 @@
 <!--pages/posts/posts.wxml-->
 
+
 <view class="section">
   <view class="section__title">
+
     <view class="searchbar" bindtap="GoToSearch">Search</view>
     <view class="newbanner">
       <image src="../images/multi.gif" bindtap="GoToMulti" class="multisearch-tool"></image>

@@ -11,6 +11,7 @@ Page({
     autoplay: false,
     interval: 2000,
     duration: 1000,
+    liked: false,
 
   },
   // likeButton: function(){
@@ -58,6 +59,30 @@ Page({
       }
     })
     },
+    chooseImage: function() {
+      var page = this;
+      wx.chooseImage({
+        count: 1, 
+        sizeType: ['original', 'compressed'], 
+        sourceType: ['album', 'camera'], 
+        success: function(res) {
+          wx.showToast({
+            title: 'Uploading..',
+            icon: '../images/cocktail-2.png',
+            mask: true,
+            duration: 1000
+          });
+          page.setData({
+            tempFilePaths: res.tempFilePaths
+          });
+          console.log(1998,res.tempFilePaths);
+        },
+    });
+    wx.navigateTo({
+      url: '../createpost/createpost',
+    })
+  },
+
 
     goToPopup: function(e) {
       let id = this.data.recipe.id

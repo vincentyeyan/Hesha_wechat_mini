@@ -10,12 +10,11 @@
   <image class='img_bottom' src='{{img_url}}'></image>
   <view class='panel_bottom'>
   <view class='panel_content' style="display:{{bar_state==0?'block':'none'}}">
-    <view class='panel_loading' style="display:{{hasResutl==0?'block':'none'}}">
-    <image class='img_loading' src='{{loading}}'></image><text class='text_lable'>finding the recipe for you</text>
-    </view>
+    
     
 
      <view wx:if="{{button}}" class="card-box" bindtap="goToShow" >
+     <!-- <view class="card">
     <view class="index-card">
        <view class="imagebox">
         <image class="img" src="{{recipe.image}}"></image>
@@ -26,6 +25,7 @@
           <view class="p1">{{recipe.ingredients.length}}{{" ingredients"}}</view>
         </view>
     </view>
+  </view> -->
   </view>
 
 
@@ -33,9 +33,16 @@
   </view>
   </view>
   </view>
- 
-  <button wx:if="{{button}}" class='btn_test' bindtap='reShake' >Shake Again</button>
- 
+  
+  <view class="btn_test">
+    <view class="load">
+     <view class='panel_loading' style="display:{{hasResutl==0?'block':'none'}}">
+      <image class='img_loading' src='{{loading}}'></image>
+      <text class='text_lable'>finding the recipe for you</text>
+    </view> 
+    </view>
+    <button wx:if="{{button}}" bindtap='reShake' >Shake Again</button>
+  </view>
 </view>
 
 </view>

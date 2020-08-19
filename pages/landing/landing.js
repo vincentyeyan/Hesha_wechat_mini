@@ -32,23 +32,23 @@ Page({
     });
   },
 
-  GoToRecipee:function(){
-    wx.request({
-      url: `${base_url}/recipes?query=${item}`,
-       method: 'GET',
-       success(res) {
-         const recipes = res.data;
-         page.setData({
-           recipes: recipes,
-           keywords: keywords
-         });
-         wx.navigateTo({
-          url: '/pages/multiSearch/multiSearch'
-      })
-        }
-      })
+  // GoToRecipee:function(){
+  //   wx.request({
+  //     url: `${base_url}/recipes?query=${item}`,
+  //      method: 'GET',
+  //      success(res) {
+  //        const recipes = res.data;
+  //        page.setData({
+  //          recipes: recipes,
+  //          keywords: keywords
+  //        });
+  //        wx.navigateTo({
+  //         url: '/pages/multiSearch/multiSearch'
+  //     })
+  //       }
+  //     })
 
-  },
+  // },
    
     // Lifecycle function--Called when page load
    
@@ -107,13 +107,7 @@ Page({
       url: `/pages/post/post?id=${id}`,
     })
   },
-  goToRecipe: function (e) {
-    console.log(999,e)
-    let id = e.currentTarget.dataset.id
-    wx.navigateTo({
-      url: `/pages/recipe/recipe?id=${id}`,
-    })
-  },
+
 
   onShareAppMessage(){
     // return {

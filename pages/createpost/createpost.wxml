@@ -2,31 +2,13 @@
 <view class="form" >
 <form bindsubmit="formSubmit">
 <view class="content"> 
-<!-- <view class="big">Share your cocktail🔈</view> -->
 <view class="upload-box">
+<view class="upload" bindtap="takePhoto">+</view>
 <image class="upload-image"src="{{tempFilePaths}}"/>
 </view>
-<view class='container'>
-
+  <textarea class="text-box" placeholder="How is the cocktail recipe?"auto-focus />
 </view>
-
-<view class="picker-section">
-<picker bindchange="bindPickerChange" value="{{index}}" range="{{recipeNames}}">
-    <view class="picker">
-      Select your drink：{{arrayRecipes[index]}}
-    </view>
-  </picker>
-</view>
-<view>Description</view>
-  <textarea class="text-box" placeholder="what's special about your cocktail??"auto-focus />
-  <view class="rating-box">
-  <text class="section__title">Rate this recipe:</text>
-  </view>
-  <view class="rating-box">
-    <slider bindchange="slider4change" min="1" max="10" name="rating" show-value/>
-</view>
-<button form-type="submit">Post</button>
-</view>
+<button form-type="submit" class="post-button">Post</button>
 </form>
 </view>
 

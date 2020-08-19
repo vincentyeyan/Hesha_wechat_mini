@@ -1,23 +1,16 @@
 <!--pages/recipe/recipe.wxml-->
-<image class='img' src="{{recipe.image}}"></image>
-  <view class="row">
-    <view class="post-card">
-      <view class="local">
-          <view class="h1">{{recipe.name}}</view>
-          <view class="p">{{recipe.description}}</view>
-          <view class="p">{{recipe.ingredients}}</view>
-      </view>
-        </view>
-    <!-- <image class="bookmark" src="../images/bookmark.png"></image>
-    <image class="bookmark" src="../images/share.png"></image> -->
-  </view>
-
+<view class="share-post-box">
+<image class="photo-camera" bindtap="chooseImage" src="../images/photo-camera.png">Post</image>
+</view>
+<view class="cocktail-img">
+  <image class='img' src="{{recipe.image}}"></image>
+</view>
 <view class="flex">
+<!-- <button style="background-color: {{liked ? 'white' : 'rgb(47, 188, 246)'}};"class="buton" bindtap="likeRecipe">{{liked ? 'You liked this!' : 'Like'}} </button> -->
 
-
-<button style="background-color: {{liked ? 'white' : 'rgb(47, 188, 246)'}};"class="buton" bindtap="likeRecipe">{{liked ? 'You liked this!' : 'Like'}}</button>
-
-
+<button class="buton"  bindtap="likeRecipe">
+  <image class="imm" src="{{ liked? '../images/hb.png' : '../images/h.png'}}"></image>
+</button>
 
 <button class="but" open-type="share" bindtap="onShareAppMessage">
 <image class="im" src="../images/share.png">Share</image> 
@@ -29,15 +22,42 @@
 
 </view>
 
- <view class="row">
-  <view class="card-product" wx:for="{{posts}}" wx:for-item="post" data-id="{{post.id}}" bindtap="goToPost">
-    <image class='avatar' src="{{post.image}}"></image>
-  <view class='search-tag1' >{{post.description}}</view>
-  </view> 
+  <view class="row">
+    <view class="post-card">
+      <view class="local">
+        <view class="h1">{{recipe.name}}</view>
+        <view class="descript">{{recipe.description}}</view>
+          <view class="ingredbox" wx:for="{{recipe.ingredients}}" wx:for-item="ingredient" data-id="{{recipe.id}}" >
+            <view class="line1" wx:if="{{index % 2 == 0}}">
+              <view class="dose">{{ingredient[0]}}</view>
+              <view class="ingred">{{" "}}{{ingredient[1]}}</view>
+            </view>
+          <view class="line2" wx:else>
+            <view class="dose">{{ingredient[0]}}</view>
+            <view class="ingred">{{ingredient[1]}}</view>
+          </view>
+        </view>
+          <view class="instruct">{{recipe.instructions}}</view>
+      </view>
+    </view>
   </view>
+    <!-- <image class="bookmark" src="../images/bookmark.png"></image>
+    <image class="bookmark" src="../images/share.png"></image> -->
 
 
 
+
+<view class="row">
+  <view class="card-product" wx:for="{{posts}}" wx:for-item="post" data-id="{{post.id}}" bindtap="goToPost">
+    <view class="avabox">
+      <image mode="aspectFill" style="width:100%" class='avatar' src="{{post.image}}"></image>
+    </view>
+  <view class='p'>{{post.description}}</view>
+
+
+  </view>
+  <view wx:for="{{hosts.length%2}}" class="card-product-1"></view>
+</view>
 
 
 

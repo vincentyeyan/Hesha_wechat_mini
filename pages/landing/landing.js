@@ -1,76 +1,76 @@
 // pages/posts/posts.js
 const app = getApp()
 const base_url = app.globalData.base_url;
+const DEFAULT_PAGE = 0;
 Page({
   tempFilePaths: '',
+  startPageX: 0,
+  currentView: DEFAULT_PAGE,
 
   /**
    * Page initial data
    */
   data: {
-
+    toView: `card_${DEFAULT_PAGE}`
+   },
+  touchStart(e) {
+    this.startPageX = e.changedTouches[0].pageX;
+  },
+ 
+  touchEnd(e) {
+    const moveX = e.changedTouches[0].pageX - this.startPageX;
+    const maxPage = this.data.list.length - 1;
+    if (Math.abs(moveX) >= 150){
+      if (moveX > 0) {
+        this.currentView = this.currentView !== 0 ? this.currentView - 1 : 0;
+      } else {
+        this.currentView = this.currentView !== maxPage ? this.currentView + 1 : maxPage;
+      }
+    }
+    this.setData({
+      toView: `card_${this.currentView}`
+    });
   },
 
-  /**
-   * Lifecycle function--Called when page load
-   */
+  GoToRecipee:function(){
+    wx.request({
+      url: `${base_url}/recipes?query=${item}`,
+       method: 'GET',
+       success(res) {
+         const recipes = res.data;
+         page.setData({
+           recipes: recipes,
+           keywords: keywords
+         });
+         wx.navigateTo({
+          url: '/pages/multiSearch/multiSearch'
+      })
+        }
+      })
+
+  },
+   
+    // Lifecycle function--Called when page load
+   
   onLoad: function (options) {
     const page = this
     wx.request({
-    url: `${base_url}/posts`,
+    url: `${base_url}/tagged`,
     method: 'GET',
     success(res) {
-    console.log(res)
-    const posts = res.data;
-    page.setData({
-    posts: posts,
-    });
+    console.log(9987,res)
+    // const bitters = res.data.Bitter;
+    page.setData({recipes: res.data,
+      bitters : res.data.Bitter,
+      sours : res.data.Sour,
+      classics : res.data.Classic,
+      fizzys : res.data.Fizzy,
+      fruitys : res.data.Fruity
+    })
+    
     }
     })
     },
-  chooseImage: function() {
-      var page = this;
-      wx.chooseImage({
-        count: 1, 
-        sizeType: ['original', 'compressed'], 
-        sourceType: ['album', 'camera'], 
-        success: function(res) {
-          wx.showToast({
-            title: 'Uploading..',
-            icon: '../images/cocktail-2.png',
-            mask: true,
-            duration: 1000
-          });
-          page.setData({
-            tempFilePaths: res.tempFilePaths
-          });
-          console.log(1998,res.tempFilePaths);
-        },
-    });
-    wx.navigateTo({
-      url: '../createpost/createpost',
-    })
-  },
-  // previewImg: function (e) {
-  //   //获取当前图片的下标
-  //   var index = e.currentTarget.dataset.index;
-  //   //所有图片
-  //   var source = this.data.source;
-  //   wx.previewImage({
-  //     //当前显示图片
-  //     current: source[index],
-  //     //所有图片
-  //     urls: source
-  //   })
-  // },
-
-    // previewMyImage: function(files) {
-    //   wx.previewImage({
-    //     current: '',  // number of index or file path
-    //     urls: this.data.tempFilePaths  // Array of temp files
-    //   })
-    //   console.log(this.data.tempFilePaths)
-    // },
     
     
   GoToRecipe: function(event){
@@ -80,9 +80,9 @@ Page({
     })
   },
   GoToMulti: function(event){
-    wx.navigateTo({
-      url: '/pages/multi/multi'
-  })
+    wx.switchTab({
+      url:  '/pages/multi/multi'
+    })
   },
   /**
    * Lifecycle function--Called when page is initially rendered

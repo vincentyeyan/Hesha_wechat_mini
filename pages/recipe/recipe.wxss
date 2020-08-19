@@ -1,5 +1,6 @@
 /* pages/recipe/recipe.wxss */
 
+
 .card-product {
   display: flex;
   flex-direction: column;
@@ -9,59 +10,116 @@
   justify-content: space-between;
   border-radius: 4px;
   margin: 16rpx;
-  margin-top: 4rpx;
+  margin-top: 32rpx;
   
 }
-.search-tag1{
-  font-size: small;
-  }
-.avatar {
-  width: 100%;
-  height: 250rpx;
-  object-fit: cover;
-  /* background-position: top; */
-  background-size: cover;
-  background-position: center;
+.card-product-1 {
+  height:303rpx;
+  width: 252rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16px;
+  margin: 8px;
+  border-radius: 4px;
 }
-
 .row {
-  margin-top: 100rpx;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+.avatar {
+  width: 100%;
+  height: 200rpx;
+  
+  border-radius: 4px 4px 0px 0px;
+  
+  
+}
 
+.avabox {
+  width: 100%;
+  height: 200rpx;
+  object-fit: contain;
+  border-radius: 4px 4px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .search-tag1{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100rpx;
+  padding: 16rpx;
+  font-size: 24rpx;
+  text-align: justify;
+  word-wrap: wrap;
+  width: 240rpx; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  } */
+
+
+.cocktail-img {
+display: flex;
+justify-content: center;
+height:550rpx;
+width: 100vw;
+
+}
 .img {
-  margin-left: 75rpx;
-  height: 500rpx;
-  width: 80vw;
-  object-fit: cover;
+  height: 550rpx;
+  width: 366rpx;
+
 }
 .im {
-  width: 50rpx;
-  height: 50rpx;
+  width: 40rpx;
+  height: 40rpx;
 }
+.imm {
+  width: 40rpx;
+  height: 40rpx;
+}
+
 
 .flex {
   display: flex;
-  margin-top: 60rpx;
+  justify-content: center;
   align-items: center;
-  margin-left: 60rpx;
-  margin-right: 60rpx;
+ 
 } 
 
 .but {
   background-color: white;
-  width: 50rpx;
-  padding: 0;
-  display: inline;
-  margin-right: 60rpx;
+
+ 
 }
 
+.buton {
+justify-content: center;
+margin: none;
+background: none;
+
+}
+
+
 .h1 {
-  font-size: 36rpx;
-  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-weight:light;
+  font-size: 40rpx;
   margin-bottom: 10rpx;
 }
 .h2 {
@@ -71,10 +129,37 @@
   margin-bottom: 10rpx;
 }
 
-.p {
-  font-size: 24rpx;
+.descript {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  margin-top: 30rpx;
+  margin-left: 12rpx;
+  margin-right: 12rpx;
+  margin-bottom: 30rpx;
+  font-size: 26rpx;
+  font-weight: light;
   padding: 10rpx;
 }
+
+.instruct {
+  margin-left: 12rpx;
+  text-align: justify;
+  margin-right: 12rpx;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  font-weight: light;
+  padding: 10rpx;
+}
+
+
+.ingreds {
+  font-size: 28rpx;
+  font-weight: light;
+  padding: 10rpx;
+}
+
+
 .row {
   display: flex;
   justify-content: center;
@@ -88,10 +173,9 @@
 }
 
 .post-card {
-background-color:rgb(243, 243, 243);
-margin-top: 20rpx;
+background-color:rgb(250, 250, 250);
+border-radius: 8rpx;
 padding: 40rpx;
-height: 400rpx;
 width: 80vw;
 border-radius: 8rpx;
 }
@@ -109,16 +193,16 @@ border-radius: 8rpx;
 .hover-like {
   opacity: 0.5;
 }
-.like-icon{
+/* .like-icon{
   width:50rpx;
   height:50rpx;
-}
-.like-button {
+} */
+/* .like-button {
   margin-top:40rpx;
   color: white;
   text-shadow: 2rpx 2rpx 4rpx rgba(0,0,0,0.2);
 
-}
+} */
 
 .share-button {
   margin-top:10rpx;
@@ -127,7 +211,72 @@ border-radius: 8rpx;
 
 }
 .liked {
-  border-radius: 8rpx;
-  color: black;
+ 
   
+}
+
+.ingredbox {
+  display: inline-flex;
+  align-items: center;
+}
+
+.dose {
+  display: flex;
+  align-items: center;
+  font-weight: light;
+  font-size: 26rpx;
+  margin-right: 8rpx;
+  margin-left: 16rpx;
+ 
+}
+
+.ingred {
+  margin-left: 12rpx;
+  display: flex;
+  align-items: center;
+  font-weight: light;
+  font-size: 26rpx;
+
+}
+
+.line1 {
+  border-radius: 8rpx;
+  margin: 12rpx;
+  display: inline-flex;
+  background-color:  #ffefdb;
+  width:100%; 
+  padding:10rpx;
+
+}
+.line2 {
+  border-radius: 8rpx;
+  margin: 12rpx;
+  display: inline-flex;
+  background-color: #e6e6e6;
+  width:100%;
+  padding:10rpx;
+  
+}
+
+.share-post-box {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  right: 0 ;
+  justify-content: flex-end;
+  margin-right:50rpx;
+  margin-top: 32rpx;
+}
+
+.photo-camera{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.p {
+  text-align: justify;
+  padding: 20rpx;
+  font-size: 24rpx;
+  font-weight: light;
+
 }

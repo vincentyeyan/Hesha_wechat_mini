@@ -1,15 +1,5 @@
-<!--pages/multi/multi.wxml-->
-<!-- <button style="background-color: {{recipe.liked ? 'white' : 'rgb(47, 188, 246)'}};" 
-class="buton"  bindtap="likeButton">{{recipe.liked ? 'You liked this!' : 'Like'}}</button>
-  
- -->
-<!-- <button class="but" open-type="share" bindtap="onShareAppMessage">
-<image class="im" src="../images/share.png">Share</image> 
-</button> -->
-
-
 <view class="banner">
-
+<view class="titleee">Select Ingredients You Have</view>
 <view class="mainFrame">
   <swiper style="height: 98%;" class="container" indicator-dots="{{indicatorDots}}"  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{nineblocks}}" wx:for-item="nineblock" wx:for-index="i">
@@ -35,6 +25,6 @@ class="buton"  bindtap="likeButton">{{recipe.liked ? 'You liked this!' : 'Like'}
 </view>
 
 
-<button style="width: 480rpx;" class="btn-green" bindtap="multiSearch">Generate cocktails!</button>
+<button style="width: 480rpx;" class="btn-green" bindtap="multiSearch">Generate Recipes!</button>
 
 

@@ -24,31 +24,31 @@
   },
   "tabBar": {
     "color": "#00071E",
-    "selectedColor": "#17B890",
+    "selectedColor": "#6E6E6E",
     "list": [
       {
         "pagePath": "pages/landing/landing",
         "text": "Home",
-        "iconPath": "pages/images/home.png",
-        "selectedIconPath": "pages/images/home.png"
+        "iconPath": "pages/36w/36w/Asset 24home.png",
+        "selectedIconPath": "pages/36w/36w/Asset 14homeblue.png"
       },
     {
         "pagePath": "pages/multi/multi",
-        "text": "Ingredients",
-        "iconPath": "pages/images/cocktail-2.png",
-        "selectedIconPath": "pages/images/cocktail-2.png"
+        "text": "Select",
+        "iconPath": "pages/36w/36w/Asset 18multiwh.png",
+        "selectedIconPath": "pages/36w/36w/Asset 17multiblue.png"
       },
       {
         "pagePath": "pages/shake/shake",
         "text": "Shake",
-        "iconPath":  "pages/images/cocktails.png",
-        "selectedIconPath": "pages/images/cocktails.png"
+        "iconPath":  "pages/36w/36w/Asset 15shakewh.png",
+        "selectedIconPath": "pages/36w/36w/Asset 16shakeblue.png"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "Profile",
-        "iconPath":  "pages/images/avatar.png",
-        "selectedIconPath": "pages/images/avatar.png"
+        "iconPath":  "pages/36w/36w/Asset 19prowh.png",
+        "selectedIconPath": "pages/36w/36w/Asset 20problue.png"
       }
     ]
   },

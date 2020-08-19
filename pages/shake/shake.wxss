@@ -114,6 +114,8 @@ page{
 }
 
 .image {
+width: 230px;
+height: 240px;
  margin-top: 150px;
 }
 
@@ -126,9 +128,8 @@ page{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   color: black;
-  margin-bottom: 400px;
+  margin-bottom: 800rpx;
 }
 
 .index-card {

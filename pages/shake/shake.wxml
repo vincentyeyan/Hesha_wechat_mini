@@ -14,7 +14,7 @@
     
 
      <view wx:if="{{button}}" class="card-box" bindtap="goToShow" >
-     <!-- <view class="card">
+     <view class="card">
     <view class="index-card">
        <view class="imagebox">
         <image class="img" src="{{recipe.image}}"></image>
@@ -25,7 +25,7 @@
           <view class="p1">{{recipe.ingredients.length}}{{" ingredients"}}</view>
         </view>
     </view>
-  </view> -->
+  </view>
   </view>
 
 

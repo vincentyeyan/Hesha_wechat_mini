@@ -29,26 +29,26 @@
       {
         "pagePath": "pages/landing/landing",
         "text": "Home",
-        "iconPath": "pages/36w/36w/Asset 24home.png",
-        "selectedIconPath": "pages/36w/36w/Asset 14homeblue.png"
+        "iconPath": "/pages/36w/32w/homeon.png",
+        "selectedIconPath": "/pages/36w/32w/proon.png"
       },
     {
         "pagePath": "pages/multi/multi",
         "text": "Select",
-        "iconPath": "pages/36w/36w/Asset 18multiwh.png",
-        "selectedIconPath": "pages/36w/36w/Asset 17multiblue.png"
+        "iconPath": "pages/36w/32w/multioff.png",
+        "selectedIconPath": "pages/36w/32w/multion.png"
       },
       {
         "pagePath": "pages/shake/shake",
         "text": "Shake",
-        "iconPath":  "pages/36w/36w/Asset 15shakewh.png",
-        "selectedIconPath": "pages/36w/36w/Asset 16shakeblue.png"
+        "iconPath":  "pages/36w/32w/shakeoff.png",
+        "selectedIconPath": "pages/36w/32w/shakeon.png"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "Profile",
-        "iconPath":  "pages/36w/36w/Asset 19prowh.png",
-        "selectedIconPath": "pages/36w/36w/Asset 20problue.png"
+        "iconPath":  "pages/36w/32w/prooff.png",
+        "selectedIconPath": "pages/36w/32w/homeclick.png"
       }
     ]
   },

@@ -1,12 +1,7 @@
-// pages/shake/shake.js
-// var socketOpen = false;
-// var count = 0;
-// var SocketTask;
-// var url = 'xxxx';
 const app = getApp()
 const base_url = app.globalData.base_url;
 Page({
-
+  
   /**
    * Page initial data
    */
@@ -14,11 +9,8 @@ Page({
     img_url:"../images/heshaker.png",
     shakeY: false,
     page: false,
-    hasResutl:-1,
-    bar_state:0,
-    winWidth:0,
-    winHeight:0,
-    loading:"https://www.demomaster.cn/eatbar/public/static/img/yaoyiyao/small_loading.gif"
+    loading:"https://www.demomaster.cn/eatbar/public/static/img/yaoyiyao/small_loading.gif",
+    button: false,
 
   },
   
@@ -50,18 +42,24 @@ Page({
             shakeY: false,
             page: true
         })
-        //set false after shaking 3 s
-        var context = wx.createContext()
-        context.rect(5, 5, 25, 15)
-        context.stroke()
-        context.drawImage()
-        wx.drawCanvas({
-          canvasId: 'myCanvas',
-          actions: context.getActions()
-        })
-          // wx.navigateTo({
-          //   url: `/pages/recipe/recipe?id=${page.data.rand}`,
-          // })
+        wx.request({
+          url: `${base_url}/recipes/${page.data.rand}`,
+           method: 'GET',
+           success(res) {
+             page.setData({
+               recipe: res.data.recipe,
+             });
+            }
+          })
+        page.initAnimation();
+          setTimeout(function () {
+            page.startAnimation();
+            setTimeout(function () {
+              page.setData({
+                button: true
+              })
+            }, 5000)  
+          }, 1000) 
          }, 3000) 
   },
 
@@ -74,51 +72,25 @@ Page({
     });
   },
 
-
-
-
-
-
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady: function () {
-    let page = this;
-    page.initAnimation();
-
-    
+  reShake: function(e) {
+    this.setData({
+      page: false,
+      button: false
+    })
   },
 
-  /**
-   * Lifecycle function--Called when page show
-   */
+  goToShow: function(e) {
+    const page = this
+    wx.navigateTo({
+      url: `/pages/recipe/recipe?id=${page.data.rand}`,
+    })
+  },
+
+
+  onReady: function () {  
+  },
   onShow: function () {
-    var that = this;
-    //获取系统信息 
-    // wx.getSystemInfo({
-    //   success: function (res) {
-    //     that.setData({
-    //       winWidth: res.windowWidth,
-    //       winHeight: res.windowHeight
-    //     });
-    //   }
-    // });
-    // wx.downloadFile({
-    //   url: that.data.img_url,
-    //   success: function (sres) {
-    //     console.log(sres);
-    //   }, fail: function (fres) {
- 
-    //   }
-    // })
-    setTimeout(function () {
-      that.startAnimation()
-     }, 5000) 
-   
   },
-  
-  
   initAnimation: function () {
     var that = this;
     //实例化一个动画
@@ -179,9 +151,6 @@ Page({
       }
     })
   },
-  /**
-  *位移
-  */
   startAnimation: function () {
     var that = this
     //x轴位移100px

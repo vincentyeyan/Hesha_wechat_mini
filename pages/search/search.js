@@ -35,6 +35,7 @@ Page({
     url: `${base_url}/recipes?query=${word_arr}`,
      method: 'GET',
      success(res) {
+       console.log(res)
        const recipes = res.data;
        page.setData({
          recipes: recipes,

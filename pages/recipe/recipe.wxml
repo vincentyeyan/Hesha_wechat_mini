@@ -1,6 +1,6 @@
 <!--pages/recipe/recipe.wxml-->
 <view class="share-post-box">
-<image class="photo-camera" bindtap="chooseImage" src="../images/photo-camera.png">Post</image>
+<!-- <image class="photo-camera" bindtap="chooseImage" src="../images/photo-camera.png">Post</image> -->
 </view>
 <view class="cocktail-img">
   <image class='img' src="{{recipe.image}}"></image>
@@ -46,7 +46,7 @@
 
 
 
-
+<!-- 
 <view class="row">
   <view class="card-product" wx:for="{{posts}}" wx:for-item="post" data-id="{{post.id}}" bindtap="goToPost">
     <view class="avabox">
@@ -57,7 +57,7 @@
 
   </view>
   <view wx:for="{{hosts.length%2}}" class="card-product-1"></view>
-</view>
+</view> -->
 
 
 

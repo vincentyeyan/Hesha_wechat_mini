@@ -112,6 +112,7 @@ Page({
   },
 
   multiSearch: function(e) {
+    console.log('generate recipe')
     const page = this
     var searchKeyword = ""
     const arrArr = page.data.nineblocks
@@ -125,6 +126,7 @@ Page({
     url: `${base_url}/recipes?query=${searchKeyword}`,
      method: 'GET',
      success(res) {
+       console.log('multisearch result', res)
        const recipes = res.data;
        page.setData({
          recipes: recipes,

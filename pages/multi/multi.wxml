@@ -1,5 +1,5 @@
 <view class="banner">
-<view class="titleee">Select Ingredients You Have</view>
+<view class="titleee">Select the ingredients you have at home</view>
 <view class="mainFrame">
   <swiper style="height: 98%;" class="container" indicator-dots="{{indicatorDots}}"  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{nineblocks}}" wx:for-item="nineblock" wx:for-index="i">

@@ -22,6 +22,13 @@ Page({
     })
   },
 
+  goToRecipe: function (e) {
+    let id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `/pages/recipe/recipe?id=${id}`,
+    })
+  },
+
   /**
    * Lifecycle function--Called when page is initially rendered
    */

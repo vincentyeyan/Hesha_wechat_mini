@@ -157,7 +157,7 @@ text-overflow: ellipsis;
   align-items:center;
   margin-top: 10rpx;
   margin-bottom: 40rpx;
- margin-left:13rpx;
+  margin-left:13rpx;
   background-color:rgb(240, 240, 240);
   box-shadow: 2px 2px 4px rgba(82, 82, 82, 0.2);
   width: 608rpx;

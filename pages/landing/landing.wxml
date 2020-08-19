@@ -13,6 +13,6 @@
 
 <drinks drinks="{{sours}}" label="Sours" />
 <drinks drinks="{{classics}}" label="Retro" />
-<drinks drinks="{{bitters}}" label="Bitter" />
+<drinks drinks="{{bitters}}" label="Bitter"/>
 <drinks drinks="{{fruitys}}" label="Sweet" />
 <drinks drinks="{{fizzys}}" label="Fizzy" />

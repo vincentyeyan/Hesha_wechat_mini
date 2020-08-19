@@ -99,8 +99,6 @@ Page({
     
   },
 
-
-
   goToPost: function (e) {
     let id = e.currentTarget.dataset.id
     wx.navigateTo({

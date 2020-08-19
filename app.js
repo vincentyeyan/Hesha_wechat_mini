@@ -7,9 +7,12 @@ AV.init({
 });
 App({
   onLaunch: function () {
+    console.log('logging in')
+    let page = this
     wx.login({
-      success: (res) => {
+      success (res) {
         console.log('login', res)
+
       wx.request({
 
          url: "https://hesha.wogengapp.cn/api/v1/login",
@@ -31,9 +34,9 @@ App({
   globalData: {
     userInfo: null,
     userId: null,
+
     //base_url: "http://localhost:3000/api/v1"
     base_url: "https://hesha.wogengapp.cn/api/v1" 
-
 
     }
 })

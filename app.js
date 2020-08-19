@@ -23,7 +23,7 @@ App({
         },
       success: (res) => {
       console.log('login res', res)
-        this.globalData.userId = res.data.userId
+        page.globalData.userId = res.data.userId
       }
       })
       }

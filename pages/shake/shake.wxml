@@ -34,7 +34,7 @@
   </view>
   </view>
  
-  <button wx:if="{{button}}" class='btn_test' bindtap='reShake' >再来一次</button>
+  <button wx:if="{{button}}" class='btn_test' bindtap='reShake' >Shake Again</button>
  
 </view>
 

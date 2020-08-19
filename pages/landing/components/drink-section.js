@@ -14,6 +14,12 @@ Component({
   data: {
 
   },
+  GoToRecipe: function(event){
+    let id = event.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `../recipe/recipe?id=${id}`
+    })
+  },
 
   /**
    * Component methods

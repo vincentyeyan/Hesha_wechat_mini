@@ -47,24 +47,26 @@ Page({
    */
   onShow: function () {
     let page = this
-    wx.request({
-      url: `${base_url}/recipes`,
-      method: 'GET',
-      success(res) {
-        const recipes = res.data.recipes; //array of hashes
-        // console.log(1221,recipes)
-        const likedRecipes = []
-        recipes.forEach((recipe) => {
-          if (recipe.liked == true) {
-            likedRecipes.push(recipe);
-          }
-        })
-        page.setData({
-          recipes: likedRecipes
-        });
+    // let userId = app.globalData.userId
+    // console.log(9987,userId)
+    // wx.request({
+    //   url: `${base_url}/profile?user_id=${userId}`,
+    //   method: 'GET',
+    //   success(res) {
+    //     const recipes = res.data; //array of hashes
+    //     console.log(1221,recipes)
+        // const likedRecipes = []
+        // recipes.forEach((recipe) => {
+        //   if (liked == true) {
+        //     likedRecipes.push(recipe);
+        //   }
+        // })
+        // page.setData({
+        //   recipes: likedRecipes
+        // });
       }
-    })
-  },
+   
+
 
   /**
    * Lifecycle function--Called when page hide

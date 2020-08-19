@@ -8,7 +8,7 @@
     bindtouchend="touchEnd">
     <view class="scroll-drinks">
       <view wx:for="{{drinks}}" wx:key="{{item}}" class="card-box" id="card_{{index}}">
-        <view class="card" bindtap="GoToRecipee">
+        <view class="card" bindtap="GoToRecipe">
           <image class="cardd" src="{{item.image}}" mode="aspectFit"></image>
           <view class="text-boxx">{{item.name}}</view>
         </view>

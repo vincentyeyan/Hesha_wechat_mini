@@ -14,15 +14,6 @@ Page({
     liked: false,
 
   },
-  // likeButton: function(){
-  //   const recipes = app.globalData.recipes;
-  //   let r = this.data.recipe
-  //   r["liked"] = true
-  //     this.setData({
-  //       recipe: r
-  //     })
-  //     wx.setStorageSync('liked', true)
-  // },
   likeRecipe: function(){
     let page = this;
     let recipe = page.data.recipe;

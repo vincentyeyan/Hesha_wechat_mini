@@ -11,8 +11,10 @@ App({
       success: (res) => {
         console.log('login', res)
       wx.request({
+
         url: "https://hesha.wogengapp.cn/api/v1/login",
         // url: "http://localhost:3000/api/v1/login",
+
         method: 'post',
         data: {
           code: res.code
@@ -31,6 +33,7 @@ App({
   globalData: {
     userInfo: null,
     userId: null,
+
     // base_url: "http://localhost:3000/api/v1"
     base_url: "https://hesha.wogengapp.cn/api/v1" 
     }

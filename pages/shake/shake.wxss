@@ -1,13 +1,14 @@
  /* pages/shake/shake.wxss */
 @import "/utils/animate.wxss";
 page{
+  background-color: #2d3132;
   height: 100%;
 }
 .panel_root{
-  background-color:white;
+  background-color: red;
   height: 100%;
 }
-/* .view_top{
+.view_top{
   position: absolute;
   display: block;
   height: 40%;
@@ -23,7 +24,7 @@ page{
   width: 100%;
   background-color: #2d3132;
   text-align: center;
-} */
+}
 .img_top{
   position: absolute;
   bottom: 0;
@@ -97,5 +98,5 @@ page{
   background: white;
   border-radius: .3rem;
   padding: 1rem;
-  color: black; 
+  color: black;
 }

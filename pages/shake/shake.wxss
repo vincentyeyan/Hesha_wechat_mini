@@ -115,6 +115,9 @@ page{
 
 .image {
  margin-top: 150px;
+ width: 240px;
+height: 220px;
+
 }
 
 .card {

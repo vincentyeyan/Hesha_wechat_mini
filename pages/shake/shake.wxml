@@ -11,16 +11,30 @@
   <view class='panel_bottom'>
   <view class='panel_content' style="display:{{bar_state==0?'block':'none'}}">
     <view class='panel_loading' style="display:{{hasResutl==0?'block':'none'}}">
-    <image class='img_loading' src='{{loading}}'></image><text class='text_lable'>正在搜索同意时刻摇晃手机的人</text>
+    <image class='img_loading' src='{{loading}}'></image><text class='text_lable'>finding the recipe for you</text>
     </view>
-    <view class='panel_result'  bindtap="goToShow" style="display:{{hasResutl==1?'block':'none'}}">
-    哈哈
+    
+
+     <view wx:if="{{button}}" class="card-box" bindtap="goToShow" >
+    <view class="index-card">
+       <view class="imagebox">
+        <image class="img" src="{{recipe.image}}"></image>
+       </view>
+        <view class="text">
+          <view class="h2">{{recipe.name}}</view>
+          <view class="p2">{{recipe.ingredients[0][1]}}{{" and "}}{{recipe.ingredients[1][1]}}</view>
+          <view class="p1">{{recipe.ingredients.length}}{{" ingredients"}}</view>
+        </view>
     </view>
+  </view>
+
+
+  
   </view>
   </view>
   </view>
  
-  <button wx:if="{{button}}" class='btn_test' bindtap='reShake' >再来一次</button>
+  <button wx:if="{{button}}" class='btn_test' bindtap='reShake' >Shake Again</button>
  
 </view>
 
@@ -29,10 +43,10 @@
 <view wx:else >
 
   <view class="text {{shakeY? ' animate__animated animate__infinite animate__shakeY' : ''}}">
- <image class="img" src="{{img_url}}"> 
+ <image class="image" src="{{img_url}}"> 
 </image>
 </view> 
-<button bindtap="shake" type="primary">shake</button> 
+ <button bindtap="shake" type="primary">shake</button> 
 
 
  </view> 

@@ -48,16 +48,17 @@ Page({
   
   },
   formSubmit: function(event) {
-    console.log(181,event)
+    console.log(1891,event)
     let description = event.detail.value.description;
     let recipe = this.data.recipeId;
     let id = this.data.id;
+    let image = event.detail.value.tempFilePaths
     let post = {
       user_id: app.globalData.userId,
       recipe: recipe,
       description: description,
-      recipe:recipe
-
+      recipe:recipe,
+      image:image
     }
     console.log(post)
     wx.request({
@@ -120,32 +121,16 @@ Page({
   onShareAppMessage: function () {
 
   },
-
-  chooseImage: function chooseimage() {
-    let page = this;
-    wx.chooseImage({
-      count: 1, 
-      sizeType: ['original', 'compressed'], 
-      sourceType: ['album', 'camera'], 
-      success: function success(res) {
-        wx.showToast({
-          title: 'Uploading...',
-          icon: 'loading',
-          mask: true,
-          duration: 1000
-        });
-        page.setData({
-          tempFilePaths: res.tempFilePaths
-        });
-      }
-    });
-  },
   takePhoto: function() {
+    let page = this;
     wx.chooseImage({
       count: 1,
       sizeType: ['original', 'compressed'],
       sourceType: ['album', 'camera'],
       success: function(res) {
+        page.setData({
+          tempFilePaths: res.tempFilePaths
+        });
         let tempFilePath = res.tempFilePaths[0];
         new AV.File('file-name', {
           blob: {
@@ -154,7 +139,9 @@ Page({
         }).save().then(
           file => console.log(file.url())
         ).catch(console.error);
+        
       }
+      
     });
   }
 })

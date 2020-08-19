@@ -20,12 +20,13 @@
 .searchbar{
   display: flex;
   align-items:center;
-  margin-top: 60rpx;
   background-color:rgb(240, 240, 240);
   box-shadow: 2px 2px 4px rgba(82, 82, 82, 0.2);
-  width: 600rpx;
+  width: 608rpx;
   padding-left: 40rpx;
   height: 60rpx;
+  margin-top: 10rpx;
+  margin-right: 12rpx;
 }
 
 .banner-wrapper {
@@ -33,12 +34,11 @@
   justify-content: center;
   position: relative;
   width: 100vw;
-  height: 380rpx;
 }
 
 .section {
-  margin-top: 60rpx;
   margin-bottom: 10rpx;
+  height:100rpx;
 }
 
 .card-box{
@@ -46,6 +46,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 300rpx;
 }
 
 .index-card {

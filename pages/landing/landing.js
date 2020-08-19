@@ -107,6 +107,13 @@ Page({
       url: `/pages/post/post?id=${id}`,
     })
   },
+  goToRecipe: function (e) {
+    console.log(999,e)
+    let id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `/pages/recipe/recipe?id=${id}`,
+    })
+  },
 
   onShareAppMessage(){
     // return {

@@ -11,8 +11,8 @@
   </view>
 </view> 
 
-<drinks drinks="{{sours}}" label="Sours" />
-<drinks drinks="{{classics}}" label="Retro"/>
-<drinks drinks="{{bitters}}" label="Bitter"/>
-<drinks drinks="{{fruitys}}" label="Sweet" />
-<drinks drinks="{{fizzys}}" label="Fizzy" />
+<drinks drinks="{{sours}}" label="Sours" bindtap="goToRecipe"/>
+<drinks drinks="{{classics}}" label="Retro" bindtap="goToRecipe"/>
+<drinks drinks="{{bitters}}" label="Bitter" bindtap="goToRecipe"/>
+<drinks drinks="{{fruitys}}" label="Sweet" bindtap="goToRecipe"/>
+<drinks drinks="{{fizzys}}" label="Fizzy" bindtap="goToRecipe"/>

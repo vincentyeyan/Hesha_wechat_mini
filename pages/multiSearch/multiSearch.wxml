@@ -6,7 +6,7 @@
  </view>
  
   <view class="card-box">
-    <view class="index-card" wx:for="{{recipes.recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}" bindtap="goToRecipe">
+    <view class="index-card" wx:for="{{recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}" bindtap="goToRecipe">
        <view class="imagebox">
         <image class="img" src="{{recipe.image}}"></image>
        </view>

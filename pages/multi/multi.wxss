@@ -4,7 +4,7 @@ page{
 .active  {
   border-style: solid;
   border-width: 6rpx;
-  border-color:#68C8F2;
+  border-color: #FF6633;
 
   }
 
@@ -36,11 +36,14 @@ page{
   /* background-color:#f3f3f3; */
 }
 .titleee{
+  display: flex;
+ justify-content: center;
   margin-top: 80rpx;
-  font-weight: 700;
-  margin-left: 60rpx;
-  font-size: 50rpx ;
-  color: #68C8F2;
+  font-weight: light;
+  margin-left: 40rpx;
+  margin-right:40rpx;
+  font-size: 34rpx ;
+  color: #fff1ec;
 }
 
 .box {
@@ -94,7 +97,7 @@ color: #e4e4e4;
   right: 0;
   bottom: 0;
   width: 60vw;
-  height: 7vh;
+  height: 6vh;
   margin-bottom: 50rpx;
-  background-color:#68C8F2;
+  background-color: #FF6633;
 }

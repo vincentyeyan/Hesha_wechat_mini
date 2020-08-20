@@ -155,9 +155,9 @@ text-overflow: ellipsis;
   color: rgb(129, 129, 129);
   display: flex;
   align-items:center;
-  margin-top: 10rpx;
+  margin-top: 30rpx;
   margin-bottom: 40rpx;
-  margin-left:13rpx;
+  
   background-color:rgb(240, 240, 240);
   box-shadow: 2px 2px 4px rgba(82, 82, 82, 0.2);
   width: 608rpx;
@@ -168,25 +168,25 @@ text-overflow: ellipsis;
 .multisearch-tool{
   display: flex;
   align-items:center;
-  margin: 0 20rpx 0rpx 0rpx;
+  margin: 0 auto;
   width: 650rpx;
   height: 200rpx;
-  padding-left: 17rpx;
   /* opacity: 0.75; */
   color:white;
   font-size: 26rpx;
+  border-radius: 10rpx;
 }
 .newbanner{
   /* display: flex; */
   align-items: center;
   justify-content: center;
-  margin:auto 0;
+  margin-top: 60rpx;
   border-radius: 8rpx;
 }
 .categories-card {
   display: flex;
   align-items:center;
-  margin: 20rpx 6rpx 2rpx 43rpx;
+  margin: 60rpx 2rpx 2rpx 40rpx;
   border-radius: 8rpx; 
   width: 650rpx;
   height: 220rpx;
@@ -298,3 +298,28 @@ text-overflow: ellipsis;
   /* margin-right: 3000rpx;
   margin-top: 500rpx; */
 }
+.bannerbox {
+  display: flex;
+  justify-content: center;
+}
+
+.logo { 
+  margin-top: 200rpx;
+  height: 360rpx;
+  width: 360rpx;
+}
+
+.imagebox {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  margin-top: 100rpx;
+  
+}
+
+/* .section--catergories-card {
+margin-top: 40rpx;
+padding-top: 10rpx;
+} */

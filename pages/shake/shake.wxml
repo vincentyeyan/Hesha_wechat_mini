@@ -2,12 +2,12 @@
 
 <view class='panel_root'>
   <view class='view_top' animation="{{animation1}}">
-  <image class='img_top'  src='{{img_url}}'></image>
+  <image style="aspectFit" class='img_top'  src='{{img_url}}'></image>
   <view class='win_line_top' style="display:{{bar_state==1?'block':'none'}}"></view>
   </view>
   <view class='view_bottom' animation="{{animation2}}">
   <view class='win_line_bottom' style="display:{{bar_state==1?'block':'none'}}"></view>
-  <image class='img_bottom' src='{{img_url}}'></image>
+  <image style="aspectFit" class='img_bottom' src='{{img_url}}'></image>
   <view class='panel_bottom'>
   <view class='panel_content' style="display:{{bar_state==0?'block':'none'}}">
     
@@ -41,22 +41,24 @@
       <text class='text_lable'>finding the recipe for you</text> -->
     </view> 
     </view>
-    <button wx:if="{{button}}" bindtap='reShake' >Shake Again</button>
+    <button class="button" wx:if="{{button}}" bindtap='reShake' >Shake again</button>
   </view>
 </view>
 
 </view>
 
 <view wx:else >
-
-<button class="bu" open-type="share" bindtap="onShareAppMessage">
-<image class="im" src="../images/share.png">Share</image> 
-</button> 
+  <view class="buttonbox">
+    <button hover-class="none" class="mini-btn" type="default" size="mini"class="bu" open-type="share" bindtap="onShareAppMessage">
+      <image class="im" src="../images/share.png">Share</image> 
+    </button> 
+  </view> 
 
   <view class="text {{shakeY? ' animate__animated animate__infinite animate__shakeY' : ''}}">
   
- <image class="image" src="{{img_url}}"> 
-</image>
+<!-- <view class="shakepage"> -->
+  <image class="image" src="{{img_url}}"> </image>
+ <!-- </view> -->
 </view> 
 
  <!-- <button class="but" bindtap="shake" type="primary">shake</button>   -->

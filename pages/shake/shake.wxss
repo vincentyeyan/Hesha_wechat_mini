@@ -3,8 +3,8 @@
 
 
 page{
-  background-color: #2d3132;
-  height: 100%;
+  background-color: #f1f1f1;
+  
 }
 
 
@@ -15,12 +15,30 @@ page{
 
 
 .bu {
-  
-  background-color: white;
+margin-top: 40rpx;
+margin-right: 40rpx;
+width: 40rpx;
+height: 44rpx;
+position: absolute;
+z-index: 12;
+}
+.buttonbox {
+  padding-right: 40rpx;
+  display: flex;
+  justify-content: flex-end;
+  height: 100rpx;
+  width: 95vw;
   position: absolute;
-  width: 0px;
-
+  z-index: 15;
  
+}
+
+
+
+
+.shakepage {
+z-index: 11;
+
 }
 
 .panel_root{
@@ -36,7 +54,7 @@ page{
   display: block;
   height: 40%;
   width: 100%;
-  background-color: #2d3132;
+  background-color: #f1f1f1;
   text-align: center;
 }
 .view_bottom{
@@ -45,7 +63,7 @@ page{
   display: block;
   height: 60%;
   width: 100%;
-  background-color: #2d3132;
+  background-color: #f1f1f1;
   text-align: center;
 }
 .img_top{
@@ -54,7 +72,7 @@ page{
   width: 14.4rem;
   height: 12.6rem;
   margin-bottom: -6.3rem;
-  margin-left: -7.2rem;
+  margin-left: -8.7rem;
   clip:rect(0px,14.4rem,6.3rem,0px);
 }
 .img_bottom{
@@ -63,7 +81,7 @@ page{
   width: 14.4rem;
   height: 12.6rem;
   margin-top: -6.3rem;
-  margin-left: -7.2rem;
+  margin-left: -8.7rem;
   clip:rect(6.3rem,14.4rem,360px,0px);
 }
 
@@ -80,8 +98,7 @@ page{
   height: .3rem;
   width: 100%;
   display: block;
-  background-color: gray;
-  border-bottom: 1px solid black;
+  
 }
 .win_line_bottom{
   position: absolute;
@@ -89,8 +106,7 @@ page{
   height: .3rem;
   width: 100%;
   display: block;
-  background-color: gray;
-  border-bottom: 1px top black;
+  
 }
 .panel_bottom{
   width: 100%;
@@ -114,21 +130,22 @@ page{
 }
 
 .image {
-  margin-top: 144px;
-  width: 227px;
-  height: 207px;
-  margin-left: 73px;
-
-  
+  /* margin-top: 230rpx; */
+  height: 12.6rem;
+  /* height: 207rpx;
+  margin-left: 90rpx; */
+  margin-top: 11.4rem;
+  margin-left: 4.3rem;
+  width: 14.4rem;
   
 }
 
 .but {
-  margin-top: 200px;
+  margin-top: 200rpx;
 }
 
 .card {
-  margin-bottom: 80px;
+  margin-bottom: 80rpx;
 }
 
  
@@ -136,16 +153,17 @@ page{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   color: black;
-  margin-bottom: 400px;
+  margin-bottom: 800rpx;
 }
 
 .index-card {
   display:flex;
+  justify-content: flex-start;
   margin-bottom: 32rpx;
   background-color: rgb(255, 255, 255);
-  box-shadow: 2rpx 2rpx 40rpx rgba(0,0,0,0.1);
+  box-shadow: 2rpx 2rpx 40rpx rgba(0,0,0,0.2);
   width: 90vw;
   height: 18vh;
   border-radius: 8rpx;
@@ -179,6 +197,8 @@ page{
 
 
 .h2 {
+  display: flex;
+  justify-content: flex-start;
   margin-top: 20rpx;
   margin-bottom: 10rpx;
   font-weight:light;
@@ -189,6 +209,8 @@ page{
 
 
 .p1 {
+  display: flex;
+  justify-content: flex-start;
   font-size: 22rpx;
   font-weight: light;
   margin-top: 24rpx;
@@ -203,14 +225,22 @@ page{
 } 
 
 .p2 {
+  display: flex;
+  justify-content: flex-start;
   font-size: 24rpx;
   font-weight: light;
   margin-top: 10rpx;
   margin-left: 20rpx;
   margin-left: 20rpx; 
-  word-wrap: wrap;
+  /* word-wrap: wrap; */
   white-space: nowrap; 
   width: 320rpx; 
   overflow: hidden;
   text-overflow: ellipsis; 
 } 
+
+.button {
+  background-color: #e78317;
+  color: white;
+  text-shadow: rgba(0,0,0,0.9);
+}

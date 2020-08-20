@@ -162,7 +162,7 @@ text-overflow: ellipsis;
 .multisearch-tool{
   display: flex;
   align-items:center;
-  margin-bottom: 60rpx;
+  margin-bottom: 40rpx;
   width: 650rpx;
   height: 200rpx;
   /* opacity: 0.75; */
@@ -180,9 +180,9 @@ text-overflow: ellipsis;
 .categories-card {
   display: flex;
   align-items:center;
-  margin: 20rpx 2rpx 40rpx 40rpx;
+  margin: 20rpx 40rpx 40rpx 40rpx;
   border-radius: 8rpx; 
-  width: 100%;
+  width: 86vw;
   height: 220rpx;
   padding-left: 5rpx;
   color:white;
@@ -247,7 +247,7 @@ text-overflow: ellipsis;
 .scroll-box{
   white-space: nowrap;
   height: 270rpx;
-  width: 108%;
+  width: 100%;
 }
  
 .card-box{

@@ -1,9 +1,28 @@
  /* pages/shake/shake.wxss */
 @import "/utils/animate.wxss";
+
+
 page{
   background-color: #2d3132;
   height: 100%;
 }
+
+
+.im {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+
+.bu {
+  
+  background-color: white;
+  position: absolute;
+  width: 0px;
+
+ 
+}
+
 .panel_root{
   background-color: red;
   height: 100%;
@@ -32,39 +51,20 @@ page{
 .img_top{
   position: absolute;
   bottom: 0;
-  width: 16rem;
-  height: 15rem;
-  margin-bottom: -7em;
-  margin-left: -8rem;
-  clip:rect(0px,16rem,7rem,0px);
+  width: 14.4rem;
+  height: 12.6rem;
+  margin-bottom: -6.3rem;
+  margin-left: -7.2rem;
+  clip:rect(0px,14.4rem,6.3rem,0px);
 }
 .img_bottom{
   position: absolute;
   top:0;
-  width: 16rem;
-  height: 15rem;
-  margin-top: -7rem;
-  margin-left: -8rem;
-  clip:rect(7rem,16rem,400px,0px);
-}
-
-.img_top{
-  position: absolute;
-  bottom: 0;
-  width: 16rem;
-  height: 14rem;
-  margin-bottom: -7rem;
-  margin-left: -8rem;
-  clip:rect(0px,16rem,7rem,0px);
-}
-.img_bottom{
-  position: absolute;
-  top:0;
-  width: 16rem;
-  height: 14rem;
-  margin-top: -7rem;
-  margin-left: -8rem;
-  clip:rect(7rem,16rem,400px,0px);
+  width: 14.4rem;
+  height: 12.6rem;
+  margin-top: -6.3rem;
+  margin-left: -7.2rem;
+  clip:rect(6.3rem,14.4rem,360px,0px);
 }
 
 
@@ -114,10 +114,17 @@ page{
 }
 
 .image {
- margin-top: 150px;
- width: 240px;
-height: 220px;
+  margin-top: 144px;
+  width: 227px;
+  height: 207px;
+  margin-left: 73px;
 
+  
+  
+}
+
+.but {
+  margin-top: 200px;
 }
 
 .card {

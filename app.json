@@ -4,16 +4,11 @@
     "pages/landing/landing",
     "pages/search/search",
     "pages/multiSearch/multiSearch",
-    "pages/popup/popup",
     "pages/logs/logs",
-    "pages/singleTag/singleTag",
-    "pages/post/post",
     "pages/recipe/recipe",
     "pages/cocktail/cocktail",
     "pages/category/category",
-    "pages/createpost/createpost",
     "pages/profile/profile",
-    "pages/camera/camera",
     "pages/multi/multi",
     "pages/shake/shake"
     

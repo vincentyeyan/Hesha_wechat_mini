@@ -1,2 +1,25 @@
 @import '/app';
 @import '../landing';
+
+.label {
+  margin-left: 80rpx;
+  margin-top: 10rpx;
+  margin-bottom: 40rpx;
+  font-size: 32rpx;
+  font-weight: light;
+  color: rgb(83, 83, 83);
+}
+
+.text-boxx {
+  font-size: 26rpx;
+  font-weight: lighter;
+ 
+}
+
+.scroll-box {
+  padding-right: 50rpx;
+}
+
+.cardd {
+
+}

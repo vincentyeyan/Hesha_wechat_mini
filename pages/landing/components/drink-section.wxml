@@ -1,7 +1,6 @@
+<view class="label">{{label}}</view>
 <view class="categories-card">
-  <view class="category-card sours">
-    <view>{{label}}</view>
-  </view>
+ 
   <scroll-view class="scroll-box" scroll-x scroll-with-animation 
     scroll-into-view="{{toView}}"
     bindtouchstart="touchStart"

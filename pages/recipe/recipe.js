@@ -1,6 +1,7 @@
 // pages/recipe/recipe.js
 const app = getApp();
 const base_url = app.globalData.base_url;
+let likeList = app.globalData.likeList;
 Page({
   /**
    * Page initial data
@@ -16,6 +17,19 @@ Page({
   },
   likeRecipe: function(){
     let page = this;
+    const id = page.data.recipe.id;
+    if (likeList.includes(id)) {
+      const index = likeList.indexOf(id);
+      if (index > -1) {
+        likeList.splice(index, 1);
+      }
+    }
+    else {
+      likeList.push(id);
+    }
+    console.log(likeList)
+
+
     let recipe = page.data.recipe;
     let userId = app.globalData.userId
     console.log(userId)
@@ -47,9 +61,17 @@ Page({
           recipe: recipe,
           posts: posts
         })
+        if (likeList.includes(page.data.recipe.id)){
+          page.setData({
+            liked: true
+          })
+        }
       }
     })
+  
     },
+   
+
     chooseImage: function() {
       var page = this;
       wx.chooseImage({

@@ -47,24 +47,19 @@ Page({
    */
   onShow: function () {
     let page = this
-    // let userId = app.globalData.userId
-    // console.log(9987,userId)
-    // wx.request({
-    //   url: `${base_url}/profile?user_id=${userId}`,
-    //   method: 'GET',
-    //   success(res) {
-    //     const recipes = res.data; //array of hashes
-    //     console.log(1221,recipes)
-        // const likedRecipes = []
-        // recipes.forEach((recipe) => {
-        //   if (liked == true) {
-        //     likedRecipes.push(recipe);
-        //   }
-        // })
-        // page.setData({
-        //   recipes: likedRecipes
-        // });
+    let userId = app.globalData.userId
+    console.log(996,userId)
+    wx.request({
+      url: `${base_url}/profile?user_id=${userId}`,
+      method: 'GET',
+      success(res) {
+        const recipes = res.data; //array of hashes
+        page.setData({
+          recipes: recipes
+        });
       },
+    })
+  },
    
 
 
@@ -73,6 +68,6 @@ Page({
    */
   onHide: function () {
 
-  },
+  }
 
 })

@@ -37,8 +37,8 @@
   <view class="btn_test">
     <view class="load">
      <view class='panel_loading' style="display:{{hasResutl==0?'block':'none'}}">
-      <image class='img_loading' src='{{loading}}'></image>
-      <text class='text_lable'>finding the recipe for you</text>
+      <!-- <image class='img_loading' src='{{loading}}'></image>
+      <text class='text_lable'>finding the recipe for you</text> -->
     </view> 
     </view>
     <button wx:if="{{button}}" bindtap='reShake' >Shake Again</button>
@@ -49,11 +49,17 @@
 
 <view wx:else >
 
+<button class="bu" open-type="share" bindtap="onShareAppMessage">
+<image class="im" src="../images/share.png">Share</image> 
+</button> 
+
   <view class="text {{shakeY? ' animate__animated animate__infinite animate__shakeY' : ''}}">
+  
  <image class="image" src="{{img_url}}"> 
 </image>
 </view> 
- <!-- <button bindtap="shake" type="primary">shake</button>  -->
+
+ <button class="but" bindtap="shake" type="primary">shake</button>  
 
 
  </view> 

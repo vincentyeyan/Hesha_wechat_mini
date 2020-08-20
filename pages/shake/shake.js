@@ -58,9 +58,9 @@ Page({
               page.setData({
                 button: true
               })
-            }, 5000)  
+            }, 2000)  
           }, 1000) 
-         }, 3000) 
+         }, 2000) 
   },
 
   onLoad: function (options) {
@@ -169,7 +169,7 @@ Page({
           that.setData({
             hasResutl: 1
           })
-        }, 4000)
+        }, 1000)
       }, 400)
     } else {
       h1 = "25%";

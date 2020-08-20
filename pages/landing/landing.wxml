@@ -1,6 +1,6 @@
 <!--pages/posts/posts.wxml-->
 
-<!-- <block wx-if="{{finishLoading}}"> -->
+
 <view class="section">
   <view class="section__title">
 
@@ -11,18 +11,8 @@
   </view>
 </view> 
 
-  <drinks drinks="{{sours}}" label="Sours" />
-  <drinks drinks="{{classics}}" label="Retro" />
+  <drinks drinks="{{sours}}" label="Sour" />
+  <drinks drinks="{{classics}}" label="Classic" />
   <drinks drinks="{{bitters}}" label="Bitter"/>
   <drinks drinks="{{fruitys}}" label="Sweet" />
   <drinks drinks="{{fizzys}}" label="Fizzy" />
-<!-- </block> -->
-
-<!-- <block wx-if="{{!finishLoading}}">
-  <view class="bannerbox">
-    <image class="logo" src="../images/gifgif.gif"></image>
-  </view>
-  <view class="imagebox">
-    <image class="image" src="../images/he.png"></image>
-  </view>
-</block> -->

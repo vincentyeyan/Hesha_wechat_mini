@@ -1,0 +1,9 @@
+<!--pages/loading/loading.wxml-->
+<view class="bannerbox">
+  <image class="logo" src="../images/gifgif.gif"></image>
+</view>
+<view class="imagebox">
+  <image class="image" src="../images/he.png"></image>
+</view>
+
+

@@ -53,6 +53,7 @@ Page({
     // Lifecycle function--Called when page load
    
   onLoad: function (options) {
+    // that.launchScreen()
     const page = this
     wx.request({
     url: `${base_url}/tagged`,
@@ -71,8 +72,7 @@ Page({
     }
     })
     },
-    
-    
+  
   GoToRecipe: function(event){
     let id = event.currentTarget.dataset.id
     wx.navigateTo({
@@ -105,6 +105,15 @@ Page({
       url: `/pages/post/post?id=${id}`,
     })
   },
+
+  // launchScreen: function() {
+  //   let that = this
+  //   setTimeout(function() {
+  //     that.setData({
+  //       finshLoading: true
+  //     })
+  //   }, 1800);
+  // },
 
 
   onShareAppMessage(){

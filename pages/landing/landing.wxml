@@ -1,18 +1,28 @@
 <!--pages/posts/posts.wxml-->
 
-
+<!-- <block wx-if="{{finishLoading}}"> -->
 <view class="section">
   <view class="section__title">
 
     <view class="searchbar" bindtap="GoToSearch">Search</view>
     <view class="newbanner">
-      <image src="../images/multi.gif" bindtap="GoToMulti" class="multisearch-tool"></image>
+      <image style="aspectFill" src="../images/multi.gif" bindtap="GoToMulti" class="multisearch-tool"></image>
     </view>
   </view>
 </view> 
 
-<drinks drinks="{{sours}}" label="Sours" />
-<drinks drinks="{{classics}}" label="Retro" />
-<drinks drinks="{{bitters}}" label="Bitter"/>
-<drinks drinks="{{fruitys}}" label="Sweet" />
-<drinks drinks="{{fizzys}}" label="Fizzy" />
+  <drinks drinks="{{sours}}" label="Sours" />
+  <drinks drinks="{{classics}}" label="Retro" />
+  <drinks drinks="{{bitters}}" label="Bitter"/>
+  <drinks drinks="{{fruitys}}" label="Sweet" />
+  <drinks drinks="{{fizzys}}" label="Fizzy" />
+<!-- </block> -->
+
+<!-- <block wx-if="{{!finishLoading}}">
+  <view class="bannerbox">
+    <image class="logo" src="../images/gifgif.gif"></image>
+  </view>
+  <view class="imagebox">
+    <image class="image" src="../images/he.png"></image>
+  </view>
+</block> -->

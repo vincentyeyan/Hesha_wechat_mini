@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/loading/loading",
     "pages/landing/landing",
     "pages/search/search",
     "pages/multiSearch/multiSearch",
@@ -15,6 +16,7 @@
     "pages/camera/camera",
     "pages/multi/multi",
     "pages/shake/shake"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -29,8 +31,8 @@
       {
         "pagePath": "pages/landing/landing",
         "text": "Home",
-        "iconPath": "/pages/36w/32w/homeon.png",
-        "selectedIconPath": "/pages/36w/32w/proon.png"
+        "iconPath": "/pages/36w/32w/homeboff.png",
+        "selectedIconPath": "/pages/36w/32w/homebon.png"
       },
     {
         "pagePath": "pages/multi/multi",
@@ -48,7 +50,7 @@
         "pagePath": "pages/profile/profile",
         "text": "Profile",
         "iconPath":  "pages/36w/32w/prooff.png",
-        "selectedIconPath": "pages/36w/32w/homeclick.png"
+        "selectedIconPath": "pages/36w/32w/probon.png"
       }
     ]
   },

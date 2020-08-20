@@ -19,8 +19,8 @@
   justify-content: center;
 }
 .img-avatar {
-  height: 45px;
-  width: 45px;
+  height: 200rpx;
+  width: 200rpx;
   border-radius: 50%;
   
 }
@@ -49,6 +49,8 @@
   display: flex;
   justify-content: center;
   margin-top: 5px;
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
   }
 
   .section-line {
@@ -196,28 +198,14 @@
   z-index: 11;
 }
 
-/* .searchbar {
-  display: flex;
-  align-items:center;
-  margin: 0 auto;
-  background-color: white;
-  border-radius: 8rpx;
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
-  width: 600rpx;
-  padding-left: 40rpx;
-  height: 50rpx;
-} */
-
-/* .btn {
-  background-color: none;
-  margin-top: 30rpx;
-  color: white;
-} */
+ 
 
 .card-box {
-  margin-left:35rpx;
+  width: 100%;
+  /* margin-left:35rpx; */
   display: inline-block;
   justify-content: center;
+  background-color:#FBDEED;
 }
 
 .index-card {
@@ -228,6 +216,7 @@
   width: 90vw;
   height: 18vh;
   border-radius: 8rpx;
+  margin-left:30rpx;
 }
 .img {
   object-fit: cover;

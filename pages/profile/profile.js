@@ -9,6 +9,7 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   onLoad: function() {
+    let page = this
     // 查看是否授权
     wx.getSetting({
       success (res){
@@ -16,18 +17,19 @@ Page({
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称
           wx.getUserInfo({
             success: function(res) {
-              console.log(res.userInfo)
+              console.log(1145,res.userInfo)
+              let userInfo = res.userInfo
+              page.setData({
+                userInfo:userInfo
+                // userNickName:nickName,
+                // avatarUrl:avatarUrl
+              })
             }
           })
         }
       }
     })
     
-  },
-  bindGetUserInfo (e) {
-    console.log(e.detail.userInfo)
-    let userInfo = e.detail.userInfo
-    this.setData(userInfo)
   },
 
   /**

@@ -59,7 +59,7 @@
 </image>
 </view> 
 
- <button class="but" bindtap="shake" type="primary">shake</button>  
+ <!-- <button class="but" bindtap="shake" type="primary">shake</button>   -->
 
 
  </view> 

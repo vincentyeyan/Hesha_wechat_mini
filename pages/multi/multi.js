@@ -103,25 +103,29 @@ Page({
 
 
 
-  searchInput: function(e) {
-    console.log(e)
-    this.setData({
-      searchKeyWord: e.detail.value
-      // .split(" ")
-    })
-  },
+  // searchInput: function(e) {
+  //   console.log(e)
+  //   this.setData({
+  //     searchKeyWord: e.detail.value
+  //     // .split(" ")
+  //   })
+  // },
 
   multiSearch: function(e) {
     console.log('generate recipe')
     const page = this
-    var searchKeyword = ""
+    let searchKeyword = ""
+    let searchArray = []
     const arrArr = page.data.nineblocks
     arrArr.forEach(function (item) {
       item.filter(item => item[2] === true)
-     .forEach(item => searchKeyword += `${item[1]} ` )
+     .forEach((item) => {
+      searchKeyword += `${item[1]} `
+      searchArray.push(item[1])
+    })
     });
-    var keywords = searchKeyword.split(" ")
     console.log(searchKeyword)
+    console.log(searchArray)
     wx.request({
     url: `${base_url}/recipes?query=${searchKeyword}`,
      method: 'GET',
@@ -130,7 +134,7 @@ Page({
        const recipes = res.data;
        page.setData({
          recipes: recipes,
-         keywords: keywords
+         keywords: searchArray
        });
        wx.navigateTo({
         url: '/pages/multiSearch/multiSearch'

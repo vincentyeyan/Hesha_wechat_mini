@@ -1,7 +1,7 @@
 <!--pages/multiSearch/multiSearch.wxml-->
  <view class="keywordmain">
  <view class="keywordbox">{{"Results for "}} </view>
-  <view class="keywords" wx:for="{{keywords}}" wx:for-item="keyword">{{keyword}},</view>
+  <view class="keywords" wx:for="{{keywords}}" wx:for-item="keyword">"{{keyword}}"</view>
 
  </view>
  

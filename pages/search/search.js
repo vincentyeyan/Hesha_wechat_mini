@@ -36,7 +36,7 @@ Page({
      method: 'GET',
      success(res) {
        console.log(res)
-       const recipes = res.data;
+       const recipes = res.data.recipes;
        page.setData({
          recipes: recipes,
        });

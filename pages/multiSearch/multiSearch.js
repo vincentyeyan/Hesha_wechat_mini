@@ -17,7 +17,7 @@ Page({
     let lastPage = getCurrentPages().slice(-2, -1)[0]
     let lastPageData = lastPage.data
       this.setData ({
-      recipes: lastPageData.recipes,
+      recipes: lastPageData.recipes.recipes,
       keywords: lastPageData.keywords
     })
   },

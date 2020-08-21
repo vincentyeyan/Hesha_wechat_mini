@@ -4,7 +4,7 @@
   <view class="banner-wrapper">
     <view class="section">
       <view class="section__title"></view>
-      <input class="searchbar" bindinput="searchInput" name="input" placeholder="Search" bindconfirm="searchForm" />
+      <input focus="true" class="searchbar" bindinput="searchInput" name="input" placeholder="Search" bindconfirm="searchForm" />
     </view>
   </view>
 

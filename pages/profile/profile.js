@@ -6,9 +6,14 @@ Page({
    * Page initial data
    */
   data: {
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    hasUserInfo: false
   },
   onLoad: function() {
+    this.getUserInfo()
+  },
+
+  getUserInfo() {
     let page = this
     // 查看是否授权
     wx.getSetting({
@@ -17,6 +22,8 @@ Page({
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称
           wx.getUserInfo({
             success: function(res) {
+              page.setData({ hasUserInfo: true })
+              console.log(1149,res)
               console.log(1145,res.userInfo)
               let userInfo = res.userInfo
               page.setData({
@@ -29,9 +36,7 @@ Page({
         }
       }
     })
-    
   },
-
   /**
    * Lifecycle function--Called when page is initially rendered
    */

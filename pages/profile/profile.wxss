@@ -20,6 +20,13 @@
   border-radius: 50%;
   
 }
+.btn-authorize {
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 
 .usernickname {
   font-size: 32rpx;
@@ -49,9 +56,6 @@
  justify-content:  center;
 }
 
-.btn-authorize {
-  margin-top: 10rpx;
-}
 
 .usernickname {
   display: flex;

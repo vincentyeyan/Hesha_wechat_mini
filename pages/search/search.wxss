@@ -58,7 +58,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 300rpx;
+  margin-bottom: 200rpx;
+  margin-top: 60rpx;
 }
 
 .index-card {

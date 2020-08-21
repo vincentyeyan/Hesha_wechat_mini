@@ -55,10 +55,13 @@
   </view> 
 
   <view class="text {{shakeY? ' animate__animated animate__infinite animate__shakeY' : ''}}">
-  
-<!-- <view class="shakepage"> -->
-  <image class="image" src="{{img_url}}"> </image>
- <!-- </view> -->
+    
+  <view class="shaker">
+    <image class="image" src="{{img_url}}"> </image>
+  </view>
+  <view class="shake">
+    <image class="logo" src="../images/shakeimg.png"></image>
+  </view>
 </view> 
 
  <!-- <button class="but" bindtap="shake" type="primary">shake</button>   -->

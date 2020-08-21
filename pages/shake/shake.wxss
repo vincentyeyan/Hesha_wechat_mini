@@ -6,6 +6,20 @@ page{
   background-color: #f1f1f1;
   
 }
+.logo {
+  width: 200rpx;
+  height: 135rpx;
+  margin-right: 30rpx;
+}
+
+.shake {
+margin-right: 100rpx;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 490rpx;
+}
 
 
 .im {

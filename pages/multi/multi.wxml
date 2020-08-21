@@ -6,15 +6,19 @@
       <swiper-item class="vol-swiper-item" bindtap="onItemClick">
 
   <view class="box">
-  <view wx:for="{{nineblock}}" wx:for-item="block" >
-  <view class="{{nineblocks[i][index][2]? 'active block':'block'}}"
-  style="background-image: url({{block[0]}}" bindtap="selectMultiple" data-id2="{{index}}" data-id1="{{i}}" >
-<!-- class="{{nineblocks[i][index][2]}}? ‘inactive’:‘active’" -->
+  <view wx:for="{{nineblock}}" wx:for-item="block" style="width: 30%;">
+    <view class="block-container">
+      <view class="{{nineblocks[i][index][2]? 'active block':'block'}}"
+      style="background-image: url({{block[0]}})" bindtap="selectMultiple" data-id2="{{index}}" data-id1="{{i}}" >
+      <!-- class="{{nineblocks[i][index][2]}}? ‘inactive’:‘active’" -->
+      </view>
+      <!-- <image src="{{block[0]}}" mode="aspectFill" 
+        class="{{nineblocks[i][index][2]? 'active block':'block'}}" 
+        bindtap="selectMultiple" data-id2="{{index}}" data-id1="{{i}}"/> -->
+    </view>
 
-    
-
-  </view>
-  <view class="item" >{{block[1]}}</view>
+      
+    <view class="item" >{{block[1]}}</view>
   </view>
   </view>
 

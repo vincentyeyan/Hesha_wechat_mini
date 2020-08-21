@@ -1,5 +1,4 @@
 <!--pages/profile/profile.wxml-->
-  <view class="blue-bar"></view>
    <view class="avatar-div">
     <image class="img-avatar" src="{{userInfo.avatarUrl}}"></image>
   </view>
@@ -9,18 +8,21 @@
  <view class="section-line">
  </view>
   <view class="recipes-box">
-
-  <view class="card-box" >
-    <view class="my-likes">Liked Recipes</view> 
-    <view class="index-card" bindtap="GoToRecipe" wx:for="{{recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}">
-    <view class="img">
-      <image class="img-class" src="{{recipe.image}}"></image>
-      </view>
-      <view class="text">
-        <view class="h2">{{recipe.name}}</view>
-        <view class="p"> {{recipe.description}}</view>
+<view class="likebox">
+<view class="my-likes">My cocktails</view>
+</view> 
+  <view class="cardcontainer">
+    <view class="card-box" >
+      <view class="index-card" bindtap="GoToRecipe" wx:for="{{recipes}}" wx:for-item="recipe" data-id="{{recipe.id}}">
+        <view class="img">
+          <image class="img-class" src="{{recipe.image}}"></image>
+        </view>
+        <view class="text">
+          <view class="h2">{{recipe.name}}</view>
+          <view class="p"> {{recipe.description}}</view>
+        </view>
       </view>
     </view>
-  </view>
+  </view> 
 </view> 
 <!-- <button class="btn-authorize" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">Log In</button> -->

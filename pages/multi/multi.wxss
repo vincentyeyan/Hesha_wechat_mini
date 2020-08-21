@@ -1,12 +1,11 @@
 /* pages/multi/multi.wxss */
 page{
-  background-color:black;}
+  background-color:rgb(255, 255, 255);}
 .active  {
   border-style: solid;
   border-width: 6rpx;
-  border-color: #FF6633;
-
-  }
+  border-color: #FF6633 !important;
+}
 
 .vol-swiper-item {
   height: 50%;
@@ -37,13 +36,14 @@ page{
 }
 .titleee{
   display: flex;
- justify-content: center;
+  justify-content: center;
   margin-top: 80rpx;
   font-weight: light;
   margin-left: 40rpx;
   margin-right:40rpx;
   font-size: 34rpx ;
-  color: #fff1ec;
+  color: #FF6633;
+  font-weight: bold;
 }
 
 .box {
@@ -57,17 +57,28 @@ page{
   justify-content: center;
 }
 
+.block-container {
+  padding: 16rpx; 
+  width: 100%; 
+  height: 250rpx;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .block {
   border-radius: 16rpx;
+  /* border-color: transparent; */
   /* background-color: rgba(0,0,0,0.2); */
-  display: flex;
+  /* display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: center; */
   background-size: cover;
   background-position: center;
-  border-style: solid;
-  border-width: 6rpx; 
-  margin:16rpx;
+  /* margin:16rpx; */
   width: 180rpx;
   height: 180rpx;
   box-shadow: 2rpx 2rpx 30rpx rgba(0,0,0,0.2);
@@ -81,7 +92,7 @@ display: flex;
 justify-content: center;
 align-items: flex-start;
 font-size: 24rpx;
-color: #e4e4e4;
+color: #000;
 
 }
 

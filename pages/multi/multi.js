@@ -49,7 +49,7 @@ Page({
 
 ['https://tse4-mm.cn.bing.net/th/id/OIP.mC7LmJBSyZkWd7LyMGsA3gAAAA?pid=Api&rs=1','Dry vermouth', false],
 
-['https://tse2-mm.cn.bing.net/th/id/OIP.r3Z6A9GxydFrd7-JQ-DPwwHaHa?pid=Api&rs=1', '`Brandy', false],
+['https://tse2-mm.cn.bing.net/th/id/OIP.r3Z6A9GxydFrd7-JQ-DPwwHaHa?pid=Api&rs=1', 'Brandy', false],
 
 ['https://tse3-mm.cn.bing.net/th/id/OIP.97PzVjm2aUTvnShxyu-4rgHaHa?pid=Api&rs=1','Campari', false] 
 ],

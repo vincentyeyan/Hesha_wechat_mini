@@ -7,19 +7,13 @@
   margin-bottom: 40rpx;
   font-size: 32rpx;
   font-weight: light;
-  color: rgb(83, 83, 83);
+  color: rgb(66, 66, 66);
 }
 
 .text-boxx {
-  font-size: 26rpx;
+  
+  font-size: 24rpx;
   font-weight: lighter;
+  width: 200rpx
  
-}
-
-.scroll-box {
-  padding-right: 50rpx;
-}
-
-.cardd {
-
 }
